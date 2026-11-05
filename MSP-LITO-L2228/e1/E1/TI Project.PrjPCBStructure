@@ -1,0 +1,3 @@
+Record=TopLevelDocument|FileName=[ProjectName].SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=[ProjectName].SchDoc|FileName=[ProjectName]_BlankSheet.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=[ProjectName].SchDoc|FileName=[ProjectName]_Hardware.SchDoc|SheetNumber=3

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=VBAT Pin=J4-1
+Removed Pin From Net: NetName=3V3 Pin=J4-2
+Removed Member From Class: ClassName=Header Member=J4
+Removed Member From Class: ClassName=MSP-LITO-MSPM0L2228 Member=J4

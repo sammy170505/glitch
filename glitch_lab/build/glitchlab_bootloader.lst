@@ -1,0 +1,3399 @@
+
+/out/glitchlab_bootloader.elf:	file format elf32-littlearm
+
+Disassembly of section .text:
+
+000060c0 <level0>:
+; {
+    60c0: b510         	push	{r4, lr}
+    60c2: b082         	sub	sp, #0x8
+    60c4: 2000         	movs	r0, #0x0
+;     volatile int a = 0;
+    60c6: 9001         	str	r0, [sp, #0x4]
+    60c8: 48fc         	ldr	r0, [pc, #0x3f0]        @ 0x64bc <level0+0x3fc>
+;     g_t0 = SysTick->VAL;
+    60ca: 6802         	ldr	r2, [r0]
+    60cc: 49fc         	ldr	r1, [pc, #0x3f0]        @ 0x64c0 <level0+0x400>
+    60ce: 600a         	str	r2, [r1]
+    60d0: 4afc         	ldr	r2, [pc, #0x3f0]        @ 0x64c4 <level0+0x404>
+    60d2: 2301         	movs	r3, #0x1
+;     gpio->DOUTSET31_0 = pins;
+    60d4: 6013         	str	r3, [r2]
+;     A200
+    60d6: 9c01         	ldr	r4, [sp, #0x4]
+    60d8: 1c64         	adds	r4, r4, #0x1
+    60da: 9401         	str	r4, [sp, #0x4]
+    60dc: 9c01         	ldr	r4, [sp, #0x4]
+    60de: 1c64         	adds	r4, r4, #0x1
+    60e0: 9401         	str	r4, [sp, #0x4]
+    60e2: 9c01         	ldr	r4, [sp, #0x4]
+    60e4: 1c64         	adds	r4, r4, #0x1
+    60e6: 9401         	str	r4, [sp, #0x4]
+    60e8: 9c01         	ldr	r4, [sp, #0x4]
+    60ea: 1c64         	adds	r4, r4, #0x1
+    60ec: 9401         	str	r4, [sp, #0x4]
+    60ee: 9c01         	ldr	r4, [sp, #0x4]
+    60f0: 1c64         	adds	r4, r4, #0x1
+    60f2: 9401         	str	r4, [sp, #0x4]
+    60f4: 9c01         	ldr	r4, [sp, #0x4]
+    60f6: 1c64         	adds	r4, r4, #0x1
+    60f8: 9401         	str	r4, [sp, #0x4]
+    60fa: 9c01         	ldr	r4, [sp, #0x4]
+    60fc: 1c64         	adds	r4, r4, #0x1
+    60fe: 9401         	str	r4, [sp, #0x4]
+    6100: 9c01         	ldr	r4, [sp, #0x4]
+    6102: 1c64         	adds	r4, r4, #0x1
+    6104: 9401         	str	r4, [sp, #0x4]
+    6106: 9c01         	ldr	r4, [sp, #0x4]
+    6108: 1c64         	adds	r4, r4, #0x1
+    610a: 9401         	str	r4, [sp, #0x4]
+    610c: 9c01         	ldr	r4, [sp, #0x4]
+    610e: 1c64         	adds	r4, r4, #0x1
+    6110: 9401         	str	r4, [sp, #0x4]
+    6112: 9c01         	ldr	r4, [sp, #0x4]
+    6114: 1c64         	adds	r4, r4, #0x1
+    6116: 9401         	str	r4, [sp, #0x4]
+    6118: 9c01         	ldr	r4, [sp, #0x4]
+    611a: 1c64         	adds	r4, r4, #0x1
+    611c: 9401         	str	r4, [sp, #0x4]
+    611e: 9c01         	ldr	r4, [sp, #0x4]
+    6120: 1c64         	adds	r4, r4, #0x1
+    6122: 9401         	str	r4, [sp, #0x4]
+    6124: 9c01         	ldr	r4, [sp, #0x4]
+    6126: 1c64         	adds	r4, r4, #0x1
+    6128: 9401         	str	r4, [sp, #0x4]
+    612a: 9c01         	ldr	r4, [sp, #0x4]
+    612c: 1c64         	adds	r4, r4, #0x1
+    612e: 9401         	str	r4, [sp, #0x4]
+    6130: 9c01         	ldr	r4, [sp, #0x4]
+    6132: 1c64         	adds	r4, r4, #0x1
+    6134: 9401         	str	r4, [sp, #0x4]
+    6136: 9c01         	ldr	r4, [sp, #0x4]
+    6138: 1c64         	adds	r4, r4, #0x1
+    613a: 9401         	str	r4, [sp, #0x4]
+    613c: 9c01         	ldr	r4, [sp, #0x4]
+    613e: 1c64         	adds	r4, r4, #0x1
+    6140: 9401         	str	r4, [sp, #0x4]
+    6142: 9c01         	ldr	r4, [sp, #0x4]
+    6144: 1c64         	adds	r4, r4, #0x1
+    6146: 9401         	str	r4, [sp, #0x4]
+    6148: 9c01         	ldr	r4, [sp, #0x4]
+    614a: 1c64         	adds	r4, r4, #0x1
+    614c: 9401         	str	r4, [sp, #0x4]
+    614e: 9c01         	ldr	r4, [sp, #0x4]
+    6150: 1c64         	adds	r4, r4, #0x1
+    6152: 9401         	str	r4, [sp, #0x4]
+    6154: 9c01         	ldr	r4, [sp, #0x4]
+    6156: 1c64         	adds	r4, r4, #0x1
+    6158: 9401         	str	r4, [sp, #0x4]
+    615a: 9c01         	ldr	r4, [sp, #0x4]
+    615c: 1c64         	adds	r4, r4, #0x1
+    615e: 9401         	str	r4, [sp, #0x4]
+    6160: 9c01         	ldr	r4, [sp, #0x4]
+    6162: 1c64         	adds	r4, r4, #0x1
+    6164: 9401         	str	r4, [sp, #0x4]
+    6166: 9c01         	ldr	r4, [sp, #0x4]
+    6168: 1c64         	adds	r4, r4, #0x1
+    616a: 9401         	str	r4, [sp, #0x4]
+    616c: 9c01         	ldr	r4, [sp, #0x4]
+    616e: 1c64         	adds	r4, r4, #0x1
+    6170: 9401         	str	r4, [sp, #0x4]
+    6172: 9c01         	ldr	r4, [sp, #0x4]
+    6174: 1c64         	adds	r4, r4, #0x1
+    6176: 9401         	str	r4, [sp, #0x4]
+    6178: 9c01         	ldr	r4, [sp, #0x4]
+    617a: 1c64         	adds	r4, r4, #0x1
+    617c: 9401         	str	r4, [sp, #0x4]
+    617e: 9c01         	ldr	r4, [sp, #0x4]
+    6180: 1c64         	adds	r4, r4, #0x1
+    6182: 9401         	str	r4, [sp, #0x4]
+    6184: 9c01         	ldr	r4, [sp, #0x4]
+    6186: 1c64         	adds	r4, r4, #0x1
+    6188: 9401         	str	r4, [sp, #0x4]
+    618a: 9c01         	ldr	r4, [sp, #0x4]
+    618c: 1c64         	adds	r4, r4, #0x1
+    618e: 9401         	str	r4, [sp, #0x4]
+    6190: 9c01         	ldr	r4, [sp, #0x4]
+    6192: 1c64         	adds	r4, r4, #0x1
+    6194: 9401         	str	r4, [sp, #0x4]
+    6196: 9c01         	ldr	r4, [sp, #0x4]
+    6198: 1c64         	adds	r4, r4, #0x1
+    619a: 9401         	str	r4, [sp, #0x4]
+    619c: 9c01         	ldr	r4, [sp, #0x4]
+    619e: 1c64         	adds	r4, r4, #0x1
+    61a0: 9401         	str	r4, [sp, #0x4]
+    61a2: 9c01         	ldr	r4, [sp, #0x4]
+    61a4: 1c64         	adds	r4, r4, #0x1
+    61a6: 9401         	str	r4, [sp, #0x4]
+    61a8: 9c01         	ldr	r4, [sp, #0x4]
+    61aa: 1c64         	adds	r4, r4, #0x1
+    61ac: 9401         	str	r4, [sp, #0x4]
+    61ae: 9c01         	ldr	r4, [sp, #0x4]
+    61b0: 1c64         	adds	r4, r4, #0x1
+    61b2: 9401         	str	r4, [sp, #0x4]
+    61b4: 9c01         	ldr	r4, [sp, #0x4]
+    61b6: 1c64         	adds	r4, r4, #0x1
+    61b8: 9401         	str	r4, [sp, #0x4]
+    61ba: 9c01         	ldr	r4, [sp, #0x4]
+    61bc: 1c64         	adds	r4, r4, #0x1
+    61be: 9401         	str	r4, [sp, #0x4]
+    61c0: 9c01         	ldr	r4, [sp, #0x4]
+    61c2: 1c64         	adds	r4, r4, #0x1
+    61c4: 9401         	str	r4, [sp, #0x4]
+    61c6: 9c01         	ldr	r4, [sp, #0x4]
+    61c8: 1c64         	adds	r4, r4, #0x1
+    61ca: 9401         	str	r4, [sp, #0x4]
+    61cc: 9c01         	ldr	r4, [sp, #0x4]
+    61ce: 1c64         	adds	r4, r4, #0x1
+    61d0: 9401         	str	r4, [sp, #0x4]
+    61d2: 9c01         	ldr	r4, [sp, #0x4]
+    61d4: 1c64         	adds	r4, r4, #0x1
+    61d6: 9401         	str	r4, [sp, #0x4]
+    61d8: 9c01         	ldr	r4, [sp, #0x4]
+    61da: 1c64         	adds	r4, r4, #0x1
+    61dc: 9401         	str	r4, [sp, #0x4]
+    61de: 9c01         	ldr	r4, [sp, #0x4]
+    61e0: 1c64         	adds	r4, r4, #0x1
+    61e2: 9401         	str	r4, [sp, #0x4]
+    61e4: 9c01         	ldr	r4, [sp, #0x4]
+    61e6: 1c64         	adds	r4, r4, #0x1
+    61e8: 9401         	str	r4, [sp, #0x4]
+    61ea: 9c01         	ldr	r4, [sp, #0x4]
+    61ec: 1c64         	adds	r4, r4, #0x1
+    61ee: 9401         	str	r4, [sp, #0x4]
+    61f0: 9c01         	ldr	r4, [sp, #0x4]
+    61f2: 1c64         	adds	r4, r4, #0x1
+    61f4: 9401         	str	r4, [sp, #0x4]
+    61f6: 9c01         	ldr	r4, [sp, #0x4]
+    61f8: 1c64         	adds	r4, r4, #0x1
+    61fa: 9401         	str	r4, [sp, #0x4]
+    61fc: 9c01         	ldr	r4, [sp, #0x4]
+    61fe: 1c64         	adds	r4, r4, #0x1
+    6200: 9401         	str	r4, [sp, #0x4]
+    6202: 9c01         	ldr	r4, [sp, #0x4]
+    6204: 1c64         	adds	r4, r4, #0x1
+    6206: 9401         	str	r4, [sp, #0x4]
+    6208: 9c01         	ldr	r4, [sp, #0x4]
+    620a: 1c64         	adds	r4, r4, #0x1
+    620c: 9401         	str	r4, [sp, #0x4]
+    620e: 9c01         	ldr	r4, [sp, #0x4]
+    6210: 1c64         	adds	r4, r4, #0x1
+    6212: 9401         	str	r4, [sp, #0x4]
+    6214: 9c01         	ldr	r4, [sp, #0x4]
+    6216: 1c64         	adds	r4, r4, #0x1
+    6218: 9401         	str	r4, [sp, #0x4]
+    621a: 9c01         	ldr	r4, [sp, #0x4]
+    621c: 1c64         	adds	r4, r4, #0x1
+    621e: 9401         	str	r4, [sp, #0x4]
+    6220: 9c01         	ldr	r4, [sp, #0x4]
+    6222: 1c64         	adds	r4, r4, #0x1
+    6224: 9401         	str	r4, [sp, #0x4]
+    6226: 9c01         	ldr	r4, [sp, #0x4]
+    6228: 1c64         	adds	r4, r4, #0x1
+    622a: 9401         	str	r4, [sp, #0x4]
+    622c: 9c01         	ldr	r4, [sp, #0x4]
+    622e: 1c64         	adds	r4, r4, #0x1
+    6230: 9401         	str	r4, [sp, #0x4]
+    6232: 9c01         	ldr	r4, [sp, #0x4]
+    6234: 1c64         	adds	r4, r4, #0x1
+    6236: 9401         	str	r4, [sp, #0x4]
+    6238: 9c01         	ldr	r4, [sp, #0x4]
+    623a: 1c64         	adds	r4, r4, #0x1
+    623c: 9401         	str	r4, [sp, #0x4]
+    623e: 9c01         	ldr	r4, [sp, #0x4]
+    6240: 1c64         	adds	r4, r4, #0x1
+    6242: 9401         	str	r4, [sp, #0x4]
+    6244: 9c01         	ldr	r4, [sp, #0x4]
+    6246: 1c64         	adds	r4, r4, #0x1
+    6248: 9401         	str	r4, [sp, #0x4]
+    624a: 9c01         	ldr	r4, [sp, #0x4]
+    624c: 1c64         	adds	r4, r4, #0x1
+    624e: 9401         	str	r4, [sp, #0x4]
+    6250: 9c01         	ldr	r4, [sp, #0x4]
+    6252: 1c64         	adds	r4, r4, #0x1
+    6254: 9401         	str	r4, [sp, #0x4]
+    6256: 9c01         	ldr	r4, [sp, #0x4]
+    6258: 1c64         	adds	r4, r4, #0x1
+    625a: 9401         	str	r4, [sp, #0x4]
+    625c: 9c01         	ldr	r4, [sp, #0x4]
+    625e: 1c64         	adds	r4, r4, #0x1
+    6260: 9401         	str	r4, [sp, #0x4]
+    6262: 9c01         	ldr	r4, [sp, #0x4]
+    6264: 1c64         	adds	r4, r4, #0x1
+    6266: 9401         	str	r4, [sp, #0x4]
+    6268: 9c01         	ldr	r4, [sp, #0x4]
+    626a: 1c64         	adds	r4, r4, #0x1
+    626c: 9401         	str	r4, [sp, #0x4]
+    626e: 9c01         	ldr	r4, [sp, #0x4]
+    6270: 1c64         	adds	r4, r4, #0x1
+    6272: 9401         	str	r4, [sp, #0x4]
+    6274: 9c01         	ldr	r4, [sp, #0x4]
+    6276: 1c64         	adds	r4, r4, #0x1
+    6278: 9401         	str	r4, [sp, #0x4]
+    627a: 9c01         	ldr	r4, [sp, #0x4]
+    627c: 1c64         	adds	r4, r4, #0x1
+    627e: 9401         	str	r4, [sp, #0x4]
+    6280: 9c01         	ldr	r4, [sp, #0x4]
+    6282: 1c64         	adds	r4, r4, #0x1
+    6284: 9401         	str	r4, [sp, #0x4]
+    6286: 9c01         	ldr	r4, [sp, #0x4]
+    6288: 1c64         	adds	r4, r4, #0x1
+    628a: 9401         	str	r4, [sp, #0x4]
+    628c: 9c01         	ldr	r4, [sp, #0x4]
+    628e: 1c64         	adds	r4, r4, #0x1
+    6290: 9401         	str	r4, [sp, #0x4]
+    6292: 9c01         	ldr	r4, [sp, #0x4]
+    6294: 1c64         	adds	r4, r4, #0x1
+    6296: 9401         	str	r4, [sp, #0x4]
+    6298: 9c01         	ldr	r4, [sp, #0x4]
+    629a: 1c64         	adds	r4, r4, #0x1
+    629c: 9401         	str	r4, [sp, #0x4]
+    629e: 9c01         	ldr	r4, [sp, #0x4]
+    62a0: 1c64         	adds	r4, r4, #0x1
+    62a2: 9401         	str	r4, [sp, #0x4]
+    62a4: 9c01         	ldr	r4, [sp, #0x4]
+    62a6: 1c64         	adds	r4, r4, #0x1
+    62a8: 9401         	str	r4, [sp, #0x4]
+    62aa: 9c01         	ldr	r4, [sp, #0x4]
+    62ac: 1c64         	adds	r4, r4, #0x1
+    62ae: 9401         	str	r4, [sp, #0x4]
+    62b0: 9c01         	ldr	r4, [sp, #0x4]
+    62b2: 1c64         	adds	r4, r4, #0x1
+    62b4: 9401         	str	r4, [sp, #0x4]
+    62b6: 9c01         	ldr	r4, [sp, #0x4]
+    62b8: 1c64         	adds	r4, r4, #0x1
+    62ba: 9401         	str	r4, [sp, #0x4]
+    62bc: 9c01         	ldr	r4, [sp, #0x4]
+    62be: 1c64         	adds	r4, r4, #0x1
+    62c0: 9401         	str	r4, [sp, #0x4]
+    62c2: 9c01         	ldr	r4, [sp, #0x4]
+    62c4: 1c64         	adds	r4, r4, #0x1
+    62c6: 9401         	str	r4, [sp, #0x4]
+    62c8: 9c01         	ldr	r4, [sp, #0x4]
+    62ca: 1c64         	adds	r4, r4, #0x1
+    62cc: 9401         	str	r4, [sp, #0x4]
+    62ce: 9c01         	ldr	r4, [sp, #0x4]
+    62d0: 1c64         	adds	r4, r4, #0x1
+    62d2: 9401         	str	r4, [sp, #0x4]
+    62d4: 9c01         	ldr	r4, [sp, #0x4]
+    62d6: 1c64         	adds	r4, r4, #0x1
+    62d8: 9401         	str	r4, [sp, #0x4]
+    62da: 9c01         	ldr	r4, [sp, #0x4]
+    62dc: 1c64         	adds	r4, r4, #0x1
+    62de: 9401         	str	r4, [sp, #0x4]
+    62e0: 9c01         	ldr	r4, [sp, #0x4]
+    62e2: 1c64         	adds	r4, r4, #0x1
+    62e4: 9401         	str	r4, [sp, #0x4]
+    62e6: 9c01         	ldr	r4, [sp, #0x4]
+    62e8: 1c64         	adds	r4, r4, #0x1
+    62ea: 9401         	str	r4, [sp, #0x4]
+    62ec: 9c01         	ldr	r4, [sp, #0x4]
+    62ee: 1c64         	adds	r4, r4, #0x1
+    62f0: 9401         	str	r4, [sp, #0x4]
+    62f2: 9c01         	ldr	r4, [sp, #0x4]
+    62f4: 1c64         	adds	r4, r4, #0x1
+    62f6: 9401         	str	r4, [sp, #0x4]
+    62f8: 9c01         	ldr	r4, [sp, #0x4]
+    62fa: 1c64         	adds	r4, r4, #0x1
+    62fc: 9401         	str	r4, [sp, #0x4]
+    62fe: 9c01         	ldr	r4, [sp, #0x4]
+    6300: 1c64         	adds	r4, r4, #0x1
+    6302: 9401         	str	r4, [sp, #0x4]
+    6304: 9c01         	ldr	r4, [sp, #0x4]
+    6306: 1c64         	adds	r4, r4, #0x1
+    6308: 9401         	str	r4, [sp, #0x4]
+    630a: 9c01         	ldr	r4, [sp, #0x4]
+    630c: 1c64         	adds	r4, r4, #0x1
+    630e: 9401         	str	r4, [sp, #0x4]
+    6310: 9c01         	ldr	r4, [sp, #0x4]
+    6312: 1c64         	adds	r4, r4, #0x1
+    6314: 9401         	str	r4, [sp, #0x4]
+    6316: 9c01         	ldr	r4, [sp, #0x4]
+    6318: 1c64         	adds	r4, r4, #0x1
+    631a: 9401         	str	r4, [sp, #0x4]
+    631c: 9c01         	ldr	r4, [sp, #0x4]
+    631e: 1c64         	adds	r4, r4, #0x1
+    6320: 9401         	str	r4, [sp, #0x4]
+    6322: 9c01         	ldr	r4, [sp, #0x4]
+    6324: 1c64         	adds	r4, r4, #0x1
+    6326: 9401         	str	r4, [sp, #0x4]
+    6328: 9c01         	ldr	r4, [sp, #0x4]
+    632a: 1c64         	adds	r4, r4, #0x1
+    632c: 9401         	str	r4, [sp, #0x4]
+    632e: 9c01         	ldr	r4, [sp, #0x4]
+    6330: 1c64         	adds	r4, r4, #0x1
+    6332: 9401         	str	r4, [sp, #0x4]
+    6334: 9c01         	ldr	r4, [sp, #0x4]
+    6336: 1c64         	adds	r4, r4, #0x1
+    6338: 9401         	str	r4, [sp, #0x4]
+    633a: 9c01         	ldr	r4, [sp, #0x4]
+    633c: 1c64         	adds	r4, r4, #0x1
+    633e: 9401         	str	r4, [sp, #0x4]
+    6340: 9c01         	ldr	r4, [sp, #0x4]
+    6342: 1c64         	adds	r4, r4, #0x1
+    6344: 9401         	str	r4, [sp, #0x4]
+    6346: 9c01         	ldr	r4, [sp, #0x4]
+    6348: 1c64         	adds	r4, r4, #0x1
+    634a: 9401         	str	r4, [sp, #0x4]
+    634c: 9c01         	ldr	r4, [sp, #0x4]
+    634e: 1c64         	adds	r4, r4, #0x1
+    6350: 9401         	str	r4, [sp, #0x4]
+    6352: 9c01         	ldr	r4, [sp, #0x4]
+    6354: 1c64         	adds	r4, r4, #0x1
+    6356: 9401         	str	r4, [sp, #0x4]
+    6358: 9c01         	ldr	r4, [sp, #0x4]
+    635a: 1c64         	adds	r4, r4, #0x1
+    635c: 9401         	str	r4, [sp, #0x4]
+    635e: 9c01         	ldr	r4, [sp, #0x4]
+    6360: 1c64         	adds	r4, r4, #0x1
+    6362: 9401         	str	r4, [sp, #0x4]
+    6364: 9c01         	ldr	r4, [sp, #0x4]
+    6366: 1c64         	adds	r4, r4, #0x1
+    6368: 9401         	str	r4, [sp, #0x4]
+    636a: 9c01         	ldr	r4, [sp, #0x4]
+    636c: 1c64         	adds	r4, r4, #0x1
+    636e: 9401         	str	r4, [sp, #0x4]
+    6370: 9c01         	ldr	r4, [sp, #0x4]
+    6372: 1c64         	adds	r4, r4, #0x1
+    6374: 9401         	str	r4, [sp, #0x4]
+    6376: 9c01         	ldr	r4, [sp, #0x4]
+    6378: 1c64         	adds	r4, r4, #0x1
+    637a: 9401         	str	r4, [sp, #0x4]
+    637c: 9c01         	ldr	r4, [sp, #0x4]
+    637e: 1c64         	adds	r4, r4, #0x1
+    6380: 9401         	str	r4, [sp, #0x4]
+    6382: 9c01         	ldr	r4, [sp, #0x4]
+    6384: 1c64         	adds	r4, r4, #0x1
+    6386: 9401         	str	r4, [sp, #0x4]
+    6388: 9c01         	ldr	r4, [sp, #0x4]
+    638a: 1c64         	adds	r4, r4, #0x1
+    638c: 9401         	str	r4, [sp, #0x4]
+    638e: 9c01         	ldr	r4, [sp, #0x4]
+    6390: 1c64         	adds	r4, r4, #0x1
+    6392: 9401         	str	r4, [sp, #0x4]
+    6394: 9c01         	ldr	r4, [sp, #0x4]
+    6396: 1c64         	adds	r4, r4, #0x1
+    6398: 9401         	str	r4, [sp, #0x4]
+    639a: 9c01         	ldr	r4, [sp, #0x4]
+    639c: 1c64         	adds	r4, r4, #0x1
+    639e: 9401         	str	r4, [sp, #0x4]
+    63a0: 9c01         	ldr	r4, [sp, #0x4]
+    63a2: 1c64         	adds	r4, r4, #0x1
+    63a4: 9401         	str	r4, [sp, #0x4]
+    63a6: 9c01         	ldr	r4, [sp, #0x4]
+    63a8: 1c64         	adds	r4, r4, #0x1
+    63aa: 9401         	str	r4, [sp, #0x4]
+    63ac: 9c01         	ldr	r4, [sp, #0x4]
+    63ae: 1c64         	adds	r4, r4, #0x1
+    63b0: 9401         	str	r4, [sp, #0x4]
+    63b2: 9c01         	ldr	r4, [sp, #0x4]
+    63b4: 1c64         	adds	r4, r4, #0x1
+    63b6: 9401         	str	r4, [sp, #0x4]
+    63b8: 9c01         	ldr	r4, [sp, #0x4]
+    63ba: 1c64         	adds	r4, r4, #0x1
+    63bc: 9401         	str	r4, [sp, #0x4]
+    63be: 9c01         	ldr	r4, [sp, #0x4]
+    63c0: 1c64         	adds	r4, r4, #0x1
+    63c2: 9401         	str	r4, [sp, #0x4]
+    63c4: 9c01         	ldr	r4, [sp, #0x4]
+    63c6: 1c64         	adds	r4, r4, #0x1
+    63c8: 9401         	str	r4, [sp, #0x4]
+    63ca: 9c01         	ldr	r4, [sp, #0x4]
+    63cc: 1c64         	adds	r4, r4, #0x1
+    63ce: 9401         	str	r4, [sp, #0x4]
+    63d0: 9c01         	ldr	r4, [sp, #0x4]
+    63d2: 1c64         	adds	r4, r4, #0x1
+    63d4: 9401         	str	r4, [sp, #0x4]
+    63d6: 9c01         	ldr	r4, [sp, #0x4]
+    63d8: 1c64         	adds	r4, r4, #0x1
+    63da: 9401         	str	r4, [sp, #0x4]
+    63dc: 9c01         	ldr	r4, [sp, #0x4]
+    63de: 1c64         	adds	r4, r4, #0x1
+    63e0: 9401         	str	r4, [sp, #0x4]
+    63e2: 9c01         	ldr	r4, [sp, #0x4]
+    63e4: 1c64         	adds	r4, r4, #0x1
+    63e6: 9401         	str	r4, [sp, #0x4]
+    63e8: 9c01         	ldr	r4, [sp, #0x4]
+    63ea: 1c64         	adds	r4, r4, #0x1
+    63ec: 9401         	str	r4, [sp, #0x4]
+    63ee: 9c01         	ldr	r4, [sp, #0x4]
+    63f0: 1c64         	adds	r4, r4, #0x1
+    63f2: 9401         	str	r4, [sp, #0x4]
+    63f4: 9c01         	ldr	r4, [sp, #0x4]
+    63f6: 1c64         	adds	r4, r4, #0x1
+    63f8: 9401         	str	r4, [sp, #0x4]
+    63fa: 9c01         	ldr	r4, [sp, #0x4]
+    63fc: 1c64         	adds	r4, r4, #0x1
+    63fe: 9401         	str	r4, [sp, #0x4]
+    6400: 9c01         	ldr	r4, [sp, #0x4]
+    6402: 1c64         	adds	r4, r4, #0x1
+    6404: 9401         	str	r4, [sp, #0x4]
+    6406: 9c01         	ldr	r4, [sp, #0x4]
+    6408: 1c64         	adds	r4, r4, #0x1
+    640a: 9401         	str	r4, [sp, #0x4]
+    640c: 9c01         	ldr	r4, [sp, #0x4]
+    640e: 1c64         	adds	r4, r4, #0x1
+    6410: 9401         	str	r4, [sp, #0x4]
+    6412: 9c01         	ldr	r4, [sp, #0x4]
+    6414: 1c64         	adds	r4, r4, #0x1
+    6416: 9401         	str	r4, [sp, #0x4]
+    6418: 9c01         	ldr	r4, [sp, #0x4]
+    641a: 1c64         	adds	r4, r4, #0x1
+    641c: 9401         	str	r4, [sp, #0x4]
+    641e: 9c01         	ldr	r4, [sp, #0x4]
+    6420: 1c64         	adds	r4, r4, #0x1
+    6422: 9401         	str	r4, [sp, #0x4]
+    6424: 9c01         	ldr	r4, [sp, #0x4]
+    6426: 1c64         	adds	r4, r4, #0x1
+    6428: 9401         	str	r4, [sp, #0x4]
+    642a: 9c01         	ldr	r4, [sp, #0x4]
+    642c: 1c64         	adds	r4, r4, #0x1
+    642e: 9401         	str	r4, [sp, #0x4]
+    6430: 9c01         	ldr	r4, [sp, #0x4]
+    6432: 1c64         	adds	r4, r4, #0x1
+    6434: 9401         	str	r4, [sp, #0x4]
+    6436: 9c01         	ldr	r4, [sp, #0x4]
+    6438: 1c64         	adds	r4, r4, #0x1
+    643a: 9401         	str	r4, [sp, #0x4]
+    643c: 9c01         	ldr	r4, [sp, #0x4]
+    643e: 1c64         	adds	r4, r4, #0x1
+    6440: 9401         	str	r4, [sp, #0x4]
+    6442: 9c01         	ldr	r4, [sp, #0x4]
+    6444: 1c64         	adds	r4, r4, #0x1
+    6446: 9401         	str	r4, [sp, #0x4]
+    6448: 9c01         	ldr	r4, [sp, #0x4]
+    644a: 1c64         	adds	r4, r4, #0x1
+    644c: 9401         	str	r4, [sp, #0x4]
+    644e: 9c01         	ldr	r4, [sp, #0x4]
+    6450: 1c64         	adds	r4, r4, #0x1
+    6452: 9401         	str	r4, [sp, #0x4]
+    6454: 9c01         	ldr	r4, [sp, #0x4]
+    6456: 1c64         	adds	r4, r4, #0x1
+    6458: 9401         	str	r4, [sp, #0x4]
+    645a: 9c01         	ldr	r4, [sp, #0x4]
+    645c: 1c64         	adds	r4, r4, #0x1
+    645e: 9401         	str	r4, [sp, #0x4]
+    6460: 9c01         	ldr	r4, [sp, #0x4]
+    6462: 1c64         	adds	r4, r4, #0x1
+    6464: 9401         	str	r4, [sp, #0x4]
+    6466: 9c01         	ldr	r4, [sp, #0x4]
+    6468: 1c64         	adds	r4, r4, #0x1
+    646a: 9401         	str	r4, [sp, #0x4]
+    646c: 9c01         	ldr	r4, [sp, #0x4]
+    646e: 1c64         	adds	r4, r4, #0x1
+    6470: 9401         	str	r4, [sp, #0x4]
+    6472: 9c01         	ldr	r4, [sp, #0x4]
+    6474: 1c64         	adds	r4, r4, #0x1
+    6476: 9401         	str	r4, [sp, #0x4]
+    6478: 9c01         	ldr	r4, [sp, #0x4]
+    647a: 1c64         	adds	r4, r4, #0x1
+    647c: 9401         	str	r4, [sp, #0x4]
+    647e: 9c01         	ldr	r4, [sp, #0x4]
+    6480: 1c64         	adds	r4, r4, #0x1
+    6482: 9401         	str	r4, [sp, #0x4]
+    6484: 9c01         	ldr	r4, [sp, #0x4]
+    6486: 1c64         	adds	r4, r4, #0x1
+    6488: 9401         	str	r4, [sp, #0x4]
+    648a: 9c01         	ldr	r4, [sp, #0x4]
+    648c: 1c64         	adds	r4, r4, #0x1
+    648e: 9401         	str	r4, [sp, #0x4]
+    6490: 9c01         	ldr	r4, [sp, #0x4]
+    6492: 1c64         	adds	r4, r4, #0x1
+    6494: 9401         	str	r4, [sp, #0x4]
+    6496: 9c01         	ldr	r4, [sp, #0x4]
+    6498: 1c64         	adds	r4, r4, #0x1
+    649a: 9401         	str	r4, [sp, #0x4]
+    649c: 9c01         	ldr	r4, [sp, #0x4]
+    649e: 1c64         	adds	r4, r4, #0x1
+    64a0: 9401         	str	r4, [sp, #0x4]
+    64a2: 9c01         	ldr	r4, [sp, #0x4]
+    64a4: 1c64         	adds	r4, r4, #0x1
+    64a6: 9401         	str	r4, [sp, #0x4]
+    64a8: 9c01         	ldr	r4, [sp, #0x4]
+    64aa: 1c64         	adds	r4, r4, #0x1
+    64ac: 9401         	str	r4, [sp, #0x4]
+    64ae: 9c01         	ldr	r4, [sp, #0x4]
+    64b0: 1c64         	adds	r4, r4, #0x1
+    64b2: 9401         	str	r4, [sp, #0x4]
+    64b4: 9c01         	ldr	r4, [sp, #0x4]
+    64b6: 1c64         	adds	r4, r4, #0x1
+    64b8: e006         	b	0x64c8 <level0+0x408>   @ imm = #0xc
+    64ba: 46c0         	mov	r8, r8
+    64bc: 18 e0 00 e0  	.word	0xe000e018
+    64c0: 24 00 20 20  	.word	0x20200024
+    64c4: 90 32 0a 40  	.word	0x400a3290
+    64c8: 9401         	str	r4, [sp, #0x4]
+    64ca: 9c01         	ldr	r4, [sp, #0x4]
+    64cc: 1c64         	adds	r4, r4, #0x1
+    64ce: 9401         	str	r4, [sp, #0x4]
+    64d0: 9c01         	ldr	r4, [sp, #0x4]
+    64d2: 1c64         	adds	r4, r4, #0x1
+    64d4: 9401         	str	r4, [sp, #0x4]
+    64d6: 9c01         	ldr	r4, [sp, #0x4]
+    64d8: 1c64         	adds	r4, r4, #0x1
+    64da: 9401         	str	r4, [sp, #0x4]
+    64dc: 9c01         	ldr	r4, [sp, #0x4]
+    64de: 1c64         	adds	r4, r4, #0x1
+    64e0: 9401         	str	r4, [sp, #0x4]
+    64e2: 9c01         	ldr	r4, [sp, #0x4]
+    64e4: 1c64         	adds	r4, r4, #0x1
+    64e6: 9401         	str	r4, [sp, #0x4]
+    64e8: 9c01         	ldr	r4, [sp, #0x4]
+    64ea: 1c64         	adds	r4, r4, #0x1
+    64ec: 9401         	str	r4, [sp, #0x4]
+    64ee: 9c01         	ldr	r4, [sp, #0x4]
+    64f0: 1c64         	adds	r4, r4, #0x1
+    64f2: 9401         	str	r4, [sp, #0x4]
+    64f4: 9c01         	ldr	r4, [sp, #0x4]
+    64f6: 1c64         	adds	r4, r4, #0x1
+    64f8: 9401         	str	r4, [sp, #0x4]
+    64fa: 9c01         	ldr	r4, [sp, #0x4]
+    64fc: 1c64         	adds	r4, r4, #0x1
+    64fe: 9401         	str	r4, [sp, #0x4]
+    6500: 9c01         	ldr	r4, [sp, #0x4]
+    6502: 1c64         	adds	r4, r4, #0x1
+    6504: 9401         	str	r4, [sp, #0x4]
+    6506: 9c01         	ldr	r4, [sp, #0x4]
+    6508: 1c64         	adds	r4, r4, #0x1
+    650a: 9401         	str	r4, [sp, #0x4]
+    650c: 9c01         	ldr	r4, [sp, #0x4]
+    650e: 1c64         	adds	r4, r4, #0x1
+    6510: 9401         	str	r4, [sp, #0x4]
+    6512: 9c01         	ldr	r4, [sp, #0x4]
+    6514: 1c64         	adds	r4, r4, #0x1
+    6516: 9401         	str	r4, [sp, #0x4]
+    6518: 9c01         	ldr	r4, [sp, #0x4]
+    651a: 1c64         	adds	r4, r4, #0x1
+    651c: 9401         	str	r4, [sp, #0x4]
+    651e: 9c01         	ldr	r4, [sp, #0x4]
+    6520: 1c64         	adds	r4, r4, #0x1
+    6522: 9401         	str	r4, [sp, #0x4]
+    6524: 9c01         	ldr	r4, [sp, #0x4]
+    6526: 1c64         	adds	r4, r4, #0x1
+    6528: 9401         	str	r4, [sp, #0x4]
+    652a: 9c01         	ldr	r4, [sp, #0x4]
+    652c: 1c64         	adds	r4, r4, #0x1
+    652e: 9401         	str	r4, [sp, #0x4]
+    6530: 9c01         	ldr	r4, [sp, #0x4]
+    6532: 1c64         	adds	r4, r4, #0x1
+    6534: 9401         	str	r4, [sp, #0x4]
+    6536: 9c01         	ldr	r4, [sp, #0x4]
+    6538: 1c64         	adds	r4, r4, #0x1
+    653a: 9401         	str	r4, [sp, #0x4]
+    653c: 9c01         	ldr	r4, [sp, #0x4]
+    653e: 1c64         	adds	r4, r4, #0x1
+    6540: 9401         	str	r4, [sp, #0x4]
+    6542: 9c01         	ldr	r4, [sp, #0x4]
+    6544: 1c64         	adds	r4, r4, #0x1
+    6546: 9401         	str	r4, [sp, #0x4]
+    6548: 9c01         	ldr	r4, [sp, #0x4]
+    654a: 1c64         	adds	r4, r4, #0x1
+    654c: 9401         	str	r4, [sp, #0x4]
+    654e: 9c01         	ldr	r4, [sp, #0x4]
+    6550: 1c64         	adds	r4, r4, #0x1
+    6552: 9401         	str	r4, [sp, #0x4]
+    6554: 9c01         	ldr	r4, [sp, #0x4]
+    6556: 1c64         	adds	r4, r4, #0x1
+    6558: 9401         	str	r4, [sp, #0x4]
+    655a: 9c01         	ldr	r4, [sp, #0x4]
+    655c: 1c64         	adds	r4, r4, #0x1
+    655e: 9401         	str	r4, [sp, #0x4]
+    6560: 9c01         	ldr	r4, [sp, #0x4]
+    6562: 1c64         	adds	r4, r4, #0x1
+    6564: 9401         	str	r4, [sp, #0x4]
+    6566: 9c01         	ldr	r4, [sp, #0x4]
+    6568: 1c64         	adds	r4, r4, #0x1
+    656a: 9401         	str	r4, [sp, #0x4]
+    656c: 9c01         	ldr	r4, [sp, #0x4]
+    656e: 1c64         	adds	r4, r4, #0x1
+    6570: 9401         	str	r4, [sp, #0x4]
+    6572: 9c01         	ldr	r4, [sp, #0x4]
+    6574: 1c64         	adds	r4, r4, #0x1
+    6576: 9401         	str	r4, [sp, #0x4]
+    6578: 9c01         	ldr	r4, [sp, #0x4]
+    657a: 1c64         	adds	r4, r4, #0x1
+    657c: 9401         	str	r4, [sp, #0x4]
+    657e: 9c01         	ldr	r4, [sp, #0x4]
+    6580: 1c64         	adds	r4, r4, #0x1
+    6582: 9401         	str	r4, [sp, #0x4]
+    6584: 9c01         	ldr	r4, [sp, #0x4]
+    6586: 1c64         	adds	r4, r4, #0x1
+    6588: 9401         	str	r4, [sp, #0x4]
+    658a: 9c01         	ldr	r4, [sp, #0x4]
+    658c: 1c64         	adds	r4, r4, #0x1
+    658e: 9401         	str	r4, [sp, #0x4]
+    6590: 9c01         	ldr	r4, [sp, #0x4]
+    6592: 1c64         	adds	r4, r4, #0x1
+    6594: 9401         	str	r4, [sp, #0x4]
+;     gpio->DOUTCLR31_0 = pins;
+    6596: 6113         	str	r3, [r2, #0x10]
+;     return (g_t0 - SysTick->VAL) & 0x00FFFFFFu;
+    6598: 6809         	ldr	r1, [r1]
+    659a: 6800         	ldr	r0, [r0]
+    659c: 1a0c         	subs	r4, r1, r0
+    659e: 20ff         	movs	r0, #0xff
+    65a0: 0600         	lsls	r0, r0, #0x18
+    65a2: 4384         	bics	r4, r0
+;     out_s("L0 A="); out_u((uint32_t)a); out_s(" c="); out_u(c); out_end();
+    65a4: 4807         	ldr	r0, [pc, #0x1c]         @ 0x65c4 <level0+0x504>
+    65a6: f001 f897    	bl	0x76d8 <out_s>          @ imm = #0x112e
+    65aa: 9801         	ldr	r0, [sp, #0x4]
+    65ac: f000 fc54    	bl	0x6e58 <out_u>          @ imm = #0x8a8
+    65b0: 4805         	ldr	r0, [pc, #0x14]         @ 0x65c8 <level0+0x508>
+    65b2: f001 f891    	bl	0x76d8 <out_s>          @ imm = #0x1122
+    65b6: 4620         	mov	r0, r4
+    65b8: f000 fc4e    	bl	0x6e58 <out_u>          @ imm = #0x89c
+    65bc: f001 f948    	bl	0x7850 <out_end>        @ imm = #0x1290
+; }
+    65c0: b002         	add	sp, #0x8
+    65c2: bd10         	pop	{r4, pc}
+    65c4: 15 7a 00 00  	.word	0x00007a15
+    65c8: 30 7a 00 00  	.word	0x00007a30
+
+000065cc <main>:
+; {
+    65cc: b096         	sub	sp, #0x58
+    65ce: 4c80         	ldr	r4, [pc, #0x200]        @ 0x67d0 <main+0x204>
+    65d0: 4f80         	ldr	r7, [pc, #0x200]        @ 0x67d4 <main+0x208>
+;     SYSCFG_DL_init();                       /* 32 MHz SYSOSC, UART0/UART1, LED on, S2 input */
+    65d2: f001 f94b    	bl	0x786c <SYSCFG_DL_init> @ imm = #0x1296
+    65d6: 4880         	ldr	r0, [pc, #0x200]        @ 0x67d8 <main+0x20c>
+    65d8: 2181         	movs	r1, #0x81
+;     IOMUX->SECCFG.PINCM[pincmIndex] =
+    65da: 6001         	str	r1, [r0]
+    65dc: 487f         	ldr	r0, [pc, #0x1fc]        @ 0x67dc <main+0x210>
+    65de: 2101         	movs	r1, #0x1
+;     gpio->DOUTCLR31_0 = pins;
+    65e0: 6001         	str	r1, [r0]
+;     gpio->DOESET31_0 = pins;
+    65e2: 6301         	str	r1, [r0, #0x30]
+    65e4: 487e         	ldr	r0, [pc, #0x1f8]        @ 0x67e0 <main+0x214>
+    65e6: 497f         	ldr	r1, [pc, #0x1fc]        @ 0x67e4 <main+0x218>
+;     SysTick->LOAD = 0x00FFFFFFu;
+    65e8: 6041         	str	r1, [r0, #0x4]
+    65ea: 2600         	movs	r6, #0x0
+;     SysTick->VAL  = 0;
+    65ec: 6086         	str	r6, [r0, #0x8]
+    65ee: 2105         	movs	r1, #0x5
+;     SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_ENABLE_Msk;   /* no interrupt */
+    65f0: 6001         	str	r1, [r0]
+    65f2: 2142         	movs	r1, #0x42
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    65f4: 4638         	mov	r0, r7
+    65f6: f001 f8c9    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1192
+    65fa: 254f         	movs	r5, #0x4f
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    65fc: 4638         	mov	r0, r7
+    65fe: 4629         	mov	r1, r5
+    6600: f001 f8c4    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1188
+    6604: 4638         	mov	r0, r7
+    6606: 4629         	mov	r1, r5
+    6608: f001 f8c0    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1180
+    660c: 2154         	movs	r1, #0x54
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    660e: 4638         	mov	r0, r7
+    6610: f001 f8bc    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1178
+    6614: 2120         	movs	r1, #0x20
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6616: 9109         	str	r1, [sp, #0x24]
+    6618: 4638         	mov	r0, r7
+    661a: f001 f8b7    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x116e
+    661e: 2167         	movs	r1, #0x67
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6620: 4638         	mov	r0, r7
+    6622: f001 f8b3    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1166
+    6626: 256c         	movs	r5, #0x6c
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6628: 4638         	mov	r0, r7
+    662a: 4629         	mov	r1, r5
+    662c: f001 f8ae    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x115c
+    6630: 2169         	movs	r1, #0x69
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6632: 4638         	mov	r0, r7
+    6634: f001 f8aa    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1154
+    6638: 2174         	movs	r1, #0x74
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    663a: 4638         	mov	r0, r7
+    663c: f001 f8a6    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x114c
+    6640: 2163         	movs	r1, #0x63
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6642: 4638         	mov	r0, r7
+    6644: f001 f8a2    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1144
+    6648: 2168         	movs	r1, #0x68
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    664a: 4638         	mov	r0, r7
+    664c: f001 f89e    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x113c
+    6650: 4638         	mov	r0, r7
+    6652: 4629         	mov	r1, r5
+    6654: f001 f89a    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1134
+    6658: 2161         	movs	r1, #0x61
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    665a: 4638         	mov	r0, r7
+    665c: f001 f896    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x112c
+    6660: 2162         	movs	r1, #0x62
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6662: 4638         	mov	r0, r7
+    6664: f001 f892    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1124
+    6668: 4638         	mov	r0, r7
+    666a: 9909         	ldr	r1, [sp, #0x24]
+    666c: f001 f88e    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x111c
+    6670: 2176         	movs	r1, #0x76
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6672: 4638         	mov	r0, r7
+    6674: f001 f88a    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1114
+    6678: 2131         	movs	r1, #0x31
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    667a: 4638         	mov	r0, r7
+    667c: f001 f886    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x110c
+    6680: 210d         	movs	r1, #0xd
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6682: 4638         	mov	r0, r7
+    6684: f001 f882    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x1104
+    6688: 210a         	movs	r1, #0xa
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    668a: 4638         	mov	r0, r7
+    668c: f001 f87e    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x10fc
+    6690: a80a         	add	r0, sp, #0x28
+    6692: 1c41         	adds	r1, r0, #0x1
+    6694: 9108         	str	r1, [sp, #0x20]
+    6696: 1c80         	adds	r0, r0, #0x2
+    6698: 9009         	str	r0, [sp, #0x24]
+    669a: 4fb5         	ldr	r7, [pc, #0x2d4]        @ 0x6970 <main+0x3a4>
+    669c: e002         	b	0x66a4 <main+0xd8>      @ imm = #0x4
+;             g_entropy++;                    /* host timing jitter -> entropy for L7 */
+    669e: 6838         	ldr	r0, [r7]
+    66a0: 1c40         	adds	r0, r0, #0x1
+    66a2: 6038         	str	r0, [r7]
+;     return ((uart->STAT & UART_STAT_RXFE_MASK) == UART_STAT_RXFE_SET);
+    66a4: 6820         	ldr	r0, [r4]
+;         while (DL_UART_isRXFIFOEmpty(HOST_UART)) {
+    66a6: 0740         	lsls	r0, r0, #0x1d
+    66a8: d50b         	bpl	0x66c2 <main+0xf6>      @ imm = #0x16
+;             g_entropy++;                    /* host timing jitter -> entropy for L7 */
+    66aa: 6838         	ldr	r0, [r7]
+    66ac: 1c40         	adds	r0, r0, #0x1
+    66ae: 6038         	str	r0, [r7]
+;     return ((uart->STAT & UART_STAT_RXFE_MASK) == UART_STAT_RXFE_SET);
+    66b0: 6820         	ldr	r0, [r4]
+;         while (DL_UART_isRXFIFOEmpty(HOST_UART)) {
+    66b2: 0740         	lsls	r0, r0, #0x1d
+    66b4: d505         	bpl	0x66c2 <main+0xf6>      @ imm = #0xa
+;             g_entropy++;                    /* host timing jitter -> entropy for L7 */
+    66b6: 6838         	ldr	r0, [r7]
+    66b8: 1c40         	adds	r0, r0, #0x1
+    66ba: 6038         	str	r0, [r7]
+;     return ((uart->STAT & UART_STAT_RXFE_MASK) == UART_STAT_RXFE_SET);
+    66bc: 6820         	ldr	r0, [r4]
+;         while (DL_UART_isRXFIFOEmpty(HOST_UART)) {
+    66be: 0740         	lsls	r0, r0, #0x1d
+    66c0: d4ed         	bmi	0x669e <main+0xd2>      @ imm = #-0x26
+;     return ((uint8_t)(uart->RXDATA & UART_RXDATA_DATA_MASK));
+    66c2: 69e0         	ldr	r0, [r4, #0x1c]
+    66c4: b2c1         	uxtb	r1, r0
+;         if (ch == '\r') continue;
+    66c6: 290a         	cmp	r1, #0xa
+    66c8: d008         	beq	0x66dc <main+0x110>     @ imm = #0x10
+    66ca: 290d         	cmp	r1, #0xd
+    66cc: d0ea         	beq	0x66a4 <main+0xd8>      @ imm = #-0x2c
+;         if (i < n - 1) buf[i++] = ch;
+    66ce: 2e2e         	cmp	r6, #0x2e
+    66d0: d8e8         	bhi	0x66a4 <main+0xd8>      @ imm = #-0x30
+    66d2: 1c71         	adds	r1, r6, #0x1
+    66d4: aa0a         	add	r2, sp, #0x28
+;         if (i < n - 1) buf[i++] = ch;
+    66d6: 5590         	strb	r0, [r2, r6]
+    66d8: 460e         	mov	r6, r1
+    66da: e7e3         	b	0x66a4 <main+0xd8>      @ imm = #-0x3a
+    66dc: a80a         	add	r0, sp, #0x28
+    66de: 2500         	movs	r5, #0x0
+;         if (ch == '\n') { buf[i] = '\0'; return; }
+    66e0: 5585         	strb	r5, [r0, r6]
+;         if (line[0] == '\0') continue;
+    66e2: 7801         	ldrb	r1, [r0]
+    66e4: 2900         	cmp	r1, #0x0
+    66e6: 462e         	mov	r6, r5
+    66e8: d0dc         	beq	0x66a4 <main+0xd8>      @ imm = #-0x48
+    66ea: a80a         	add	r0, sp, #0x28
+;         const char *arg = (line[1] == ' ') ? &line[2] : &line[1];
+    66ec: 7840         	ldrb	r0, [r0, #0x1]
+    66ee: 2820         	cmp	r0, #0x20
+    66f0: 9809         	ldr	r0, [sp, #0x24]
+    66f2: d000         	beq	0x66f6 <main+0x12a>     @ imm = #0x0
+    66f4: 9808         	ldr	r0, [sp, #0x20]
+;         switch (line[0]) {
+    66f6: 3930         	subs	r1, #0x30
+    66f8: 2946         	cmp	r1, #0x46
+    66fa: d900         	bls	0x66fe <main+0x132>     @ imm = #0x0
+    66fc: e11d         	b	0x693a <main+0x36e>     @ imm = #0x23a
+    66fe: 0049         	lsls	r1, r1, #0x1
+    6700: 4479         	add	r1, pc
+    6702: 8889         	ldrh	r1, [r1, #0x4]
+    6704: 0049         	lsls	r1, r1, #0x1
+    6706: 448f         	add	pc, r1
+    6708: 46 00 fc 00  	.word	0x00fc0046
+    670c: 5a 00 08 01  	.word	0x0108005a
+    6710: 0c 01 5e 00  	.word	0x005e010c
+    6714: 00 01 04 01  	.word	0x01040100
+    6718: 14 01 10 01  	.word	0x01100114
+    671c: 18 01 18 01  	.word	0x01180118
+    6720: 18 01 18 01  	.word	0x01180118
+    6724: 18 01 18 01  	.word	0x01180118
+    6728: 18 01 18 01  	.word	0x01180118
+    672c: 18 01 18 01  	.word	0x01180118
+    6730: 18 01 18 01  	.word	0x01180118
+    6734: 18 01 18 01  	.word	0x01180118
+    6738: 18 01 18 01  	.word	0x01180118
+    673c: 18 01 18 01  	.word	0x01180118
+    6740: 18 01 18 01  	.word	0x01180118
+    6744: 18 01 18 01  	.word	0x01180118
+    6748: 18 01 18 01  	.word	0x01180118
+    674c: 18 01 18 01  	.word	0x01180118
+    6750: 18 01 18 01  	.word	0x01180118
+    6754: 18 01 18 01  	.word	0x01180118
+    6758: 18 01 18 01  	.word	0x01180118
+    675c: 18 01 18 01  	.word	0x01180118
+    6760: 18 01 18 01  	.word	0x01180118
+    6764: 18 01 18 01  	.word	0x01180118
+    6768: 18 01 18 01  	.word	0x01180118
+    676c: 18 01 18 01  	.word	0x01180118
+    6770: 18 01 18 01  	.word	0x01180118
+    6774: 18 01 18 01  	.word	0x01180118
+    6778: 18 01 18 01  	.word	0x01180118
+    677c: 18 01 18 01  	.word	0x01180118
+    6780: 18 01 18 01  	.word	0x01180118
+    6784: 18 01 18 01  	.word	0x01180118
+    6788: 4a 00 18 01  	.word	0x0118004a
+    678c: 18 01 18 01  	.word	0x01180118
+    6790: 18 01 18 01  	.word	0x01180118
+    6794: 6f 00        	.short	0x006f
+;         case '0': level0(arg); break;
+    6796: f7ff fc93    	bl	0x60c0 <level0>         @ imm = #-0x6da
+    679a: 462e         	mov	r6, r5
+    679c: e782         	b	0x66a4 <main+0xd8>      @ imm = #-0xfc
+    679e: 2150         	movs	r1, #0x50
+    67a0: 4e72         	ldr	r6, [pc, #0x1c8]        @ 0x696c <main+0x3a0>
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    67a2: 4630         	mov	r0, r6
+    67a4: f000 fff2    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xfe4
+    67a8: 214f         	movs	r1, #0x4f
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    67aa: 4630         	mov	r0, r6
+    67ac: f000 ffee    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xfdc
+    67b0: 214e         	movs	r1, #0x4e
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    67b2: 4630         	mov	r0, r6
+    67b4: f000 ffea    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xfd4
+    67b8: 2147         	movs	r1, #0x47
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    67ba: 4630         	mov	r0, r6
+    67bc: e09c         	b	0x68f8 <main+0x32c>     @ imm = #0x138
+;         case '2': level2(arg); break;
+    67be: f000 fca7    	bl	0x7110 <level2>         @ imm = #0x94e
+    67c2: 462e         	mov	r6, r5
+    67c4: e76e         	b	0x66a4 <main+0xd8>      @ imm = #-0x124
+;         case '5': level5(arg); break;
+    67c6: f000 fc39    	bl	0x703c <level5>         @ imm = #0x872
+    67ca: 462e         	mov	r6, r5
+    67cc: e76a         	b	0x66a4 <main+0xd8>      @ imm = #-0x12c
+    67ce: 46c0         	mov	r8, r8
+    67d0: 08 91 10 40  	.word	0x40109108
+    67d4: 00 80 10 40  	.word	0x40108000
+    67d8: 30 80 42 40  	.word	0x40428030
+    67dc: a0 32 0a 40  	.word	0x400a32a0
+    67e0: 10 e0 00 e0  	.word	0xe000e010
+    67e4: ff ff ff 00  	.word	0x00ffffff
+    67e8: 2167         	movs	r1, #0x67
+    67ea: 9105         	str	r1, [sp, #0x14]
+    67ec: 4e5f         	ldr	r6, [pc, #0x17c]        @ 0x696c <main+0x3a0>
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    67ee: 4630         	mov	r0, r6
+    67f0: f000 ffcc    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf98
+    67f4: 216c         	movs	r1, #0x6c
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    67f6: 9107         	str	r1, [sp, #0x1c]
+    67f8: 4630         	mov	r0, r6
+    67fa: f000 ffc7    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf8e
+    67fe: 2169         	movs	r1, #0x69
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6800: 9104         	str	r1, [sp, #0x10]
+    6802: 4630         	mov	r0, r6
+    6804: f000 ffc2    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf84
+    6808: 2174         	movs	r1, #0x74
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    680a: 9103         	str	r1, [sp, #0xc]
+    680c: 4630         	mov	r0, r6
+    680e: f000 ffbd    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf7a
+    6812: 2163         	movs	r1, #0x63
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6814: 4630         	mov	r0, r6
+    6816: f000 ffb9    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf72
+    681a: 2168         	movs	r1, #0x68
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    681c: 4630         	mov	r0, r6
+    681e: f000 ffb5    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf6a
+    6822: 4630         	mov	r0, r6
+    6824: 9907         	ldr	r1, [sp, #0x1c]
+    6826: f000 ffb1    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf62
+    682a: 2161         	movs	r1, #0x61
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    682c: 4630         	mov	r0, r6
+    682e: f000 ffad    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf5a
+    6832: 2162         	movs	r1, #0x62
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6834: 4630         	mov	r0, r6
+    6836: f000 ffa9    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf52
+    683a: 2120         	movs	r1, #0x20
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    683c: 9106         	str	r1, [sp, #0x18]
+    683e: 4630         	mov	r0, r6
+    6840: f000 ffa4    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf48
+    6844: 2176         	movs	r1, #0x76
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6846: 9102         	str	r1, [sp, #0x8]
+    6848: 4630         	mov	r0, r6
+    684a: f000 ff9f    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf3e
+    684e: 2131         	movs	r1, #0x31
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6850: 4630         	mov	r0, r6
+    6852: f000 ff9b    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf36
+    6856: 4630         	mov	r0, r6
+    6858: 9906         	ldr	r1, [sp, #0x18]
+    685a: f000 ff97    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf2e
+    685e: 4630         	mov	r0, r6
+    6860: 9907         	ldr	r1, [sp, #0x1c]
+    6862: f000 ff93    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf26
+    6866: 2165         	movs	r1, #0x65
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6868: 9101         	str	r1, [sp, #0x4]
+    686a: 4630         	mov	r0, r6
+    686c: f000 ff8e    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf1c
+    6870: 4630         	mov	r0, r6
+    6872: 9902         	ldr	r1, [sp, #0x8]
+    6874: f000 ff8a    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf14
+    6878: 4630         	mov	r0, r6
+    687a: 9901         	ldr	r1, [sp, #0x4]
+    687c: f000 ff86    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf0c
+    6880: 4630         	mov	r0, r6
+    6882: 9907         	ldr	r1, [sp, #0x1c]
+    6884: f000 ff82    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xf04
+    6888: 2173         	movs	r1, #0x73
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    688a: 4630         	mov	r0, r6
+    688c: f000 ff7e    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xefc
+    6890: 213d         	movs	r1, #0x3d
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6892: 9102         	str	r1, [sp, #0x8]
+    6894: 4630         	mov	r0, r6
+    6896: f000 ff79    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xef2
+    689a: 2130         	movs	r1, #0x30
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    689c: 9107         	str	r1, [sp, #0x1c]
+    689e: 4630         	mov	r0, r6
+    68a0: f000 ff74    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xee8
+    68a4: 212d         	movs	r1, #0x2d
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    68a6: 4630         	mov	r0, r6
+    68a8: f000 ff70    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xee0
+    68ac: 2139         	movs	r1, #0x39
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    68ae: 4630         	mov	r0, r6
+    68b0: f000 ff6c    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xed8
+    68b4: 4630         	mov	r0, r6
+    68b6: 9906         	ldr	r1, [sp, #0x18]
+    68b8: f000 ff68    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xed0
+    68bc: 4630         	mov	r0, r6
+    68be: 9903         	ldr	r1, [sp, #0xc]
+    68c0: f000 ff64    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xec8
+    68c4: 2172         	movs	r1, #0x72
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    68c6: 4630         	mov	r0, r6
+    68c8: f000 ff60    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xec0
+    68cc: 4630         	mov	r0, r6
+    68ce: 9904         	ldr	r1, [sp, #0x10]
+    68d0: f000 ff5c    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xeb8
+    68d4: 4630         	mov	r0, r6
+    68d6: 9905         	ldr	r1, [sp, #0x14]
+    68d8: f000 ff58    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xeb0
+    68dc: 4630         	mov	r0, r6
+    68de: 9902         	ldr	r1, [sp, #0x8]
+    68e0: f000 ff54    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xea8
+    68e4: 2150         	movs	r1, #0x50
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    68e6: 4630         	mov	r0, r6
+    68e8: f000 ff50    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xea0
+    68ec: 2142         	movs	r1, #0x42
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    68ee: 4630         	mov	r0, r6
+    68f0: f000 ff4c    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xe98
+    68f4: 4630         	mov	r0, r6
+    68f6: 9907         	ldr	r1, [sp, #0x1c]
+    68f8: f000 ff48    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xe90
+    68fc: 210d         	movs	r1, #0xd
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    68fe: 4630         	mov	r0, r6
+    6900: e02b         	b	0x695a <main+0x38e>     @ imm = #0x56
+;         case '1': level1(arg); break;
+    6902: f000 fe39    	bl	0x7578 <level1>         @ imm = #0xc72
+    6906: 462e         	mov	r6, r5
+    6908: e6cc         	b	0x66a4 <main+0xd8>      @ imm = #-0x268
+;         case '6': level6(arg); break;
+    690a: f000 fa25    	bl	0x6d58 <level6>         @ imm = #0x44a
+    690e: 462e         	mov	r6, r5
+    6910: e6c8         	b	0x66a4 <main+0xd8>      @ imm = #-0x270
+;         case '7': level7(arg); break;
+    6912: f000 f90b    	bl	0x6b2c <level7>         @ imm = #0x216
+    6916: 462e         	mov	r6, r5
+    6918: e6c4         	b	0x66a4 <main+0xd8>      @ imm = #-0x278
+;         case '3': level3(arg); break;
+    691a: f000 fdd1    	bl	0x74c0 <level3>         @ imm = #0xba2
+    691e: 462e         	mov	r6, r5
+    6920: e6c0         	b	0x66a4 <main+0xd8>      @ imm = #-0x280
+;         case '4': level4(arg); break;
+    6922: f000 fc4d    	bl	0x71c0 <level4>         @ imm = #0x89a
+    6926: 462e         	mov	r6, r5
+    6928: e6bc         	b	0x66a4 <main+0xd8>      @ imm = #-0x288
+;         case '9': level9(arg); break;
+    692a: f000 fb15    	bl	0x6f58 <level9>         @ imm = #0x62a
+    692e: 462e         	mov	r6, r5
+    6930: e6b8         	b	0x66a4 <main+0xd8>      @ imm = #-0x290
+;         case '8': level8(arg); break;
+    6932: f000 f98d    	bl	0x6c50 <level8>         @ imm = #0x31a
+    6936: 462e         	mov	r6, r5
+    6938: e6b4         	b	0x66a4 <main+0xd8>      @ imm = #-0x298
+    693a: 2145         	movs	r1, #0x45
+    693c: 480b         	ldr	r0, [pc, #0x2c]         @ 0x696c <main+0x3a0>
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    693e: f000 ff25    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xe4a
+    6942: 2652         	movs	r6, #0x52
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6944: 4809         	ldr	r0, [pc, #0x24]         @ 0x696c <main+0x3a0>
+    6946: 4631         	mov	r1, r6
+    6948: f000 ff20    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xe40
+    694c: 4807         	ldr	r0, [pc, #0x1c]         @ 0x696c <main+0x3a0>
+    694e: 4631         	mov	r1, r6
+    6950: f000 ff1c    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xe38
+    6954: 210d         	movs	r1, #0xd
+    6956: 4805         	ldr	r0, [pc, #0x14]         @ 0x696c <main+0x3a0>
+    6958: 4606         	mov	r6, r0
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    695a: f000 ff17    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xe2e
+    695e: 210a         	movs	r1, #0xa
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6960: 4630         	mov	r0, r6
+    6962: f000 ff13    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0xe26
+    6966: 462e         	mov	r6, r5
+    6968: e69c         	b	0x66a4 <main+0xd8>      @ imm = #-0x2c8
+    696a: 46c0         	mov	r8, r8
+    696c: 00 80 10 40  	.word	0x40108000
+    6970: 20 00 20 20  	.word	0x20200020
+
+00006974 <parse_hex>:
+; {
+    6974: 4601         	mov	r1, r0
+;     while (*s == ' ') s++;
+    6976: 7808         	ldrb	r0, [r1]
+    6978: 2820         	cmp	r0, #0x20
+    697a: d101         	bne	0x6980 <parse_hex+0xc>  @ imm = #0x2
+    697c: 1c49         	adds	r1, r1, #0x1
+    697e: e7fa         	b	0x6976 <parse_hex+0x2>  @ imm = #-0xc
+;     while (*s == ' ') s++;
+    6980: 2830         	cmp	r0, #0x30
+    6982: d107         	bne	0x6994 <parse_hex+0x20> @ imm = #0xe
+;     if (s[0] == '0' && (s[1] == 'x' || s[1] == 'X')) s += 2;
+    6984: 7848         	ldrb	r0, [r1, #0x1]
+    6986: 2220         	movs	r2, #0x20
+    6988: 4302         	orrs	r2, r0
+    698a: 2a78         	cmp	r2, #0x78
+    698c: d119         	bne	0x69c2 <parse_hex+0x4e> @ imm = #0x32
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    698e: 1c8a         	adds	r2, r1, #0x2
+    6990: 7888         	ldrb	r0, [r1, #0x2]
+    6992: e000         	b	0x6996 <parse_hex+0x22> @ imm = #0x0
+    6994: 460a         	mov	r2, r1
+;     if (c >= '0' && c <= '9') return c - '0';
+    6996: 4601         	mov	r1, r0
+    6998: 3930         	subs	r1, #0x30
+    699a: 2909         	cmp	r1, #0x9
+    699c: d801         	bhi	0x69a2 <parse_hex+0x2e> @ imm = #0x2
+    699e: 4611         	mov	r1, r2
+    69a0: e010         	b	0x69c4 <parse_hex+0x50> @ imm = #0x20
+;     if (c >= 'a' && c <= 'f') return c - 'a' + 10;
+    69a2: 4601         	mov	r1, r0
+    69a4: 3961         	subs	r1, #0x61
+    69a6: 2905         	cmp	r1, #0x5
+    69a8: d801         	bhi	0x69ae <parse_hex+0x3a> @ imm = #0x2
+    69aa: 3857         	subs	r0, #0x57
+    69ac: e004         	b	0x69b8 <parse_hex+0x44> @ imm = #0x8
+;     if (c >= 'A' && c <= 'F') return c - 'A' + 10;
+    69ae: 4601         	mov	r1, r0
+    69b0: 3941         	subs	r1, #0x41
+    69b2: 2905         	cmp	r1, #0x5
+    69b4: d803         	bhi	0x69be <parse_hex+0x4a> @ imm = #0x6
+    69b6: 3837         	subs	r0, #0x37
+    69b8: 4611         	mov	r1, r2
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    69ba: 2800         	cmp	r0, #0x0
+    69bc: d505         	bpl	0x69ca <parse_hex+0x56> @ imm = #0xa
+    69be: 2000         	movs	r0, #0x0
+;     return v;
+    69c0: 4770         	bx	lr
+    69c2: 2030         	movs	r0, #0x30
+;     if (c >= '0' && c <= '9') return c - '0';
+    69c4: 3830         	subs	r0, #0x30
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    69c6: 2800         	cmp	r0, #0x0
+    69c8: d4f9         	bmi	0x69be <parse_hex+0x4a> @ imm = #-0xe
+    69ca: 784a         	ldrb	r2, [r1, #0x1]
+;     if (c >= '0' && c <= '9') return c - '0';
+    69cc: 4613         	mov	r3, r2
+    69ce: 3b30         	subs	r3, #0x30
+    69d0: 2b0a         	cmp	r3, #0xa
+    69d2: d203         	bhs	0x69dc <parse_hex+0x68> @ imm = #0x6
+    69d4: 461a         	mov	r2, r3
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    69d6: 2a00         	cmp	r2, #0x0
+    69d8: d50f         	bpl	0x69fa <parse_hex+0x86> @ imm = #0x1e
+    69da: e07b         	b	0x6ad4 <parse_hex+0x160> @ imm = #0xf6
+;     if (c >= 'a' && c <= 'f') return c - 'a' + 10;
+    69dc: 4613         	mov	r3, r2
+    69de: 3b61         	subs	r3, #0x61
+    69e0: 2b06         	cmp	r3, #0x6
+    69e2: d203         	bhs	0x69ec <parse_hex+0x78> @ imm = #0x6
+    69e4: 3a57         	subs	r2, #0x57
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    69e6: 2a00         	cmp	r2, #0x0
+    69e8: d507         	bpl	0x69fa <parse_hex+0x86> @ imm = #0xe
+    69ea: e073         	b	0x6ad4 <parse_hex+0x160> @ imm = #0xe6
+;     if (c >= 'A' && c <= 'F') return c - 'A' + 10;
+    69ec: 4613         	mov	r3, r2
+    69ee: 3b41         	subs	r3, #0x41
+    69f0: 2b06         	cmp	r3, #0x6
+    69f2: d26f         	bhs	0x6ad4 <parse_hex+0x160> @ imm = #0xde
+    69f4: 3a37         	subs	r2, #0x37
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    69f6: 2a00         	cmp	r2, #0x0
+    69f8: d46c         	bmi	0x6ad4 <parse_hex+0x160> @ imm = #0xd8
+    69fa: 0100         	lsls	r0, r0, #0x4
+    69fc: 4302         	orrs	r2, r0
+    69fe: 7888         	ldrb	r0, [r1, #0x2]
+;     if (c >= '0' && c <= '9') return c - '0';
+    6a00: 4603         	mov	r3, r0
+    6a02: 3b30         	subs	r3, #0x30
+    6a04: 2b0a         	cmp	r3, #0xa
+    6a06: d203         	bhs	0x6a10 <parse_hex+0x9c> @ imm = #0x6
+    6a08: 4618         	mov	r0, r3
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6a0a: 2800         	cmp	r0, #0x0
+    6a0c: d50f         	bpl	0x6a2e <parse_hex+0xba> @ imm = #0x1e
+    6a0e: e078         	b	0x6b02 <parse_hex+0x18e> @ imm = #0xf0
+;     if (c >= 'a' && c <= 'f') return c - 'a' + 10;
+    6a10: 4603         	mov	r3, r0
+    6a12: 3b61         	subs	r3, #0x61
+    6a14: 2b06         	cmp	r3, #0x6
+    6a16: d203         	bhs	0x6a20 <parse_hex+0xac> @ imm = #0x6
+    6a18: 3857         	subs	r0, #0x57
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6a1a: 2800         	cmp	r0, #0x0
+    6a1c: d507         	bpl	0x6a2e <parse_hex+0xba> @ imm = #0xe
+    6a1e: e070         	b	0x6b02 <parse_hex+0x18e> @ imm = #0xe0
+;     if (c >= 'A' && c <= 'F') return c - 'A' + 10;
+    6a20: 4603         	mov	r3, r0
+    6a22: 3b41         	subs	r3, #0x41
+    6a24: 2b06         	cmp	r3, #0x6
+    6a26: d26c         	bhs	0x6b02 <parse_hex+0x18e> @ imm = #0xd8
+    6a28: 3837         	subs	r0, #0x37
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6a2a: 2800         	cmp	r0, #0x0
+    6a2c: d469         	bmi	0x6b02 <parse_hex+0x18e> @ imm = #0xd2
+    6a2e: 0112         	lsls	r2, r2, #0x4
+    6a30: 4310         	orrs	r0, r2
+    6a32: 78ca         	ldrb	r2, [r1, #0x3]
+;     if (c >= '0' && c <= '9') return c - '0';
+    6a34: 4613         	mov	r3, r2
+    6a36: 3b30         	subs	r3, #0x30
+    6a38: 2b0a         	cmp	r3, #0xa
+    6a3a: d203         	bhs	0x6a44 <parse_hex+0xd0> @ imm = #0x6
+    6a3c: 461a         	mov	r2, r3
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6a3e: 2a00         	cmp	r2, #0x0
+    6a40: d50f         	bpl	0x6a62 <parse_hex+0xee> @ imm = #0x1e
+    6a42: e047         	b	0x6ad4 <parse_hex+0x160> @ imm = #0x8e
+;     if (c >= 'a' && c <= 'f') return c - 'a' + 10;
+    6a44: 4613         	mov	r3, r2
+    6a46: 3b61         	subs	r3, #0x61
+    6a48: 2b06         	cmp	r3, #0x6
+    6a4a: d203         	bhs	0x6a54 <parse_hex+0xe0> @ imm = #0x6
+    6a4c: 3a57         	subs	r2, #0x57
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6a4e: 2a00         	cmp	r2, #0x0
+    6a50: d507         	bpl	0x6a62 <parse_hex+0xee> @ imm = #0xe
+    6a52: e03f         	b	0x6ad4 <parse_hex+0x160> @ imm = #0x7e
+;     if (c >= 'A' && c <= 'F') return c - 'A' + 10;
+    6a54: 4613         	mov	r3, r2
+    6a56: 3b41         	subs	r3, #0x41
+    6a58: 2b06         	cmp	r3, #0x6
+    6a5a: d23b         	bhs	0x6ad4 <parse_hex+0x160> @ imm = #0x76
+    6a5c: 3a37         	subs	r2, #0x37
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6a5e: 2a00         	cmp	r2, #0x0
+    6a60: d438         	bmi	0x6ad4 <parse_hex+0x160> @ imm = #0x70
+    6a62: 0100         	lsls	r0, r0, #0x4
+    6a64: 4302         	orrs	r2, r0
+    6a66: 7908         	ldrb	r0, [r1, #0x4]
+;     if (c >= '0' && c <= '9') return c - '0';
+    6a68: 4603         	mov	r3, r0
+    6a6a: 3b30         	subs	r3, #0x30
+    6a6c: 2b0a         	cmp	r3, #0xa
+    6a6e: d203         	bhs	0x6a78 <parse_hex+0x104> @ imm = #0x6
+    6a70: 4618         	mov	r0, r3
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6a72: 2800         	cmp	r0, #0x0
+    6a74: d50f         	bpl	0x6a96 <parse_hex+0x122> @ imm = #0x1e
+    6a76: e044         	b	0x6b02 <parse_hex+0x18e> @ imm = #0x88
+;     if (c >= 'a' && c <= 'f') return c - 'a' + 10;
+    6a78: 4603         	mov	r3, r0
+    6a7a: 3b61         	subs	r3, #0x61
+    6a7c: 2b06         	cmp	r3, #0x6
+    6a7e: d203         	bhs	0x6a88 <parse_hex+0x114> @ imm = #0x6
+    6a80: 3857         	subs	r0, #0x57
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6a82: 2800         	cmp	r0, #0x0
+    6a84: d507         	bpl	0x6a96 <parse_hex+0x122> @ imm = #0xe
+    6a86: e03c         	b	0x6b02 <parse_hex+0x18e> @ imm = #0x78
+;     if (c >= 'A' && c <= 'F') return c - 'A' + 10;
+    6a88: 4603         	mov	r3, r0
+    6a8a: 3b41         	subs	r3, #0x41
+    6a8c: 2b06         	cmp	r3, #0x6
+    6a8e: d238         	bhs	0x6b02 <parse_hex+0x18e> @ imm = #0x70
+    6a90: 3837         	subs	r0, #0x37
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6a92: 2800         	cmp	r0, #0x0
+    6a94: d435         	bmi	0x6b02 <parse_hex+0x18e> @ imm = #0x6a
+    6a96: 0112         	lsls	r2, r2, #0x4
+    6a98: 4310         	orrs	r0, r2
+    6a9a: 794a         	ldrb	r2, [r1, #0x5]
+;     if (c >= '0' && c <= '9') return c - '0';
+    6a9c: 4613         	mov	r3, r2
+    6a9e: 3b30         	subs	r3, #0x30
+    6aa0: 2b0a         	cmp	r3, #0xa
+    6aa2: d201         	bhs	0x6aa8 <parse_hex+0x134> @ imm = #0x2
+    6aa4: 461a         	mov	r2, r3
+    6aa6: e00a         	b	0x6abe <parse_hex+0x14a> @ imm = #0x14
+;     if (c >= 'a' && c <= 'f') return c - 'a' + 10;
+    6aa8: 4613         	mov	r3, r2
+    6aaa: 3b61         	subs	r3, #0x61
+    6aac: 2b06         	cmp	r3, #0x6
+    6aae: d201         	bhs	0x6ab4 <parse_hex+0x140> @ imm = #0x2
+    6ab0: 3a57         	subs	r2, #0x57
+    6ab2: e004         	b	0x6abe <parse_hex+0x14a> @ imm = #0x8
+;     if (c >= 'A' && c <= 'F') return c - 'A' + 10;
+    6ab4: 4613         	mov	r3, r2
+    6ab6: 3b41         	subs	r3, #0x41
+    6ab8: 2b06         	cmp	r3, #0x6
+    6aba: d20b         	bhs	0x6ad4 <parse_hex+0x160> @ imm = #0x16
+    6abc: 3a37         	subs	r2, #0x37
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6abe: 2a00         	cmp	r2, #0x0
+    6ac0: d408         	bmi	0x6ad4 <parse_hex+0x160> @ imm = #0x10
+    6ac2: 0100         	lsls	r0, r0, #0x4
+    6ac4: 4302         	orrs	r2, r0
+    6ac6: 798b         	ldrb	r3, [r1, #0x6]
+;     if (c >= '0' && c <= '9') return c - '0';
+    6ac8: 4618         	mov	r0, r3
+    6aca: 3830         	subs	r0, #0x30
+    6acc: 280a         	cmp	r0, #0xa
+    6ace: d202         	bhs	0x6ad6 <parse_hex+0x162> @ imm = #0x4
+    6ad0: 4603         	mov	r3, r0
+    6ad2: e00b         	b	0x6aec <parse_hex+0x178> @ imm = #0x16
+;     return v;
+    6ad4: 4770         	bx	lr
+;     if (c >= 'a' && c <= 'f') return c - 'a' + 10;
+    6ad6: 4618         	mov	r0, r3
+    6ad8: 3861         	subs	r0, #0x61
+    6ada: 2806         	cmp	r0, #0x6
+    6adc: d201         	bhs	0x6ae2 <parse_hex+0x16e> @ imm = #0x2
+    6ade: 3b57         	subs	r3, #0x57
+    6ae0: e004         	b	0x6aec <parse_hex+0x178> @ imm = #0x8
+;     if (c >= 'A' && c <= 'F') return c - 'A' + 10;
+    6ae2: 4618         	mov	r0, r3
+    6ae4: 3841         	subs	r0, #0x41
+    6ae6: 2806         	cmp	r0, #0x6
+    6ae8: d20b         	bhs	0x6b02 <parse_hex+0x18e> @ imm = #0x16
+    6aea: 3b37         	subs	r3, #0x37
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6aec: 2b00         	cmp	r3, #0x0
+    6aee: d408         	bmi	0x6b02 <parse_hex+0x18e> @ imm = #0x10
+    6af0: 0110         	lsls	r0, r2, #0x4
+    6af2: 4303         	orrs	r3, r0
+    6af4: 79c8         	ldrb	r0, [r1, #0x7]
+;     if (c >= '0' && c <= '9') return c - '0';
+    6af6: 4601         	mov	r1, r0
+    6af8: 3930         	subs	r1, #0x30
+    6afa: 290a         	cmp	r1, #0xa
+    6afc: d203         	bhs	0x6b06 <parse_hex+0x192> @ imm = #0x6
+    6afe: 4608         	mov	r0, r1
+    6b00: e00c         	b	0x6b1c <parse_hex+0x1a8> @ imm = #0x18
+    6b02: 4610         	mov	r0, r2
+;     return v;
+    6b04: 4770         	bx	lr
+;     if (c >= 'a' && c <= 'f') return c - 'a' + 10;
+    6b06: 4601         	mov	r1, r0
+    6b08: 3961         	subs	r1, #0x61
+    6b0a: 2906         	cmp	r1, #0x6
+    6b0c: d201         	bhs	0x6b12 <parse_hex+0x19e> @ imm = #0x2
+    6b0e: 3857         	subs	r0, #0x57
+    6b10: e004         	b	0x6b1c <parse_hex+0x1a8> @ imm = #0x8
+;     if (c >= 'A' && c <= 'F') return c - 'A' + 10;
+    6b12: 4601         	mov	r1, r0
+    6b14: 3941         	subs	r1, #0x41
+    6b16: 2906         	cmp	r1, #0x6
+    6b18: d205         	bhs	0x6b26 <parse_hex+0x1b2> @ imm = #0xa
+    6b1a: 3837         	subs	r0, #0x37
+;     while (n < 8 && (d = hexval(*s)) >= 0) { v = (v << 4) | (uint32_t)d; s++; n++; }
+    6b1c: 2800         	cmp	r0, #0x0
+    6b1e: d402         	bmi	0x6b26 <parse_hex+0x1b2> @ imm = #0x4
+    6b20: 0119         	lsls	r1, r3, #0x4
+    6b22: 4308         	orrs	r0, r1
+;     return v;
+    6b24: 4770         	bx	lr
+    6b26: 4618         	mov	r0, r3
+;     return v;
+    6b28: 4770         	bx	lr
+
+00006b2a <__aeabi_idiv0>:
+    6b2a: 4770         	bx	lr
+
+00006b2c <level7>:
+; {
+    6b2c: b570         	push	{r4, r5, r6, lr}
+    6b2e: b082         	sub	sp, #0x8
+    6b30: 4604         	mov	r4, r0
+;     uint32_t guess = parse_hex(arg);
+    6b32: f7ff ff1f    	bl	0x6974 <parse_hex>      @ imm = #-0x1c2
+;        if ((tch = *s) == ch) return (char *) s;
+    6b36: 7821         	ldrb	r1, [r4]
+    6b38: 2900         	cmp	r1, #0x0
+    6b3a: d019         	beq	0x6b70 <level7+0x44>    @ imm = #0x32
+    6b3c: 2920         	cmp	r1, #0x20
+    6b3e: d00c         	beq	0x6b5a <level7+0x2e>    @ imm = #0x18
+    6b40: 7861         	ldrb	r1, [r4, #0x1]
+    6b42: 2900         	cmp	r1, #0x0
+    6b44: d014         	beq	0x6b70 <level7+0x44>    @ imm = #0x28
+    6b46: 2920         	cmp	r1, #0x20
+    6b48: d006         	beq	0x6b58 <level7+0x2c>    @ imm = #0xc
+    6b4a: 78a1         	ldrb	r1, [r4, #0x2]
+    6b4c: 2900         	cmp	r1, #0x0
+    6b4e: d00f         	beq	0x6b70 <level7+0x44>    @ imm = #0x1e
+    6b50: 2920         	cmp	r1, #0x20
+    6b52: d005         	beq	0x6b60 <level7+0x34>    @ imm = #0xa
+;        s++;
+    6b54: 1ce4         	adds	r4, r4, #0x3
+    6b56: e7ee         	b	0x6b36 <level7+0xa>     @ imm = #-0x24
+;     int fixed = (sp && sp[1] == 'f');
+    6b58: 1c64         	adds	r4, r4, #0x1
+    6b5a: 2c00         	cmp	r4, #0x0
+    6b5c: d103         	bne	0x6b66 <level7+0x3a>    @ imm = #0x6
+    6b5e: e007         	b	0x6b70 <level7+0x44>    @ imm = #0xe
+    6b60: 1ca4         	adds	r4, r4, #0x2
+    6b62: 2c00         	cmp	r4, #0x0
+    6b64: d004         	beq	0x6b70 <level7+0x44>    @ imm = #0x8
+    6b66: 7861         	ldrb	r1, [r4, #0x1]
+;     uint32_t seed = fixed ? 0xACE1u : (g_entropy | 1u);
+    6b68: 2966         	cmp	r1, #0x66
+    6b6a: d101         	bne	0x6b70 <level7+0x44>    @ imm = #0x2
+    6b6c: 4b2b         	ldr	r3, [pc, #0xac]         @ 0x6c1c <level7+0xf0>
+    6b6e: e003         	b	0x6b78 <level7+0x4c>    @ imm = #0x6
+;     uint32_t seed = fixed ? 0xACE1u : (g_entropy | 1u);
+    6b70: 492b         	ldr	r1, [pc, #0xac]         @ 0x6c20 <level7+0xf4>
+    6b72: 6809         	ldr	r1, [r1]
+    6b74: 2301         	movs	r3, #0x1
+    6b76: 430b         	orrs	r3, r1
+    6b78: 492a         	ldr	r1, [pc, #0xa8]         @ 0x6c24 <level7+0xf8>
+    6b7a: 4a2b         	ldr	r2, [pc, #0xac]         @ 0x6c28 <level7+0xfc>
+;     x ^= x << 13;
+    6b7c: 035c         	lsls	r4, r3, #0xd
+    6b7e: 405c         	eors	r4, r3
+;     x ^= x >> 17;
+    6b80: 0c63         	lsrs	r3, r4, #0x11
+    6b82: 4063         	eors	r3, r4
+;     x ^= x << 5;
+    6b84: 015d         	lsls	r5, r3, #0x5
+    6b86: 405d         	eors	r5, r3
+    6b88: 4c28         	ldr	r4, [pc, #0xa0]         @ 0x6c2c <level7+0x100>
+;     uint32_t d = xorshift32(&seed) & 0x3FFu;          /* 0..1023 loops ≈ 0..~130 µs */
+    6b8a: 402c         	ands	r4, r5
+    6b8c: 2600         	movs	r6, #0x0
+;     volatile uint32_t granted = 0;
+    6b8e: 9601         	str	r6, [sp, #0x4]
+;     g_t0 = SysTick->VAL;
+    6b90: 680d         	ldr	r5, [r1]
+    6b92: 4b27         	ldr	r3, [pc, #0x9c]         @ 0x6c30 <level7+0x104>
+    6b94: 601d         	str	r5, [r3]
+    6b96: 2501         	movs	r5, #0x1
+;     gpio->DOUTSET31_0 = pins;
+    6b98: 6015         	str	r5, [r2]
+;     for (volatile uint32_t k = 0; k < d; k++) { }
+    6b9a: 9600         	str	r6, [sp]
+    6b9c: 9e00         	ldr	r6, [sp]
+    6b9e: 42a6         	cmp	r6, r4
+    6ba0: d20e         	bhs	0x6bc0 <level7+0x94>    @ imm = #0x1c
+    6ba2: 9e00         	ldr	r6, [sp]
+    6ba4: 1c76         	adds	r6, r6, #0x1
+    6ba6: 9600         	str	r6, [sp]
+    6ba8: 9e00         	ldr	r6, [sp]
+    6baa: 42a6         	cmp	r6, r4
+    6bac: d208         	bhs	0x6bc0 <level7+0x94>    @ imm = #0x10
+    6bae: 9e00         	ldr	r6, [sp]
+    6bb0: 1c76         	adds	r6, r6, #0x1
+    6bb2: 9600         	str	r6, [sp]
+    6bb4: 9e00         	ldr	r6, [sp]
+    6bb6: 42a6         	cmp	r6, r4
+    6bb8: d202         	bhs	0x6bc0 <level7+0x94>    @ imm = #0x4
+    6bba: 9e00         	ldr	r6, [sp]
+    6bbc: 1c76         	adds	r6, r6, #0x1
+    6bbe: e7ec         	b	0x6b9a <level7+0x6e>    @ imm = #-0x28
+;     if (guess == L1_PIN) {
+    6bc0: 4e1c         	ldr	r6, [pc, #0x70]         @ 0x6c34 <level7+0x108>
+    6bc2: 6836         	ldr	r6, [r6]
+    6bc4: 42b0         	cmp	r0, r6
+    6bc6: d100         	bne	0x6bca <level7+0x9e>    @ imm = #0x0
+;         granted = 1;
+    6bc8: 9501         	str	r5, [sp, #0x4]
+;     gpio->DOUTCLR31_0 = pins;
+    6bca: 6115         	str	r5, [r2, #0x10]
+;     return (g_t0 - SysTick->VAL) & 0x00FFFFFFu;
+    6bcc: 6818         	ldr	r0, [r3]
+    6bce: 6809         	ldr	r1, [r1]
+    6bd0: 1a45         	subs	r5, r0, r1
+    6bd2: 20ff         	movs	r0, #0xff
+    6bd4: 0600         	lsls	r0, r0, #0x18
+    6bd6: 4385         	bics	r5, r0
+;     out_s("L7 "); out_s(granted ? "GRANT" : "DENY");
+    6bd8: 4817         	ldr	r0, [pc, #0x5c]         @ 0x6c38 <level7+0x10c>
+    6bda: f000 fd7d    	bl	0x76d8 <out_s>          @ imm = #0xafa
+    6bde: 9801         	ldr	r0, [sp, #0x4]
+    6be0: 2800         	cmp	r0, #0x0
+    6be2: d001         	beq	0x6be8 <level7+0xbc>    @ imm = #0x2
+    6be4: 4816         	ldr	r0, [pc, #0x58]         @ 0x6c40 <level7+0x114>
+    6be6: e000         	b	0x6bea <level7+0xbe>    @ imm = #0x0
+    6be8: 4814         	ldr	r0, [pc, #0x50]         @ 0x6c3c <level7+0x110>
+;     out_s("L7 "); out_s(granted ? "GRANT" : "DENY");
+    6bea: f000 fd75    	bl	0x76d8 <out_s>          @ imm = #0xaea
+;     out_s(" c="); out_u(c); out_s(" d="); out_u(d);
+    6bee: 4815         	ldr	r0, [pc, #0x54]         @ 0x6c44 <level7+0x118>
+    6bf0: f000 fd72    	bl	0x76d8 <out_s>          @ imm = #0xae4
+    6bf4: 4628         	mov	r0, r5
+    6bf6: f000 f92f    	bl	0x6e58 <out_u>          @ imm = #0x25e
+    6bfa: 4813         	ldr	r0, [pc, #0x4c]         @ 0x6c48 <level7+0x11c>
+    6bfc: f000 fd6c    	bl	0x76d8 <out_s>          @ imm = #0xad8
+    6c00: 4620         	mov	r0, r4
+    6c02: f000 f929    	bl	0x6e58 <out_u>          @ imm = #0x252
+;     if (granted) out_s(" flag=lab{l7_jitter_beaten}");
+    6c06: 9801         	ldr	r0, [sp, #0x4]
+    6c08: 2800         	cmp	r0, #0x0
+    6c0a: d002         	beq	0x6c12 <level7+0xe6>    @ imm = #0x4
+    6c0c: 480f         	ldr	r0, [pc, #0x3c]         @ 0x6c4c <level7+0x120>
+    6c0e: f000 fd63    	bl	0x76d8 <out_s>          @ imm = #0xac6
+;     out_end();
+    6c12: f000 fe1d    	bl	0x7850 <out_end>        @ imm = #0xc3a
+; }
+    6c16: b002         	add	sp, #0x8
+    6c18: bd70         	pop	{r4, r5, r6, pc}
+    6c1a: 46c0         	mov	r8, r8
+    6c1c: e1 ac 00 00  	.word	0x0000ace1
+    6c20: 20 00 20 20  	.word	0x20200020
+    6c24: 18 e0 00 e0  	.word	0xe000e018
+    6c28: 90 32 0a 40  	.word	0x400a3290
+    6c2c: ff 03 00 00  	.word	0x000003ff
+    6c30: 24 00 20 20  	.word	0x20200024
+    6c34: 20 7a 00 00  	.word	0x00007a20
+    6c38: 34 7a 00 00  	.word	0x00007a34
+    6c3c: 1b 7a 00 00  	.word	0x00007a1b
+    6c40: 0f 7a 00 00  	.word	0x00007a0f
+    6c44: 30 7a 00 00  	.word	0x00007a30
+    6c48: 2c 7a 00 00  	.word	0x00007a2c
+    6c4c: 08 79 00 00  	.word	0x00007908
+
+00006c50 <level8>:
+; {
+    6c50: b5f0         	push	{r4, r5, r6, r7, lr}
+    6c52: b083         	sub	sp, #0xc
+    6c54: 4c36         	ldr	r4, [pc, #0xd8]         @ 0x6d30 <level8+0xe0>
+    6c56: 4d37         	ldr	r5, [pc, #0xdc]         @ 0x6d34 <level8+0xe4>
+;     volatile uint32_t n = parse_dec(arg);
+    6c58: f000 fb0a    	bl	0x7270 <parse_dec>      @ imm = #0x614
+    6c5c: 9002         	str	r0, [sp, #0x8]
+;     g_t0 = SysTick->VAL;
+    6c5e: 6821         	ldr	r1, [r4]
+    6c60: 4835         	ldr	r0, [pc, #0xd4]         @ 0x6d38 <level8+0xe8>
+    6c62: 6001         	str	r1, [r0]
+    6c64: 2101         	movs	r1, #0x1
+;     gpio->DOUTSET31_0 = pins;
+    6c66: 6029         	str	r1, [r5]
+;     if (n > 16u) {
+    6c68: 9a02         	ldr	r2, [sp, #0x8]
+    6c6a: 2a11         	cmp	r2, #0x11
+    6c6c: d301         	blo	0x6c72 <level8+0x22>    @ imm = #0x2
+    6c6e: 2210         	movs	r2, #0x10
+;         n = 16u;
+    6c70: 9202         	str	r2, [sp, #0x8]
+;     gpio->DOUTCLR31_0 = pins;
+    6c72: 6129         	str	r1, [r5, #0x10]
+;     return (g_t0 - SysTick->VAL) & 0x00FFFFFFu;
+    6c74: 6800         	ldr	r0, [r0]
+    6c76: 6821         	ldr	r1, [r4]
+    6c78: 1a44         	subs	r4, r0, r1
+    6c7a: 20ff         	movs	r0, #0xff
+    6c7c: 0600         	lsls	r0, r0, #0x18
+    6c7e: 4384         	bics	r4, r0
+;     uint32_t shown = (n < 32u) ? n : 32u;
+    6c80: 9802         	ldr	r0, [sp, #0x8]
+    6c82: 2820         	cmp	r0, #0x20
+    6c84: d207         	bhs	0x6c96 <level8+0x46>    @ imm = #0xe
+    6c86: 9d02         	ldr	r5, [sp, #0x8]
+;     out_s("L8 "); out_s(shown > 16u ? "GRANT" : "DENY");
+    6c88: 482c         	ldr	r0, [pc, #0xb0]         @ 0x6d3c <level8+0xec>
+    6c8a: f000 fd25    	bl	0x76d8 <out_s>          @ imm = #0xa4a
+    6c8e: 2d10         	cmp	r5, #0x10
+    6c90: d807         	bhi	0x6ca2 <level8+0x52>    @ imm = #0xe
+    6c92: 482c         	ldr	r0, [pc, #0xb0]         @ 0x6d44 <level8+0xf4>
+    6c94: e006         	b	0x6ca4 <level8+0x54>    @ imm = #0xc
+;     out_s("L8 "); out_s(shown > 16u ? "GRANT" : "DENY");
+    6c96: 4829         	ldr	r0, [pc, #0xa4]         @ 0x6d3c <level8+0xec>
+    6c98: f000 fd1e    	bl	0x76d8 <out_s>          @ imm = #0xa3c
+    6c9c: 4828         	ldr	r0, [pc, #0xa0]         @ 0x6d40 <level8+0xf0>
+    6c9e: 2520         	movs	r5, #0x20
+    6ca0: e000         	b	0x6ca4 <level8+0x54>    @ imm = #0x0
+    6ca2: 4827         	ldr	r0, [pc, #0x9c]         @ 0x6d40 <level8+0xf0>
+;     out_s("L8 "); out_s(shown > 16u ? "GRANT" : "DENY");
+    6ca4: f000 fd18    	bl	0x76d8 <out_s>          @ imm = #0xa30
+;     out_s(" c="); out_u(c); out_s(" n="); out_u(n); out_s(" data=");
+    6ca8: 4827         	ldr	r0, [pc, #0x9c]         @ 0x6d48 <level8+0xf8>
+    6caa: f000 fd15    	bl	0x76d8 <out_s>          @ imm = #0xa2a
+    6cae: 4620         	mov	r0, r4
+    6cb0: f000 f8d2    	bl	0x6e58 <out_u>          @ imm = #0x1a4
+    6cb4: 4825         	ldr	r0, [pc, #0x94]         @ 0x6d4c <level8+0xfc>
+    6cb6: f000 fd0f    	bl	0x76d8 <out_s>          @ imm = #0xa1e
+    6cba: 9802         	ldr	r0, [sp, #0x8]
+    6cbc: f000 f8cc    	bl	0x6e58 <out_u>          @ imm = #0x198
+    6cc0: 4823         	ldr	r0, [pc, #0x8c]         @ 0x6d50 <level8+0x100>
+    6cc2: f000 fd09    	bl	0x76d8 <out_s>          @ imm = #0xa12
+;     for (uint32_t i = 0; i < shown; i++) out_x8(p[i]);
+    6cc6: 2d00         	cmp	r5, #0x0
+    6cc8: d02e         	beq	0x6d28 <level8+0xd8>    @ imm = #0x5c
+    6cca: 1e68         	subs	r0, r5, #0x1
+    6ccc: 2103         	movs	r1, #0x3
+    6cce: f000 fcc3    	bl	0x7658 <__aeabi_uidivmod> @ imm = #0x986
+    6cd2: 1c48         	adds	r0, r1, #0x1
+    6cd4: 2600         	movs	r6, #0x0
+    6cd6: 2803         	cmp	r0, #0x3
+    6cd8: 4634         	mov	r4, r6
+    6cda: d000         	beq	0x6cde <level8+0x8e>    @ imm = #0x0
+    6cdc: 4604         	mov	r4, r0
+    6cde: 9000         	str	r0, [sp]
+;     for (uint32_t i = 0; i < shown; i++) out_x8(p[i]);
+    6ce0: 2d03         	cmp	r5, #0x3
+    6ce2: d311         	blo	0x6d08 <level8+0xb8>    @ imm = #0x22
+    6ce4: 1b28         	subs	r0, r5, r4
+    6ce6: 9001         	str	r0, [sp, #0x4]
+    6ce8: 2600         	movs	r6, #0x0
+    6cea: 4f1a         	ldr	r7, [pc, #0x68]         @ 0x6d54 <level8+0x104>
+    6cec: 19bd         	adds	r5, r7, r6
+    6cee: 5db8         	ldrb	r0, [r7, r6]
+    6cf0: f000 fd64    	bl	0x77bc <out_x8>         @ imm = #0xac8
+    6cf4: 7868         	ldrb	r0, [r5, #0x1]
+    6cf6: f000 fd61    	bl	0x77bc <out_x8>         @ imm = #0xac2
+    6cfa: 78a8         	ldrb	r0, [r5, #0x2]
+    6cfc: f000 fd5e    	bl	0x77bc <out_x8>         @ imm = #0xabc
+    6d00: 1cf6         	adds	r6, r6, #0x3
+    6d02: 9801         	ldr	r0, [sp, #0x4]
+    6d04: 42b0         	cmp	r0, r6
+    6d06: d1f1         	bne	0x6cec <level8+0x9c>    @ imm = #-0x1e
+    6d08: 9800         	ldr	r0, [sp]
+    6d0a: 2803         	cmp	r0, #0x3
+    6d0c: d00c         	beq	0x6d28 <level8+0xd8>    @ imm = #0x18
+    6d0e: 4811         	ldr	r0, [pc, #0x44]         @ 0x6d54 <level8+0x104>
+    6d10: 1985         	adds	r5, r0, r6
+    6d12: 7828         	ldrb	r0, [r5]
+    6d14: f000 fd52    	bl	0x77bc <out_x8>         @ imm = #0xaa4
+    6d18: 2c01         	cmp	r4, #0x1
+    6d1a: d005         	beq	0x6d28 <level8+0xd8>    @ imm = #0xa
+    6d1c: 7868         	ldrb	r0, [r5, #0x1]
+    6d1e: f000 fd4d    	bl	0x77bc <out_x8>         @ imm = #0xa9a
+    6d22: 1cad         	adds	r5, r5, #0x2
+    6d24: 1ea4         	subs	r4, r4, #0x2
+    6d26: d1f4         	bne	0x6d12 <level8+0xc2>    @ imm = #-0x18
+;     out_end();
+    6d28: f000 fd92    	bl	0x7850 <out_end>        @ imm = #0xb24
+; }
+    6d2c: b003         	add	sp, #0xc
+    6d2e: bdf0         	pop	{r4, r5, r6, r7, pc}
+    6d30: 18 e0 00 e0  	.word	0xe000e018
+    6d34: 90 32 0a 40  	.word	0x400a3290
+    6d38: 24 00 20 20  	.word	0x20200024
+    6d3c: 24 7a 00 00  	.word	0x00007a24
+    6d40: 0f 7a 00 00  	.word	0x00007a0f
+    6d44: 1b 7a 00 00  	.word	0x00007a1b
+    6d48: 30 7a 00 00  	.word	0x00007a30
+    6d4c: 28 7a 00 00  	.word	0x00007a28
+    6d50: f4 79 00 00  	.word	0x000079f4
+    6d54: 00 00 20 20  	.word	0x20200000
+
+00006d58 <level6>:
+; {
+    6d58: b5f0         	push	{r4, r5, r6, r7, lr}
+    6d5a: b087         	sub	sp, #0x1c
+;     while (*arg == ' ') arg++;
+    6d5c: 7801         	ldrb	r1, [r0]
+    6d5e: 1c40         	adds	r0, r0, #0x1
+    6d60: 2920         	cmp	r1, #0x20
+    6d62: d0fb         	beq	0x6d5c <level6+0x4>     @ imm = #-0xa
+    6d64: 2900         	cmp	r1, #0x0
+    6d66: d103         	bne	0x6d70 <level6+0x18>    @ imm = #0x6
+    6d68: a805         	add	r0, sp, #0x14
+    6d6a: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6d6c: 7001         	strb	r1, [r0]
+    6d6e: e017         	b	0x6da0 <level6+0x48>    @ imm = #0x2e
+    6d70: aa05         	add	r2, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6d72: 7011         	strb	r1, [r2]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    6d74: 7801         	ldrb	r1, [r0]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6d76: 2900         	cmp	r1, #0x0
+    6d78: d012         	beq	0x6da0 <level6+0x48>    @ imm = #0x24
+    6d7a: aa05         	add	r2, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6d7c: 7051         	strb	r1, [r2, #0x1]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    6d7e: 7841         	ldrb	r1, [r0, #0x1]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6d80: 2900         	cmp	r1, #0x0
+    6d82: d010         	beq	0x6da6 <level6+0x4e>    @ imm = #0x20
+    6d84: aa05         	add	r2, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6d86: 7091         	strb	r1, [r2, #0x2]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    6d88: 7881         	ldrb	r1, [r0, #0x2]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6d8a: 2900         	cmp	r1, #0x0
+    6d8c: d00e         	beq	0x6dac <level6+0x54>    @ imm = #0x1c
+    6d8e: aa05         	add	r2, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6d90: 70d1         	strb	r1, [r2, #0x3]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    6d92: 78c1         	ldrb	r1, [r0, #0x3]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6d94: 2900         	cmp	r1, #0x0
+    6d96: d00c         	beq	0x6db2 <level6+0x5a>    @ imm = #0x18
+    6d98: aa05         	add	r2, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6d9a: 7111         	strb	r1, [r2, #0x4]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    6d9c: 7901         	ldrb	r1, [r0, #0x4]
+    6d9e: e00b         	b	0x6db8 <level6+0x60>    @ imm = #0x16
+    6da0: a805         	add	r0, sp, #0x14
+    6da2: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6da4: 7041         	strb	r1, [r0, #0x1]
+    6da6: a805         	add	r0, sp, #0x14
+    6da8: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6daa: 7081         	strb	r1, [r0, #0x2]
+    6dac: a805         	add	r0, sp, #0x14
+    6dae: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6db0: 70c1         	strb	r1, [r0, #0x3]
+    6db2: a805         	add	r0, sp, #0x14
+    6db4: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6db6: 7101         	strb	r1, [r0, #0x4]
+    6db8: 4a21         	ldr	r2, [pc, #0x84]         @ 0x6e40 <level6+0xe8>
+    6dba: 4d22         	ldr	r5, [pc, #0x88]         @ 0x6e44 <level6+0xec>
+    6dbc: 4c22         	ldr	r4, [pc, #0x88]         @ 0x6e48 <level6+0xf0>
+    6dbe: a805         	add	r0, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    6dc0: 7141         	strb	r1, [r0, #0x5]
+    6dc2: 2100         	movs	r1, #0x0
+;     volatile uint32_t r = 0, flow = 0;
+    6dc4: 9104         	str	r1, [sp, #0x10]
+    6dc6: 9103         	str	r1, [sp, #0xc]
+;     volatile uint32_t granted = 0, detect = 0;
+    6dc8: 9102         	str	r1, [sp, #0x8]
+    6dca: 9101         	str	r1, [sp, #0x4]
+;     g_t0 = SysTick->VAL;
+    6dcc: 6811         	ldr	r1, [r2]
+    6dce: 4e1f         	ldr	r6, [pc, #0x7c]         @ 0x6e4c <level6+0xf4>
+    6dd0: 6031         	str	r1, [r6]
+    6dd2: 2701         	movs	r7, #0x1
+;     gpio->DOUTSET31_0 = pins;
+    6dd4: 602f         	str	r7, [r5]
+;     r = fih_eq(g, LAB_PIN, PIN_LEN);
+    6dd6: f000 fba3    	bl	0x7520 <fih_eq>         @ imm = #0x746
+    6dda: 9004         	str	r0, [sp, #0x10]
+;     flow += 1;
+    6ddc: 9803         	ldr	r0, [sp, #0xc]
+    6dde: 1c40         	adds	r0, r0, #0x1
+    6de0: 9003         	str	r0, [sp, #0xc]
+;     if (r == FIH_OK && r == FIH_OK && r == FIH_OK) {
+    6de2: 9804         	ldr	r0, [sp, #0x10]
+    6de4: 42a0         	cmp	r0, r4
+    6de6: d115         	bne	0x6e14 <level6+0xbc>    @ imm = #0x2a
+    6de8: 9804         	ldr	r0, [sp, #0x10]
+    6dea: 42a0         	cmp	r0, r4
+    6dec: d112         	bne	0x6e14 <level6+0xbc>    @ imm = #0x24
+    6dee: 9804         	ldr	r0, [sp, #0x10]
+    6df0: 42a0         	cmp	r0, r4
+    6df2: d10f         	bne	0x6e14 <level6+0xbc>    @ imm = #0x1e
+;         flow += 2;
+    6df4: 9803         	ldr	r0, [sp, #0xc]
+    6df6: 1c80         	adds	r0, r0, #0x2
+    6df8: 9003         	str	r0, [sp, #0xc]
+    6dfa: a805         	add	r0, sp, #0x14
+;         if (fih_eq(g, LAB_PIN, PIN_LEN) != FIH_OK) {
+    6dfc: f000 fb90    	bl	0x7520 <fih_eq>         @ imm = #0x720
+    6e00: 42a0         	cmp	r0, r4
+    6e02: d10b         	bne	0x6e1c <level6+0xc4>    @ imm = #0x16
+;             flow += 4;
+    6e04: 9803         	ldr	r0, [sp, #0xc]
+    6e06: 1d00         	adds	r0, r0, #0x4
+    6e08: 9003         	str	r0, [sp, #0xc]
+;             if (flow == 7) granted = 1;
+    6e0a: 9803         	ldr	r0, [sp, #0xc]
+    6e0c: 2807         	cmp	r0, #0x7
+    6e0e: d105         	bne	0x6e1c <level6+0xc4>    @ imm = #0xa
+    6e10: 9702         	str	r7, [sp, #0x8]
+    6e12: e004         	b	0x6e1e <level6+0xc6>    @ imm = #0x8
+;     } else if (r != FIH_FAIL) {
+    6e14: 9804         	ldr	r0, [sp, #0x10]
+    6e16: 490e         	ldr	r1, [pc, #0x38]         @ 0x6e50 <level6+0xf8>
+    6e18: 4288         	cmp	r0, r1
+    6e1a: d000         	beq	0x6e1e <level6+0xc6>    @ imm = #0x0
+    6e1c: 9701         	str	r7, [sp, #0x4]
+;     gpio->DOUTCLR31_0 = pins;
+    6e1e: 612f         	str	r7, [r5, #0x10]
+;     return (g_t0 - SysTick->VAL) & 0x00FFFFFFu;
+    6e20: 6830         	ldr	r0, [r6]
+    6e22: 4907         	ldr	r1, [pc, #0x1c]         @ 0x6e40 <level6+0xe8>
+    6e24: 6809         	ldr	r1, [r1]
+    6e26: 1a43         	subs	r3, r0, r1
+    6e28: 20ff         	movs	r0, #0xff
+    6e2a: 0600         	lsls	r0, r0, #0x18
+    6e2c: 4383         	bics	r3, r0
+;     reply('6', granted, detect, c, "lab{l6_fih_master}");
+    6e2e: 9902         	ldr	r1, [sp, #0x8]
+    6e30: 9a01         	ldr	r2, [sp, #0x4]
+    6e32: 4808         	ldr	r0, [pc, #0x20]         @ 0x6e54 <level6+0xfc>
+    6e34: 9000         	str	r0, [sp]
+    6e36: 2036         	movs	r0, #0x36
+    6e38: f000 faa6    	bl	0x7388 <reply>          @ imm = #0x54c
+; }
+    6e3c: b007         	add	sp, #0x1c
+    6e3e: bdf0         	pop	{r4, r5, r6, r7, pc}
+    6e40: 18 e0 00 e0  	.word	0xe000e018
+    6e44: 90 32 0a 40  	.word	0x400a3290
+    6e48: 5a 96 a5 3c  	.word	0x3ca5965a
+    6e4c: 24 00 20 20  	.word	0x20200024
+    6e50: a5 69 5a c3  	.word	0xc35a69a5
+    6e54: a1 79 00 00  	.word	0x000079a1
+
+00006e58 <out_u>:
+; {
+    6e58: b5f0         	push	{r4, r5, r6, r7, lr}
+    6e5a: b085         	sub	sp, #0x14
+    6e5c: 4605         	mov	r5, r0
+    6e5e: 483d         	ldr	r0, [pc, #0xf4]         @ 0x6f54 <out_u+0xfc>
+;     if (v == 0) { out_c('0'); return; }
+    6e60: 2d00         	cmp	r5, #0x0
+    6e62: d02d         	beq	0x6ec0 <out_u+0x68>     @ imm = #0x5a
+    6e64: 2700         	movs	r7, #0x0
+    6e66: 260a         	movs	r6, #0xa
+;     while (v) { buf[i++] = (char)('0' + (v % 10u)); v /= 10u; }
+    6e68: 4628         	mov	r0, r5
+    6e6a: 4631         	mov	r1, r6
+    6e6c: f000 fbf4    	bl	0x7658 <__aeabi_uidivmod> @ imm = #0x7e8
+    6e70: 4346         	muls	r6, r0, r6
+    6e72: 1ba9         	subs	r1, r5, r6
+    6e74: 2630         	movs	r6, #0x30
+;     while (v) { buf[i++] = (char)('0' + (v % 10u)); v /= 10u; }
+    6e76: 4331         	orrs	r1, r6
+    6e78: aa02         	add	r2, sp, #0x8
+    6e7a: 55d1         	strb	r1, [r2, r7]
+    6e7c: 2d0a         	cmp	r5, #0xa
+    6e7e: d324         	blo	0x6eca <out_u+0x72>     @ imm = #0x48
+    6e80: 210a         	movs	r1, #0xa
+;     while (v) { buf[i++] = (char)('0' + (v % 10u)); v /= 10u; }
+    6e82: f000 fbe9    	bl	0x7658 <__aeabi_uidivmod> @ imm = #0x7d2
+    6e86: 4331         	orrs	r1, r6
+    6e88: a802         	add	r0, sp, #0x8
+    6e8a: 19c0         	adds	r0, r0, r7
+    6e8c: 7041         	strb	r1, [r0, #0x1]
+    6e8e: 2d64         	cmp	r5, #0x64
+    6e90: d31d         	blo	0x6ece <out_u+0x76>     @ imm = #0x3a
+    6e92: 2164         	movs	r1, #0x64
+;     while (v) { buf[i++] = (char)('0' + (v % 10u)); v /= 10u; }
+    6e94: 4628         	mov	r0, r5
+    6e96: f000 fbdf    	bl	0x7658 <__aeabi_uidivmod> @ imm = #0x7be
+    6e9a: 210a         	movs	r1, #0xa
+;     while (v) { buf[i++] = (char)('0' + (v % 10u)); v /= 10u; }
+    6e9c: f000 fbdc    	bl	0x7658 <__aeabi_uidivmod> @ imm = #0x7b8
+    6ea0: 4331         	orrs	r1, r6
+    6ea2: 1cfe         	adds	r6, r7, #0x3
+    6ea4: a802         	add	r0, sp, #0x8
+;     while (v) { buf[i++] = (char)('0' + (v % 10u)); v /= 10u; }
+    6ea6: 19c0         	adds	r0, r0, r7
+    6ea8: 7081         	strb	r1, [r0, #0x2]
+    6eaa: 207d         	movs	r0, #0x7d
+    6eac: 00c1         	lsls	r1, r0, #0x3
+    6eae: 4628         	mov	r0, r5
+    6eb0: f000 fbd2    	bl	0x7658 <__aeabi_uidivmod> @ imm = #0x7a4
+    6eb4: 08e9         	lsrs	r1, r5, #0x3
+    6eb6: 297d         	cmp	r1, #0x7d
+    6eb8: 4637         	mov	r7, r6
+    6eba: 4605         	mov	r5, r0
+    6ebc: d2d3         	bhs	0x6e66 <out_u+0xe>      @ imm = #-0x5a
+    6ebe: e007         	b	0x6ed0 <out_u+0x78>     @ imm = #0xe
+    6ec0: 2130         	movs	r1, #0x30
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6ec2: f000 fc63    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x8c6
+; }
+    6ec6: b005         	add	sp, #0x14
+    6ec8: bdf0         	pop	{r4, r5, r6, r7, pc}
+;     while (i--) out_c(buf[i]);
+    6eca: 1c7e         	adds	r6, r7, #0x1
+    6ecc: e000         	b	0x6ed0 <out_u+0x78>     @ imm = #0x0
+;     while (v) { buf[i++] = (char)('0' + (v % 10u)); v /= 10u; }
+    6ece: 1cbe         	adds	r6, r7, #0x2
+;     while (i--) out_c(buf[i]);
+    6ed0: 1e70         	subs	r0, r6, #0x1
+    6ed2: 2103         	movs	r1, #0x3
+    6ed4: 9000         	str	r0, [sp]
+    6ed6: f000 fbbf    	bl	0x7658 <__aeabi_uidivmod> @ imm = #0x77e
+    6eda: 1c48         	adds	r0, r1, #0x1
+    6edc: 2803         	cmp	r0, #0x3
+    6ede: d018         	beq	0x6f12 <out_u+0xba>     @ imm = #0x30
+    6ee0: 4607         	mov	r7, r0
+;     while (i--) out_c(buf[i]);
+    6ee2: 2803         	cmp	r0, #0x3
+    6ee4: d018         	beq	0x6f18 <out_u+0xc0>     @ imm = #0x30
+    6ee6: a802         	add	r0, sp, #0x8
+;     while (i--) out_c(buf[i]);
+    6ee8: 1e80         	subs	r0, r0, #0x2
+    6eea: 9001         	str	r0, [sp, #0x4]
+    6eec: 4d19         	ldr	r5, [pc, #0x64]         @ 0x6f54 <out_u+0xfc>
+    6eee: 9801         	ldr	r0, [sp, #0x4]
+    6ef0: 1980         	adds	r0, r0, r6
+    6ef2: 7841         	ldrb	r1, [r0, #0x1]
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6ef4: 4628         	mov	r0, r5
+    6ef6: f000 fc49    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x892
+;     while (i--) out_c(buf[i]);
+    6efa: 2f01         	cmp	r7, #0x1
+    6efc: d00f         	beq	0x6f1e <out_u+0xc6>     @ imm = #0x1e
+    6efe: 1eb4         	subs	r4, r6, #0x2
+    6f00: 9801         	ldr	r0, [sp, #0x4]
+    6f02: 5d81         	ldrb	r1, [r0, r6]
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6f04: 4628         	mov	r0, r5
+    6f06: f000 fc41    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x882
+;     while (i--) out_c(buf[i]);
+    6f0a: 1ebf         	subs	r7, r7, #0x2
+    6f0c: 4626         	mov	r6, r4
+    6f0e: d1ee         	bne	0x6eee <out_u+0x96>     @ imm = #-0x24
+    6f10: e006         	b	0x6f20 <out_u+0xc8>     @ imm = #0xc
+    6f12: 2700         	movs	r7, #0x0
+;     while (i--) out_c(buf[i]);
+    6f14: 2803         	cmp	r0, #0x3
+    6f16: d1e6         	bne	0x6ee6 <out_u+0x8e>     @ imm = #-0x34
+    6f18: 4634         	mov	r4, r6
+    6f1a: 4d0e         	ldr	r5, [pc, #0x38]         @ 0x6f54 <out_u+0xfc>
+    6f1c: e000         	b	0x6f20 <out_u+0xc8>     @ imm = #0x0
+;     while (i--) out_c(buf[i]);
+    6f1e: 1e74         	subs	r4, r6, #0x1
+    6f20: 9800         	ldr	r0, [sp]
+    6f22: 2802         	cmp	r0, #0x2
+    6f24: d314         	blo	0x6f50 <out_u+0xf8>     @ imm = #0x28
+    6f26: 462f         	mov	r7, r5
+;     while (i--) out_c(buf[i]);
+    6f28: 4265         	rsbs	r5, r4, #0
+    6f2a: a802         	add	r0, sp, #0x8
+    6f2c: 1820         	adds	r0, r4, r0
+    6f2e: 1ec6         	subs	r6, r0, #0x3
+    6f30: 78b1         	ldrb	r1, [r6, #0x2]
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6f32: 4638         	mov	r0, r7
+    6f34: f000 fc2a    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x854
+;     while (i--) out_c(buf[i]);
+    6f38: 7871         	ldrb	r1, [r6, #0x1]
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6f3a: 4638         	mov	r0, r7
+    6f3c: f000 fc26    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x84c
+;     while (i--) out_c(buf[i]);
+    6f40: 7831         	ldrb	r1, [r6]
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    6f42: 4638         	mov	r0, r7
+    6f44: f000 fc22    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x844
+;     while (i--) out_c(buf[i]);
+    6f48: 1ced         	adds	r5, r5, #0x3
+    6f4a: 1ef6         	subs	r6, r6, #0x3
+    6f4c: 2d00         	cmp	r5, #0x0
+    6f4e: d1ef         	bne	0x6f30 <out_u+0xd8>     @ imm = #-0x22
+; }
+    6f50: b005         	add	sp, #0x14
+    6f52: bdf0         	pop	{r4, r5, r6, r7, pc}
+    6f54: 00 80 10 40  	.word	0x40108000
+
+00006f58 <level9>:
+; {
+    6f58: b5f0         	push	{r4, r5, r6, r7, lr}
+    6f5a: b085         	sub	sp, #0x14
+    6f5c: 4c32         	ldr	r4, [pc, #0xc8]         @ 0x7028 <level9+0xd0>
+    6f5e: 4d33         	ldr	r5, [pc, #0xcc]         @ 0x702c <level9+0xd4>
+;     uint32_t guess = parse_hex(arg);
+    6f60: f7ff fd08    	bl	0x6974 <parse_hex>      @ imm = #-0x5f0
+    6f64: 2300         	movs	r3, #0x0
+;     volatile uint32_t granted = 0;
+    6f66: 9304         	str	r3, [sp, #0x10]
+;     volatile uint32_t sink = 0;
+    6f68: 9303         	str	r3, [sp, #0xc]
+;     g_t0 = SysTick->VAL;
+    6f6a: 6822         	ldr	r2, [r4]
+    6f6c: 4930         	ldr	r1, [pc, #0xc0]         @ 0x7030 <level9+0xd8>
+    6f6e: 600a         	str	r2, [r1]
+    6f70: 2201         	movs	r2, #0x1
+;     gpio->DOUTSET31_0 = pins;
+    6f72: 602a         	str	r2, [r5]
+;     for (volatile uint32_t i = 0; i < L9_PAD; i++) { sink += i; }   /* lead pad  */
+    6f74: 9302         	str	r3, [sp, #0x8]
+    6f76: 9e02         	ldr	r6, [sp, #0x8]
+    6f78: 2e3b         	cmp	r6, #0x3b
+    6f7a: d81d         	bhi	0x6fb8 <level9+0x60>    @ imm = #0x3a
+    6f7c: 9e02         	ldr	r6, [sp, #0x8]
+    6f7e: 9f03         	ldr	r7, [sp, #0xc]
+    6f80: 19be         	adds	r6, r7, r6
+    6f82: 9603         	str	r6, [sp, #0xc]
+    6f84: 9e02         	ldr	r6, [sp, #0x8]
+    6f86: 1c76         	adds	r6, r6, #0x1
+    6f88: 9602         	str	r6, [sp, #0x8]
+    6f8a: 9e02         	ldr	r6, [sp, #0x8]
+    6f8c: 2e3b         	cmp	r6, #0x3b
+    6f8e: d813         	bhi	0x6fb8 <level9+0x60>    @ imm = #0x26
+    6f90: 9e02         	ldr	r6, [sp, #0x8]
+    6f92: 9f03         	ldr	r7, [sp, #0xc]
+    6f94: 19be         	adds	r6, r7, r6
+    6f96: 9603         	str	r6, [sp, #0xc]
+    6f98: 9e02         	ldr	r6, [sp, #0x8]
+    6f9a: 1c76         	adds	r6, r6, #0x1
+    6f9c: 9602         	str	r6, [sp, #0x8]
+    6f9e: 9e02         	ldr	r6, [sp, #0x8]
+    6fa0: 2e3b         	cmp	r6, #0x3b
+    6fa2: d809         	bhi	0x6fb8 <level9+0x60>    @ imm = #0x12
+    6fa4: 9e02         	ldr	r6, [sp, #0x8]
+    6fa6: 9f03         	ldr	r7, [sp, #0xc]
+    6fa8: 19be         	adds	r6, r7, r6
+    6faa: 9603         	str	r6, [sp, #0xc]
+    6fac: 9e02         	ldr	r6, [sp, #0x8]
+    6fae: 1c76         	adds	r6, r6, #0x1
+    6fb0: 9602         	str	r6, [sp, #0x8]
+    6fb2: 9e02         	ldr	r6, [sp, #0x8]
+    6fb4: 2e3c         	cmp	r6, #0x3c
+    6fb6: d3e1         	blo	0x6f7c <level9+0x24>    @ imm = #-0x3e
+;     if (guess == L1_PIN) {
+    6fb8: 4e1e         	ldr	r6, [pc, #0x78]         @ 0x7034 <level9+0xdc>
+    6fba: 6836         	ldr	r6, [r6]
+    6fbc: 42b0         	cmp	r0, r6
+    6fbe: d100         	bne	0x6fc2 <level9+0x6a>    @ imm = #0x0
+;         granted = 1;                                                  /* THE branch */
+    6fc0: 9204         	str	r2, [sp, #0x10]
+;     for (volatile uint32_t i = 0; i < L9_PAD; i++) { sink += i; }   /* trail pad */
+    6fc2: 9302         	str	r3, [sp, #0x8]
+    6fc4: 9802         	ldr	r0, [sp, #0x8]
+    6fc6: 283b         	cmp	r0, #0x3b
+    6fc8: d81d         	bhi	0x7006 <level9+0xae>    @ imm = #0x3a
+    6fca: 9802         	ldr	r0, [sp, #0x8]
+    6fcc: 9b03         	ldr	r3, [sp, #0xc]
+    6fce: 1818         	adds	r0, r3, r0
+    6fd0: 9003         	str	r0, [sp, #0xc]
+    6fd2: 9802         	ldr	r0, [sp, #0x8]
+    6fd4: 1c40         	adds	r0, r0, #0x1
+    6fd6: 9002         	str	r0, [sp, #0x8]
+    6fd8: 9802         	ldr	r0, [sp, #0x8]
+    6fda: 283b         	cmp	r0, #0x3b
+    6fdc: d813         	bhi	0x7006 <level9+0xae>    @ imm = #0x26
+    6fde: 9802         	ldr	r0, [sp, #0x8]
+    6fe0: 9b03         	ldr	r3, [sp, #0xc]
+    6fe2: 1818         	adds	r0, r3, r0
+    6fe4: 9003         	str	r0, [sp, #0xc]
+    6fe6: 9802         	ldr	r0, [sp, #0x8]
+    6fe8: 1c40         	adds	r0, r0, #0x1
+    6fea: 9002         	str	r0, [sp, #0x8]
+    6fec: 9802         	ldr	r0, [sp, #0x8]
+    6fee: 283b         	cmp	r0, #0x3b
+    6ff0: d809         	bhi	0x7006 <level9+0xae>    @ imm = #0x12
+    6ff2: 9802         	ldr	r0, [sp, #0x8]
+    6ff4: 9b03         	ldr	r3, [sp, #0xc]
+    6ff6: 1818         	adds	r0, r3, r0
+    6ff8: 9003         	str	r0, [sp, #0xc]
+    6ffa: 9802         	ldr	r0, [sp, #0x8]
+    6ffc: 1c40         	adds	r0, r0, #0x1
+    6ffe: 9002         	str	r0, [sp, #0x8]
+    7000: 9802         	ldr	r0, [sp, #0x8]
+    7002: 283c         	cmp	r0, #0x3c
+    7004: d3e1         	blo	0x6fca <level9+0x72>    @ imm = #-0x3e
+;     gpio->DOUTCLR31_0 = pins;
+    7006: 612a         	str	r2, [r5, #0x10]
+;     return (g_t0 - SysTick->VAL) & 0x00FFFFFFu;
+    7008: 6808         	ldr	r0, [r1]
+    700a: 6821         	ldr	r1, [r4]
+    700c: 1a43         	subs	r3, r0, r1
+    700e: 20ff         	movs	r0, #0xff
+    7010: 0600         	lsls	r0, r0, #0x18
+    7012: 4383         	bics	r3, r0
+;     (void)sink;
+    7014: 9803         	ldr	r0, [sp, #0xc]
+;     reply('9', granted, 0, c, "lab{l9_widened_skip}");
+    7016: 9904         	ldr	r1, [sp, #0x10]
+    7018: 4807         	ldr	r0, [pc, #0x1c]         @ 0x7038 <level9+0xe0>
+    701a: 9000         	str	r0, [sp]
+    701c: 2039         	movs	r0, #0x39
+    701e: 2200         	movs	r2, #0x0
+    7020: f000 f9b2    	bl	0x7388 <reply>          @ imm = #0x364
+; }
+    7024: b005         	add	sp, #0x14
+    7026: bdf0         	pop	{r4, r5, r6, r7, pc}
+    7028: 18 e0 00 e0  	.word	0xe000e018
+    702c: 90 32 0a 40  	.word	0x400a3290
+    7030: 24 00 20 20  	.word	0x20200024
+    7034: 20 7a 00 00  	.word	0x00007a20
+    7038: 51 79 00 00  	.word	0x00007951
+
+0000703c <level5>:
+; {
+    703c: b5f0         	push	{r4, r5, r6, r7, lr}
+    703e: b087         	sub	sp, #0x1c
+;     while (*arg == ' ') arg++;
+    7040: 7801         	ldrb	r1, [r0]
+    7042: 1c40         	adds	r0, r0, #0x1
+    7044: 2920         	cmp	r1, #0x20
+    7046: d0fb         	beq	0x7040 <level5+0x4>     @ imm = #-0xa
+    7048: 2900         	cmp	r1, #0x0
+    704a: d103         	bne	0x7054 <level5+0x18>    @ imm = #0x6
+    704c: a805         	add	r0, sp, #0x14
+    704e: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7050: 7001         	strb	r1, [r0]
+    7052: e017         	b	0x7084 <level5+0x48>    @ imm = #0x2e
+    7054: aa05         	add	r2, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7056: 7011         	strb	r1, [r2]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    7058: 7801         	ldrb	r1, [r0]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    705a: 2900         	cmp	r1, #0x0
+    705c: d012         	beq	0x7084 <level5+0x48>    @ imm = #0x24
+    705e: aa05         	add	r2, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7060: 7051         	strb	r1, [r2, #0x1]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    7062: 7841         	ldrb	r1, [r0, #0x1]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7064: 2900         	cmp	r1, #0x0
+    7066: d010         	beq	0x708a <level5+0x4e>    @ imm = #0x20
+    7068: aa05         	add	r2, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    706a: 7091         	strb	r1, [r2, #0x2]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    706c: 7881         	ldrb	r1, [r0, #0x2]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    706e: 2900         	cmp	r1, #0x0
+    7070: d00e         	beq	0x7090 <level5+0x54>    @ imm = #0x1c
+    7072: aa05         	add	r2, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7074: 70d1         	strb	r1, [r2, #0x3]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    7076: 78c1         	ldrb	r1, [r0, #0x3]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7078: 2900         	cmp	r1, #0x0
+    707a: d00c         	beq	0x7096 <level5+0x5a>    @ imm = #0x18
+    707c: aa05         	add	r2, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    707e: 7111         	strb	r1, [r2, #0x4]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    7080: 7900         	ldrb	r0, [r0, #0x4]
+    7082: e00b         	b	0x709c <level5+0x60>    @ imm = #0x16
+    7084: a805         	add	r0, sp, #0x14
+    7086: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7088: 7041         	strb	r1, [r0, #0x1]
+    708a: a805         	add	r0, sp, #0x14
+    708c: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    708e: 7081         	strb	r1, [r0, #0x2]
+    7090: a805         	add	r0, sp, #0x14
+    7092: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7094: 70c1         	strb	r1, [r0, #0x3]
+    7096: a905         	add	r1, sp, #0x14
+    7098: 2000         	movs	r0, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    709a: 7108         	strb	r0, [r1, #0x4]
+    709c: 4918         	ldr	r1, [pc, #0x60]         @ 0x7100 <level5+0xc4>
+    709e: 4e19         	ldr	r6, [pc, #0x64]         @ 0x7104 <level5+0xc8>
+    70a0: ac05         	add	r4, sp, #0x14
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    70a2: 7160         	strb	r0, [r4, #0x5]
+    70a4: 2000         	movs	r0, #0x0
+;     volatile uint32_t granted = 0, detect = 0;
+    70a6: 9002         	str	r0, [sp, #0x8]
+    70a8: 9001         	str	r0, [sp, #0x4]
+;     g_t0 = SysTick->VAL;
+    70aa: 6808         	ldr	r0, [r1]
+    70ac: 4f16         	ldr	r7, [pc, #0x58]         @ 0x7108 <level5+0xcc>
+    70ae: 6038         	str	r0, [r7]
+    70b0: 2501         	movs	r5, #0x1
+;     gpio->DOUTSET31_0 = pins;
+    70b2: 6035         	str	r5, [r6]
+;     r1 = (ct_diff(g, LAB_PIN, PIN_LEN) == 0);
+    70b4: 4620         	mov	r0, r4
+    70b6: f000 fbbb    	bl	0x7830 <ct_diff>        @ imm = #0x776
+    70ba: 4241         	rsbs	r1, r0, #0
+    70bc: 4141         	adcs	r1, r0
+    70be: 9104         	str	r1, [sp, #0x10]
+;     r2 = (ct_diff(g, LAB_PIN, PIN_LEN) == 0);
+    70c0: 4620         	mov	r0, r4
+    70c2: f000 fbb5    	bl	0x7830 <ct_diff>        @ imm = #0x76a
+    70c6: 4241         	rsbs	r1, r0, #0
+    70c8: 4141         	adcs	r1, r0
+    70ca: 9103         	str	r1, [sp, #0xc]
+;     if (r1) {
+    70cc: 9804         	ldr	r0, [sp, #0x10]
+    70ce: 2800         	cmp	r0, #0x0
+    70d0: d005         	beq	0x70de <level5+0xa2>    @ imm = #0xa
+;         if (r2) granted = 1;
+    70d2: 9803         	ldr	r0, [sp, #0xc]
+    70d4: 2800         	cmp	r0, #0x0
+    70d6: d001         	beq	0x70dc <level5+0xa0>    @ imm = #0x2
+    70d8: 9502         	str	r5, [sp, #0x8]
+    70da: e000         	b	0x70de <level5+0xa2>    @ imm = #0x0
+;         else    detect  = 1;
+    70dc: 9501         	str	r5, [sp, #0x4]
+;     gpio->DOUTCLR31_0 = pins;
+    70de: 6135         	str	r5, [r6, #0x10]
+;     return (g_t0 - SysTick->VAL) & 0x00FFFFFFu;
+    70e0: 6838         	ldr	r0, [r7]
+    70e2: 4907         	ldr	r1, [pc, #0x1c]         @ 0x7100 <level5+0xc4>
+    70e4: 6809         	ldr	r1, [r1]
+    70e6: 1a43         	subs	r3, r0, r1
+    70e8: 20ff         	movs	r0, #0xff
+    70ea: 0600         	lsls	r0, r0, #0x18
+    70ec: 4383         	bics	r3, r0
+;     reply('5', granted, detect, c, "lab{l5_double_trouble}");
+    70ee: 9902         	ldr	r1, [sp, #0x8]
+    70f0: 9a01         	ldr	r2, [sp, #0x4]
+    70f2: 4806         	ldr	r0, [pc, #0x18]         @ 0x710c <level5+0xd0>
+    70f4: 9000         	str	r0, [sp]
+    70f6: 2035         	movs	r0, #0x35
+    70f8: f000 f946    	bl	0x7388 <reply>          @ imm = #0x28c
+; }
+    70fc: b007         	add	sp, #0x1c
+    70fe: bdf0         	pop	{r4, r5, r6, r7, pc}
+    7100: 18 e0 00 e0  	.word	0xe000e018
+    7104: 90 32 0a 40  	.word	0x400a3290
+    7108: 24 00 20 20  	.word	0x20200024
+    710c: 24 79 00 00  	.word	0x00007924
+
+00007110 <level2>:
+; {
+    7110: b5f0         	push	{r4, r5, r6, r7, lr}
+    7112: b085         	sub	sp, #0x14
+;     while (*arg == ' ') arg++;
+    7114: 7801         	ldrb	r1, [r0]
+    7116: 1c40         	adds	r0, r0, #0x1
+    7118: 2920         	cmp	r1, #0x20
+    711a: d0fb         	beq	0x7114 <level2+0x4>     @ imm = #-0xa
+    711c: 2900         	cmp	r1, #0x0
+    711e: d103         	bne	0x7128 <level2+0x18>    @ imm = #0x6
+    7120: a803         	add	r0, sp, #0xc
+    7122: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7124: 7001         	strb	r1, [r0]
+    7126: e017         	b	0x7158 <level2+0x48>    @ imm = #0x2e
+    7128: aa03         	add	r2, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    712a: 7011         	strb	r1, [r2]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    712c: 7801         	ldrb	r1, [r0]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    712e: 2900         	cmp	r1, #0x0
+    7130: d012         	beq	0x7158 <level2+0x48>    @ imm = #0x24
+    7132: aa03         	add	r2, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7134: 7051         	strb	r1, [r2, #0x1]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    7136: 7841         	ldrb	r1, [r0, #0x1]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7138: 2900         	cmp	r1, #0x0
+    713a: d010         	beq	0x715e <level2+0x4e>    @ imm = #0x20
+    713c: aa03         	add	r2, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    713e: 7091         	strb	r1, [r2, #0x2]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    7140: 7881         	ldrb	r1, [r0, #0x2]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7142: 2900         	cmp	r1, #0x0
+    7144: d00e         	beq	0x7164 <level2+0x54>    @ imm = #0x1c
+    7146: aa03         	add	r2, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7148: 70d1         	strb	r1, [r2, #0x3]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    714a: 78c1         	ldrb	r1, [r0, #0x3]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    714c: 2900         	cmp	r1, #0x0
+    714e: d00c         	beq	0x716a <level2+0x5a>    @ imm = #0x18
+    7150: aa03         	add	r2, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7152: 7111         	strb	r1, [r2, #0x4]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    7154: 7901         	ldrb	r1, [r0, #0x4]
+    7156: e00b         	b	0x7170 <level2+0x60>    @ imm = #0x16
+    7158: a803         	add	r0, sp, #0xc
+    715a: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    715c: 7041         	strb	r1, [r0, #0x1]
+    715e: a803         	add	r0, sp, #0xc
+    7160: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7162: 7081         	strb	r1, [r0, #0x2]
+    7164: a803         	add	r0, sp, #0xc
+    7166: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7168: 70c1         	strb	r1, [r0, #0x3]
+    716a: a803         	add	r0, sp, #0xc
+    716c: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    716e: 7101         	strb	r1, [r0, #0x4]
+    7170: 4c0f         	ldr	r4, [pc, #0x3c]         @ 0x71b0 <level2+0xa0>
+    7172: 4d10         	ldr	r5, [pc, #0x40]         @ 0x71b4 <level2+0xa4>
+    7174: a803         	add	r0, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7176: 7141         	strb	r1, [r0, #0x5]
+    7178: 2100         	movs	r1, #0x0
+;     volatile uint32_t granted = 0;
+    717a: 9102         	str	r1, [sp, #0x8]
+;     g_t0 = SysTick->VAL;
+    717c: 6821         	ldr	r1, [r4]
+    717e: 4e0e         	ldr	r6, [pc, #0x38]         @ 0x71b8 <level2+0xa8>
+    7180: 6031         	str	r1, [r6]
+    7182: 2701         	movs	r7, #0x1
+;     gpio->DOUTSET31_0 = pins;
+    7184: 602f         	str	r7, [r5]
+;     if (naive_eq(g, LAB_PIN, PIN_LEN)) {
+    7186: f000 fa87    	bl	0x7698 <naive_eq>       @ imm = #0x50e
+    718a: 2800         	cmp	r0, #0x0
+    718c: d000         	beq	0x7190 <level2+0x80>    @ imm = #0x0
+;         granted = 1;
+    718e: 9702         	str	r7, [sp, #0x8]
+;     gpio->DOUTCLR31_0 = pins;
+    7190: 612f         	str	r7, [r5, #0x10]
+;     return (g_t0 - SysTick->VAL) & 0x00FFFFFFu;
+    7192: 6830         	ldr	r0, [r6]
+    7194: 6821         	ldr	r1, [r4]
+    7196: 1a43         	subs	r3, r0, r1
+    7198: 20ff         	movs	r0, #0xff
+    719a: 0600         	lsls	r0, r0, #0x18
+    719c: 4383         	bics	r3, r0
+;     reply('2', granted, 0, c, "lab{l2_early_exit}");
+    719e: 9902         	ldr	r1, [sp, #0x8]
+    71a0: 4806         	ldr	r0, [pc, #0x18]         @ 0x71bc <level2+0xac>
+    71a2: 9000         	str	r0, [sp]
+    71a4: 2032         	movs	r0, #0x32
+    71a6: 2200         	movs	r2, #0x0
+    71a8: f000 f8ee    	bl	0x7388 <reply>          @ imm = #0x1dc
+; }
+    71ac: b005         	add	sp, #0x14
+    71ae: bdf0         	pop	{r4, r5, r6, r7, pc}
+    71b0: 18 e0 00 e0  	.word	0xe000e018
+    71b4: 90 32 0a 40  	.word	0x400a3290
+    71b8: 24 00 20 20  	.word	0x20200024
+    71bc: 8e 79 00 00  	.word	0x0000798e
+
+000071c0 <level4>:
+; {
+    71c0: b5f0         	push	{r4, r5, r6, r7, lr}
+    71c2: b085         	sub	sp, #0x14
+;     while (*arg == ' ') arg++;
+    71c4: 7801         	ldrb	r1, [r0]
+    71c6: 1c40         	adds	r0, r0, #0x1
+    71c8: 2920         	cmp	r1, #0x20
+    71ca: d0fb         	beq	0x71c4 <level4+0x4>     @ imm = #-0xa
+    71cc: 2900         	cmp	r1, #0x0
+    71ce: d103         	bne	0x71d8 <level4+0x18>    @ imm = #0x6
+    71d0: a803         	add	r0, sp, #0xc
+    71d2: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    71d4: 7001         	strb	r1, [r0]
+    71d6: e017         	b	0x7208 <level4+0x48>    @ imm = #0x2e
+    71d8: aa03         	add	r2, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    71da: 7011         	strb	r1, [r2]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    71dc: 7801         	ldrb	r1, [r0]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    71de: 2900         	cmp	r1, #0x0
+    71e0: d012         	beq	0x7208 <level4+0x48>    @ imm = #0x24
+    71e2: aa03         	add	r2, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    71e4: 7051         	strb	r1, [r2, #0x1]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    71e6: 7841         	ldrb	r1, [r0, #0x1]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    71e8: 2900         	cmp	r1, #0x0
+    71ea: d010         	beq	0x720e <level4+0x4e>    @ imm = #0x20
+    71ec: aa03         	add	r2, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    71ee: 7091         	strb	r1, [r2, #0x2]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    71f0: 7881         	ldrb	r1, [r0, #0x2]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    71f2: 2900         	cmp	r1, #0x0
+    71f4: d00e         	beq	0x7214 <level4+0x54>    @ imm = #0x1c
+    71f6: aa03         	add	r2, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    71f8: 70d1         	strb	r1, [r2, #0x3]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    71fa: 78c1         	ldrb	r1, [r0, #0x3]
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    71fc: 2900         	cmp	r1, #0x0
+    71fe: d00c         	beq	0x721a <level4+0x5a>    @ imm = #0x18
+    7200: aa03         	add	r2, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7202: 7111         	strb	r1, [r2, #0x4]
+;         if (!ended && arg[i] == '\0') ended = 1;
+    7204: 7901         	ldrb	r1, [r0, #0x4]
+    7206: e00b         	b	0x7220 <level4+0x60>    @ imm = #0x16
+    7208: a803         	add	r0, sp, #0xc
+    720a: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    720c: 7041         	strb	r1, [r0, #0x1]
+    720e: a803         	add	r0, sp, #0xc
+    7210: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7212: 7081         	strb	r1, [r0, #0x2]
+    7214: a803         	add	r0, sp, #0xc
+    7216: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7218: 70c1         	strb	r1, [r0, #0x3]
+    721a: a803         	add	r0, sp, #0xc
+    721c: 2100         	movs	r1, #0x0
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    721e: 7101         	strb	r1, [r0, #0x4]
+    7220: 4c0f         	ldr	r4, [pc, #0x3c]         @ 0x7260 <level4+0xa0>
+    7222: 4d10         	ldr	r5, [pc, #0x40]         @ 0x7264 <level4+0xa4>
+    7224: a803         	add	r0, sp, #0xc
+;         dst[i] = ended ? 0 : (uint8_t)arg[i];
+    7226: 7141         	strb	r1, [r0, #0x5]
+    7228: 2100         	movs	r1, #0x0
+;     volatile uint32_t granted = 0;
+    722a: 9102         	str	r1, [sp, #0x8]
+;     g_t0 = SysTick->VAL;
+    722c: 6821         	ldr	r1, [r4]
+    722e: 4e0e         	ldr	r6, [pc, #0x38]         @ 0x7268 <level4+0xa8>
+    7230: 6031         	str	r1, [r6]
+    7232: 2701         	movs	r7, #0x1
+;     gpio->DOUTSET31_0 = pins;
+    7234: 602f         	str	r7, [r5]
+;     if (ct_diff(g, LAB_PIN, PIN_LEN) == 0) {
+    7236: f000 fafb    	bl	0x7830 <ct_diff>        @ imm = #0x5f6
+    723a: 2800         	cmp	r0, #0x0
+    723c: d100         	bne	0x7240 <level4+0x80>    @ imm = #0x0
+;         granted = 1;
+    723e: 9702         	str	r7, [sp, #0x8]
+;     gpio->DOUTCLR31_0 = pins;
+    7240: 612f         	str	r7, [r5, #0x10]
+;     return (g_t0 - SysTick->VAL) & 0x00FFFFFFu;
+    7242: 6830         	ldr	r0, [r6]
+    7244: 6821         	ldr	r1, [r4]
+    7246: 1a43         	subs	r3, r0, r1
+    7248: 20ff         	movs	r0, #0xff
+    724a: 0600         	lsls	r0, r0, #0x18
+    724c: 4383         	bics	r3, r0
+;     reply('4', granted, 0, c, "lab{l4_ct_loop_cut}");
+    724e: 9902         	ldr	r1, [sp, #0x8]
+    7250: 4806         	ldr	r0, [pc, #0x18]         @ 0x726c <level4+0xac>
+    7252: 9000         	str	r0, [sp]
+    7254: 2034         	movs	r0, #0x34
+    7256: 2200         	movs	r2, #0x0
+    7258: f000 f896    	bl	0x7388 <reply>          @ imm = #0x12c
+; }
+    725c: b005         	add	sp, #0x14
+    725e: bdf0         	pop	{r4, r5, r6, r7, pc}
+    7260: 18 e0 00 e0  	.word	0xe000e018
+    7264: 90 32 0a 40  	.word	0x400a3290
+    7268: 24 00 20 20  	.word	0x20200024
+    726c: 66 79 00 00  	.word	0x00007966
+
+00007270 <parse_dec>:
+; {
+    7270: b510         	push	{r4, lr}
+    7272: 4601         	mov	r1, r0
+;     while (*s == ' ') s++;
+    7274: 7808         	ldrb	r0, [r1]
+    7276: 1c49         	adds	r1, r1, #0x1
+    7278: 2820         	cmp	r0, #0x20
+    727a: d0fb         	beq	0x7274 <parse_dec+0x4>  @ imm = #-0xa
+;     while (n < 9 && *s >= '0' && *s <= '9') { v = v * 10u + (uint32_t)(*s - '0'); s++; n++; }
+    727c: 3830         	subs	r0, #0x30
+    727e: 2809         	cmp	r0, #0x9
+    7280: d841         	bhi	0x7306 <parse_dec+0x96> @ imm = #0x82
+    7282: 780b         	ldrb	r3, [r1]
+    7284: 461a         	mov	r2, r3
+    7286: 3a30         	subs	r2, #0x30
+    7288: 2a09         	cmp	r2, #0x9
+    728a: d83b         	bhi	0x7304 <parse_dec+0x94> @ imm = #0x76
+    728c: 220a         	movs	r2, #0xa
+;     while (n < 9 && *s >= '0' && *s <= '9') { v = v * 10u + (uint32_t)(*s - '0'); s++; n++; }
+    728e: 4350         	muls	r0, r2, r0
+    7290: 18c0         	adds	r0, r0, r3
+    7292: 3830         	subs	r0, #0x30
+    7294: 784b         	ldrb	r3, [r1, #0x1]
+    7296: 461c         	mov	r4, r3
+    7298: 3c30         	subs	r4, #0x30
+    729a: 2c09         	cmp	r4, #0x9
+    729c: d832         	bhi	0x7304 <parse_dec+0x94> @ imm = #0x64
+    729e: 4350         	muls	r0, r2, r0
+    72a0: 18c0         	adds	r0, r0, r3
+    72a2: 3830         	subs	r0, #0x30
+    72a4: 788b         	ldrb	r3, [r1, #0x2]
+    72a6: 461c         	mov	r4, r3
+    72a8: 3c30         	subs	r4, #0x30
+    72aa: 2c09         	cmp	r4, #0x9
+    72ac: d82a         	bhi	0x7304 <parse_dec+0x94> @ imm = #0x54
+    72ae: 4350         	muls	r0, r2, r0
+    72b0: 18c0         	adds	r0, r0, r3
+    72b2: 3830         	subs	r0, #0x30
+    72b4: 78cb         	ldrb	r3, [r1, #0x3]
+    72b6: 461c         	mov	r4, r3
+    72b8: 3c30         	subs	r4, #0x30
+    72ba: 2c09         	cmp	r4, #0x9
+    72bc: d822         	bhi	0x7304 <parse_dec+0x94> @ imm = #0x44
+    72be: 4350         	muls	r0, r2, r0
+    72c0: 18c0         	adds	r0, r0, r3
+    72c2: 3830         	subs	r0, #0x30
+    72c4: 790b         	ldrb	r3, [r1, #0x4]
+    72c6: 461c         	mov	r4, r3
+    72c8: 3c30         	subs	r4, #0x30
+    72ca: 2c09         	cmp	r4, #0x9
+    72cc: d81a         	bhi	0x7304 <parse_dec+0x94> @ imm = #0x34
+    72ce: 4350         	muls	r0, r2, r0
+    72d0: 18c0         	adds	r0, r0, r3
+    72d2: 3830         	subs	r0, #0x30
+    72d4: 794b         	ldrb	r3, [r1, #0x5]
+    72d6: 461c         	mov	r4, r3
+    72d8: 3c30         	subs	r4, #0x30
+    72da: 2c09         	cmp	r4, #0x9
+    72dc: d812         	bhi	0x7304 <parse_dec+0x94> @ imm = #0x24
+    72de: 4350         	muls	r0, r2, r0
+    72e0: 18c0         	adds	r0, r0, r3
+    72e2: 3830         	subs	r0, #0x30
+    72e4: 798b         	ldrb	r3, [r1, #0x6]
+    72e6: 461c         	mov	r4, r3
+    72e8: 3c30         	subs	r4, #0x30
+    72ea: 2c09         	cmp	r4, #0x9
+    72ec: d80a         	bhi	0x7304 <parse_dec+0x94> @ imm = #0x14
+    72ee: 4350         	muls	r0, r2, r0
+    72f0: 18c0         	adds	r0, r0, r3
+    72f2: 3830         	subs	r0, #0x30
+    72f4: 79c9         	ldrb	r1, [r1, #0x7]
+    72f6: 460b         	mov	r3, r1
+    72f8: 3b30         	subs	r3, #0x30
+    72fa: 2b09         	cmp	r3, #0x9
+    72fc: d802         	bhi	0x7304 <parse_dec+0x94> @ imm = #0x4
+    72fe: 4342         	muls	r2, r0, r2
+    7300: 1850         	adds	r0, r2, r1
+    7302: 3830         	subs	r0, #0x30
+;     return v;
+    7304: bd10         	pop	{r4, pc}
+    7306: 2000         	movs	r0, #0x0
+;     return v;
+    7308: bd10         	pop	{r4, pc}
+    730a: 0000         	movs	r0, r0
+
+0000730c <__TI_decompress_lzss>:
+    730c: b5f8         	push	{r3, r4, r5, r6, r7, lr}
+    730e: 1c45         	adds	r5, r0, #0x1
+    7310: 7800         	ldrb	r0, [r0]
+    7312: 2300         	movs	r3, #0x0
+    7314: 2b08         	cmp	r3, #0x8
+    7316: d032         	beq	0x737e <__TI_decompress_lzss+0x72> @ imm = #0x64
+    7318: 782f         	ldrb	r7, [r5]
+    731a: 07c2         	lsls	r2, r0, #0x1f
+    731c: d10c         	bne	0x7338 <__TI_decompress_lzss+0x2c> @ imm = #0x18
+    731e: 786a         	ldrb	r2, [r5, #0x1]
+    7320: 240f         	movs	r4, #0xf
+    7322: 4014         	ands	r4, r2
+    7324: 1ce4         	adds	r4, r4, #0x3
+    7326: 2c12         	cmp	r4, #0x12
+    7328: d10b         	bne	0x7342 <__TI_decompress_lzss+0x36> @ imm = #0x16
+    732a: 2402         	movs	r4, #0x2
+    732c: 572e         	ldrsb	r6, [r5, r4]
+    732e: b2f4         	uxtb	r4, r6
+    7330: 2e00         	cmp	r6, #0x0
+    7332: d408         	bmi	0x7346 <__TI_decompress_lzss+0x3a> @ imm = #0x10
+    7334: 1cee         	adds	r6, r5, #0x3
+    7336: e00e         	b	0x7356 <__TI_decompress_lzss+0x4a> @ imm = #0x1c
+    7338: 1c6d         	adds	r5, r5, #0x1
+    733a: 1c4a         	adds	r2, r1, #0x1
+    733c: 700f         	strb	r7, [r1]
+    733e: 4611         	mov	r1, r2
+    7340: e01a         	b	0x7378 <__TI_decompress_lzss+0x6c> @ imm = #0x34
+    7342: 1cae         	adds	r6, r5, #0x2
+    7344: e008         	b	0x7358 <__TI_decompress_lzss+0x4c> @ imm = #0x10
+    7346: 1d2e         	adds	r6, r5, #0x4
+    7348: 78ed         	ldrb	r5, [r5, #0x3]
+    734a: 9500         	str	r5, [sp]
+    734c: 257f         	movs	r5, #0x7f
+    734e: 402c         	ands	r4, r5
+    7350: 9d00         	ldr	r5, [sp]
+    7352: 01ed         	lsls	r5, r5, #0x7
+    7354: 192c         	adds	r4, r5, r4
+    7356: 3412         	adds	r4, #0x12
+    7358: 013d         	lsls	r5, r7, #0x4
+    735a: 0912         	lsrs	r2, r2, #0x4
+    735c: 1952         	adds	r2, r2, r5
+    735e: 4d09         	ldr	r5, [pc, #0x24]         @ 0x7384 <__TI_decompress_lzss+0x78>
+    7360: 42aa         	cmp	r2, r5
+    7362: d00e         	beq	0x7382 <__TI_decompress_lzss+0x76> @ imm = #0x1c
+    7364: 43d2         	mvns	r2, r2
+    7366: 2c00         	cmp	r4, #0x0
+    7368: d005         	beq	0x7376 <__TI_decompress_lzss+0x6a> @ imm = #0xa
+    736a: 5c8d         	ldrb	r5, [r1, r2]
+    736c: 1c4f         	adds	r7, r1, #0x1
+    736e: 700d         	strb	r5, [r1]
+    7370: 1e64         	subs	r4, r4, #0x1
+    7372: 4639         	mov	r1, r7
+    7374: e7f7         	b	0x7366 <__TI_decompress_lzss+0x5a> @ imm = #-0x12
+    7376: 4635         	mov	r5, r6
+    7378: 0840         	lsrs	r0, r0, #0x1
+    737a: 1c5b         	adds	r3, r3, #0x1
+    737c: e7ca         	b	0x7314 <__TI_decompress_lzss+0x8> @ imm = #-0x6c
+    737e: 4628         	mov	r0, r5
+    7380: e7c5         	b	0x730e <__TI_decompress_lzss+0x2> @ imm = #-0x76
+    7382: bdf8         	pop	{r3, r4, r5, r6, r7, pc}
+    7384: ff 0f 00 00  	.word	0x00000fff
+
+00007388 <reply>:
+; {
+    7388: b5f0         	push	{r4, r5, r6, r7, lr}
+    738a: b081         	sub	sp, #0x4
+    738c: 461e         	mov	r6, r3
+    738e: 4615         	mov	r5, r2
+    7390: 460c         	mov	r4, r1
+    7392: 4607         	mov	r7, r0
+    7394: 204c         	movs	r0, #0x4c
+;     out_c('L'); out_c(lvl); out_c(' ');
+    7396: f000 fa99    	bl	0x78cc <out_c>          @ imm = #0x532
+    739a: 4638         	mov	r0, r7
+    739c: f000 fa96    	bl	0x78cc <out_c>          @ imm = #0x52c
+    73a0: 2020         	movs	r0, #0x20
+;     out_c('L'); out_c(lvl); out_c(' ');
+    73a2: f000 fa93    	bl	0x78cc <out_c>          @ imm = #0x526
+;     if (detect)       out_s("DETECT");
+    73a6: 2c00         	cmp	r4, #0x0
+    73a8: d003         	beq	0x73b2 <reply+0x2a>     @ imm = #0x6
+    73aa: 4811         	ldr	r0, [pc, #0x44]         @ 0x73f0 <reply+0x68>
+;     if (detect)       out_s("DETECT");
+    73ac: 2d00         	cmp	r5, #0x0
+    73ae: d103         	bne	0x73b8 <reply+0x30>     @ imm = #0x6
+    73b0: e003         	b	0x73ba <reply+0x32>     @ imm = #0x6
+    73b2: 480e         	ldr	r0, [pc, #0x38]         @ 0x73ec <reply+0x64>
+;     if (detect)       out_s("DETECT");
+    73b4: 2d00         	cmp	r5, #0x0
+    73b6: d000         	beq	0x73ba <reply+0x32>     @ imm = #0x0
+    73b8: 480e         	ldr	r0, [pc, #0x38]         @ 0x73f4 <reply+0x6c>
+    73ba: f000 f98d    	bl	0x76d8 <out_s>          @ imm = #0x31a
+;     out_s(" c="); out_u(cyc);
+    73be: 480e         	ldr	r0, [pc, #0x38]         @ 0x73f8 <reply+0x70>
+    73c0: f000 f98a    	bl	0x76d8 <out_s>          @ imm = #0x314
+    73c4: 4630         	mov	r0, r6
+    73c6: f7ff fd47    	bl	0x6e58 <out_u>          @ imm = #-0x572
+;     if (granted && !detect && flag) { out_s(" flag="); out_s(flag); }
+    73ca: 2d00         	cmp	r5, #0x0
+    73cc: d10a         	bne	0x73e4 <reply+0x5c>     @ imm = #0x14
+    73ce: 2c00         	cmp	r4, #0x0
+    73d0: d008         	beq	0x73e4 <reply+0x5c>     @ imm = #0x10
+    73d2: 9c06         	ldr	r4, [sp, #0x18]
+;     if (granted && !detect && flag) { out_s(" flag="); out_s(flag); }
+    73d4: 2c00         	cmp	r4, #0x0
+    73d6: d005         	beq	0x73e4 <reply+0x5c>     @ imm = #0xa
+    73d8: 4808         	ldr	r0, [pc, #0x20]         @ 0x73fc <reply+0x74>
+    73da: f000 f97d    	bl	0x76d8 <out_s>          @ imm = #0x2fa
+    73de: 4620         	mov	r0, r4
+    73e0: f000 f97a    	bl	0x76d8 <out_s>          @ imm = #0x2f4
+;     out_end();
+    73e4: f000 fa34    	bl	0x7850 <out_end>        @ imm = #0x468
+; }
+    73e8: b001         	add	sp, #0x4
+    73ea: bdf0         	pop	{r4, r5, r6, r7, pc}
+    73ec: 1b 7a 00 00  	.word	0x00007a1b
+    73f0: 0f 7a 00 00  	.word	0x00007a0f
+    73f4: fb 79 00 00  	.word	0x000079fb
+    73f8: 30 7a 00 00  	.word	0x00007a30
+    73fc: 02 7a 00 00  	.word	0x00007a02
+
+00007400 <SYSCFG_DL_UART_0_init>:
+; {
+    7400: b510         	push	{r4, lr}
+;     DL_UART_Main_setClockConfig(UART_0_INST, (DL_UART_Main_ClockConfig *) &gUART_0ClockConfig);
+    7402: 4912         	ldr	r1, [pc, #0x48]         @ 0x744c <SYSCFG_DL_UART_0_init+0x4c>
+    7404: 4c12         	ldr	r4, [pc, #0x48]         @ 0x7450 <SYSCFG_DL_UART_0_init+0x50>
+    7406: 4620         	mov	r0, r4
+    7408: f000 fa3c    	bl	0x7884 <DL_UART_setClockConfig> @ imm = #0x478
+;     DL_UART_Main_init(UART_0_INST, (DL_UART_Main_Config *) &gUART_0Config);
+    740c: 4911         	ldr	r1, [pc, #0x44]         @ 0x7454 <SYSCFG_DL_UART_0_init+0x54>
+    740e: 4620         	mov	r0, r4
+    7410: f000 f8de    	bl	0x75d0 <DL_UART_init>   @ imm = #0x1bc
+    7414: 4810         	ldr	r0, [pc, #0x40]         @ 0x7458 <SYSCFG_DL_UART_0_init+0x58>
+;     tmp  = *reg;
+    7416: 6801         	ldr	r1, [r0]
+    7418: 2203         	movs	r2, #0x3
+    741a: 03d2         	lsls	r2, r2, #0xf
+;     tmp  = tmp & ~mask;
+    741c: 4391         	bics	r1, r2
+;     *reg = tmp | (val & mask);
+    741e: 6001         	str	r1, [r0]
+;     tmp  = *reg;
+    7420: 6901         	ldr	r1, [r0, #0x10]
+    7422: 4a0e         	ldr	r2, [pc, #0x38]         @ 0x745c <SYSCFG_DL_UART_0_init+0x5c>
+;     tmp  = tmp & ~mask;
+    7424: 400a         	ands	r2, r1
+;     *reg = tmp | (val & mask);
+    7426: 3211         	adds	r2, #0x11
+    7428: 6102         	str	r2, [r0, #0x10]
+;     tmp  = *reg;
+    742a: 6941         	ldr	r1, [r0, #0x14]
+    742c: 2217         	movs	r2, #0x17
+;     tmp  = tmp & ~mask;
+    742e: 430a         	orrs	r2, r1
+    7430: 2128         	movs	r1, #0x28
+;     *reg = tmp | (val & mask);
+    7432: 438a         	bics	r2, r1
+    7434: 6142         	str	r2, [r0, #0x14]
+;         &uart->LCRH, (uart->LCRH & UART_LCRH_BRK_MASK), UART_LCRH_BRK_MASK);
+    7436: 6841         	ldr	r1, [r0, #0x4]
+    7438: 2201         	movs	r2, #0x1
+    743a: 4011         	ands	r1, r2
+;     tmp  = *reg;
+    743c: 6843         	ldr	r3, [r0, #0x4]
+;     tmp  = tmp & ~mask;
+    743e: 4393         	bics	r3, r2
+;     *reg = tmp | (val & mask);
+    7440: 1859         	adds	r1, r3, r1
+    7442: 6041         	str	r1, [r0, #0x4]
+;     uart->CTL0 |= UART_CTL0_ENABLE_ENABLE;
+    7444: 6801         	ldr	r1, [r0]
+    7446: 4311         	orrs	r1, r2
+    7448: 6001         	str	r1, [r0]
+; }
+    744a: bd10         	pop	{r4, pc}
+    744c: 38 7a 00 00  	.word	0x00007a38
+    7450: 00 80 10 40  	.word	0x40108000
+    7454: d8 79 00 00  	.word	0x000079d8
+    7458: 00 91 10 40  	.word	0x40109100
+    745c: 00 00 ff ff  	.word	0xffff0000
+
+00007460 <SYSCFG_DL_UART_1_init>:
+; {
+    7460: b510         	push	{r4, lr}
+;     DL_UART_Main_setClockConfig(UART_1_INST, (DL_UART_Main_ClockConfig *) &gUART_1ClockConfig);
+    7462: 4912         	ldr	r1, [pc, #0x48]         @ 0x74ac <SYSCFG_DL_UART_1_init+0x4c>
+    7464: 4c12         	ldr	r4, [pc, #0x48]         @ 0x74b0 <SYSCFG_DL_UART_1_init+0x50>
+    7466: 4620         	mov	r0, r4
+    7468: f000 fa0c    	bl	0x7884 <DL_UART_setClockConfig> @ imm = #0x418
+;     DL_UART_Main_init(UART_1_INST, (DL_UART_Main_Config *) &gUART_1Config);
+    746c: 4911         	ldr	r1, [pc, #0x44]         @ 0x74b4 <SYSCFG_DL_UART_1_init+0x54>
+    746e: 4620         	mov	r0, r4
+    7470: f000 f8ae    	bl	0x75d0 <DL_UART_init>   @ imm = #0x15c
+    7474: 4810         	ldr	r0, [pc, #0x40]         @ 0x74b8 <SYSCFG_DL_UART_1_init+0x58>
+;     tmp  = *reg;
+    7476: 6801         	ldr	r1, [r0]
+    7478: 2203         	movs	r2, #0x3
+    747a: 03d2         	lsls	r2, r2, #0xf
+;     tmp  = tmp & ~mask;
+    747c: 4391         	bics	r1, r2
+;     *reg = tmp | (val & mask);
+    747e: 6001         	str	r1, [r0]
+;     tmp  = *reg;
+    7480: 6901         	ldr	r1, [r0, #0x10]
+    7482: 4a0e         	ldr	r2, [pc, #0x38]         @ 0x74bc <SYSCFG_DL_UART_1_init+0x5c>
+;     tmp  = tmp & ~mask;
+    7484: 400a         	ands	r2, r1
+;     *reg = tmp | (val & mask);
+    7486: 3211         	adds	r2, #0x11
+    7488: 6102         	str	r2, [r0, #0x10]
+;     tmp  = *reg;
+    748a: 6941         	ldr	r1, [r0, #0x14]
+    748c: 2217         	movs	r2, #0x17
+;     tmp  = tmp & ~mask;
+    748e: 430a         	orrs	r2, r1
+    7490: 2128         	movs	r1, #0x28
+;     *reg = tmp | (val & mask);
+    7492: 438a         	bics	r2, r1
+    7494: 6142         	str	r2, [r0, #0x14]
+;         &uart->LCRH, (uart->LCRH & UART_LCRH_BRK_MASK), UART_LCRH_BRK_MASK);
+    7496: 6841         	ldr	r1, [r0, #0x4]
+    7498: 2201         	movs	r2, #0x1
+    749a: 4011         	ands	r1, r2
+;     tmp  = *reg;
+    749c: 6843         	ldr	r3, [r0, #0x4]
+;     tmp  = tmp & ~mask;
+    749e: 4393         	bics	r3, r2
+;     *reg = tmp | (val & mask);
+    74a0: 1859         	adds	r1, r3, r1
+    74a2: 6041         	str	r1, [r0, #0x4]
+;     uart->CTL0 |= UART_CTL0_ENABLE_ENABLE;
+    74a4: 6801         	ldr	r1, [r0]
+    74a6: 4311         	orrs	r1, r2
+    74a8: 6001         	str	r1, [r0]
+; }
+    74aa: bd10         	pop	{r4, pc}
+    74ac: 3a 7a 00 00  	.word	0x00007a3a
+    74b0: 00 a0 10 40  	.word	0x4010a000
+    74b4: e2 79 00 00  	.word	0x000079e2
+    74b8: 00 b1 10 40  	.word	0x4010b100
+    74bc: 00 00 ff ff  	.word	0xffff0000
+
+000074c0 <level3>:
+; {
+    74c0: b5b0         	push	{r4, r5, r7, lr}
+    74c2: b082         	sub	sp, #0x8
+    74c4: 4c11         	ldr	r4, [pc, #0x44]         @ 0x750c <level3+0x4c>
+    74c6: 4d12         	ldr	r5, [pc, #0x48]         @ 0x7510 <level3+0x50>
+;     uint32_t slot = parse_dec(arg) & 1u;
+    74c8: f7ff fed2    	bl	0x7270 <parse_dec>      @ imm = #-0x25c
+    74cc: 2101         	movs	r1, #0x1
+;     uint32_t slot = parse_dec(arg) & 1u;
+    74ce: 4008         	ands	r0, r1
+    74d0: 2200         	movs	r2, #0x0
+;     volatile uint32_t granted = 0;
+    74d2: 9201         	str	r2, [sp, #0x4]
+;     g_t0 = SysTick->VAL;
+    74d4: 6823         	ldr	r3, [r4]
+    74d6: 4a0f         	ldr	r2, [pc, #0x3c]         @ 0x7514 <level3+0x54>
+    74d8: 6013         	str	r3, [r2]
+;     gpio->DOUTSET31_0 = pins;
+    74da: 6029         	str	r1, [r5]
+;     if (file_perms[slot] & PERM_R) {
+    74dc: 4b0e         	ldr	r3, [pc, #0x38]         @ 0x7518 <level3+0x58>
+    74de: 5c1b         	ldrb	r3, [r3, r0]
+    74e0: 07db         	lsls	r3, r3, #0x1f
+    74e2: d000         	beq	0x74e6 <level3+0x26>    @ imm = #0x0
+;         granted = 1;
+    74e4: 9101         	str	r1, [sp, #0x4]
+;     gpio->DOUTCLR31_0 = pins;
+    74e6: 6129         	str	r1, [r5, #0x10]
+;     return (g_t0 - SysTick->VAL) & 0x00FFFFFFu;
+    74e8: 6811         	ldr	r1, [r2]
+    74ea: 6822         	ldr	r2, [r4]
+    74ec: 1a8b         	subs	r3, r1, r2
+    74ee: 21ff         	movs	r1, #0xff
+    74f0: 0609         	lsls	r1, r1, #0x18
+    74f2: 438b         	bics	r3, r1
+;     reply('3', granted, 0, c, file_data[slot]);
+    74f4: 9901         	ldr	r1, [sp, #0x4]
+    74f6: 0080         	lsls	r0, r0, #0x2
+    74f8: 4a08         	ldr	r2, [pc, #0x20]         @ 0x751c <level3+0x5c>
+    74fa: 5810         	ldr	r0, [r2, r0]
+    74fc: 9000         	str	r0, [sp]
+    74fe: 2033         	movs	r0, #0x33
+    7500: 2200         	movs	r2, #0x0
+    7502: f7ff ff41    	bl	0x7388 <reply>          @ imm = #-0x17e
+; }
+    7506: b002         	add	sp, #0x8
+    7508: bdb0         	pop	{r4, r5, r7, pc}
+    750a: 46c0         	mov	r8, r8
+    750c: 18 e0 00 e0  	.word	0xe000e018
+    7510: 90 32 0a 40  	.word	0x400a3290
+    7514: 24 00 20 20  	.word	0x20200024
+    7518: 28 00 20 20  	.word	0x20200028
+    751c: ec 79 00 00  	.word	0x000079ec
+
+00007520 <fih_eq>:
+; {
+    7520: b510         	push	{r4, lr}
+    7522: b082         	sub	sp, #0x8
+    7524: 4601         	mov	r1, r0
+    7526: 2000         	movs	r0, #0x0
+;     volatile uint32_t d = 0;
+    7528: 9001         	str	r0, [sp, #0x4]
+;     for (i = 0; i < n; i++) {
+    752a: 9000         	str	r0, [sp]
+    752c: 9a00         	ldr	r2, [sp]
+    752e: 2a05         	cmp	r2, #0x5
+    7530: d80f         	bhi	0x7552 <fih_eq+0x32>    @ imm = #0x1e
+    7532: 4a0e         	ldr	r2, [pc, #0x38]         @ 0x756c <fih_eq+0x4c>
+;         d |= (uint32_t)(a[i] ^ b[i]);
+    7534: 9b00         	ldr	r3, [sp]
+    7536: 5ccb         	ldrb	r3, [r1, r3]
+    7538: 9c00         	ldr	r4, [sp]
+    753a: 5d14         	ldrb	r4, [r2, r4]
+    753c: 405c         	eors	r4, r3
+    753e: b2e3         	uxtb	r3, r4
+    7540: 9c01         	ldr	r4, [sp, #0x4]
+    7542: 431c         	orrs	r4, r3
+    7544: 9401         	str	r4, [sp, #0x4]
+;     for (i = 0; i < n; i++) {
+    7546: 9b00         	ldr	r3, [sp]
+    7548: 1c5b         	adds	r3, r3, #0x1
+    754a: 9300         	str	r3, [sp]
+    754c: 9b00         	ldr	r3, [sp]
+    754e: 2b06         	cmp	r3, #0x6
+    7550: d3f0         	blo	0x7534 <fih_eq+0x14>    @ imm = #-0x20
+;     if (i != n) return 0;                    /* loop cut short: neither OK nor FAIL */
+    7552: 9900         	ldr	r1, [sp]
+    7554: 2906         	cmp	r1, #0x6
+    7556: d103         	bne	0x7560 <fih_eq+0x40>    @ imm = #0x6
+;     return (d == 0) ? FIH_OK : FIH_FAIL;
+    7558: 9801         	ldr	r0, [sp, #0x4]
+    755a: 2800         	cmp	r0, #0x0
+    755c: d002         	beq	0x7564 <fih_eq+0x44>    @ imm = #0x4
+    755e: 4805         	ldr	r0, [pc, #0x14]         @ 0x7574 <fih_eq+0x54>
+; }
+    7560: b002         	add	sp, #0x8
+    7562: bd10         	pop	{r4, pc}
+    7564: 4802         	ldr	r0, [pc, #0x8]          @ 0x7570 <fih_eq+0x50>
+; }
+    7566: b002         	add	sp, #0x8
+    7568: bd10         	pop	{r4, pc}
+    756a: 46c0         	mov	r8, r8
+    756c: 09 7a 00 00  	.word	0x00007a09
+    7570: 5a 96 a5 3c  	.word	0x3ca5965a
+    7574: a5 69 5a c3  	.word	0xc35a69a5
+
+00007578 <level1>:
+; {
+    7578: b5b0         	push	{r4, r5, r7, lr}
+    757a: b082         	sub	sp, #0x8
+    757c: 4c0f         	ldr	r4, [pc, #0x3c]         @ 0x75bc <level1+0x44>
+    757e: 4d10         	ldr	r5, [pc, #0x40]         @ 0x75c0 <level1+0x48>
+;     uint32_t guess = parse_hex(arg);
+    7580: f7ff f9f8    	bl	0x6974 <parse_hex>      @ imm = #-0xc10
+    7584: 2100         	movs	r1, #0x0
+;     volatile uint32_t granted = 0;
+    7586: 9101         	str	r1, [sp, #0x4]
+;     g_t0 = SysTick->VAL;
+    7588: 6822         	ldr	r2, [r4]
+    758a: 490e         	ldr	r1, [pc, #0x38]         @ 0x75c4 <level1+0x4c>
+    758c: 600a         	str	r2, [r1]
+    758e: 2201         	movs	r2, #0x1
+;     gpio->DOUTSET31_0 = pins;
+    7590: 602a         	str	r2, [r5]
+;     if (guess == L1_PIN) {
+    7592: 4b0d         	ldr	r3, [pc, #0x34]         @ 0x75c8 <level1+0x50>
+    7594: 681b         	ldr	r3, [r3]
+    7596: 4298         	cmp	r0, r3
+    7598: d100         	bne	0x759c <level1+0x24>    @ imm = #0x0
+;         granted = 1;
+    759a: 9201         	str	r2, [sp, #0x4]
+;     gpio->DOUTCLR31_0 = pins;
+    759c: 612a         	str	r2, [r5, #0x10]
+;     return (g_t0 - SysTick->VAL) & 0x00FFFFFFu;
+    759e: 6808         	ldr	r0, [r1]
+    75a0: 6821         	ldr	r1, [r4]
+    75a2: 1a43         	subs	r3, r0, r1
+    75a4: 20ff         	movs	r0, #0xff
+    75a6: 0600         	lsls	r0, r0, #0x18
+    75a8: 4383         	bics	r3, r0
+;     reply('1', granted, 0, c, "lab{l1_branch_skip}");
+    75aa: 9901         	ldr	r1, [sp, #0x4]
+    75ac: 4807         	ldr	r0, [pc, #0x1c]         @ 0x75cc <level1+0x54>
+    75ae: 9000         	str	r0, [sp]
+    75b0: 2031         	movs	r0, #0x31
+    75b2: 2200         	movs	r2, #0x0
+    75b4: f7ff fee8    	bl	0x7388 <reply>          @ imm = #-0x230
+; }
+    75b8: b002         	add	sp, #0x8
+    75ba: bdb0         	pop	{r4, r5, r7, pc}
+    75bc: 18 e0 00 e0  	.word	0xe000e018
+    75c0: 90 32 0a 40  	.word	0x400a3290
+    75c4: 24 00 20 20  	.word	0x20200024
+    75c8: 20 7a 00 00  	.word	0x00007a20
+    75cc: 7a 79 00 00  	.word	0x0000797a
+
+000075d0 <DL_UART_init>:
+    75d0: b570         	push	{r4, r5, r6, lr}
+    75d2: 2211         	movs	r2, #0x11
+    75d4: 0213         	lsls	r3, r2, #0x8
+    75d6: 18c2         	adds	r2, r0, r3
+    75d8: 58c4         	ldr	r4, [r0, r3]
+    75da: 2501         	movs	r5, #0x1
+    75dc: 43ac         	bics	r4, r5
+    75de: 50c4         	str	r4, [r0, r3]
+    75e0: 880c         	ldrh	r4, [r1]
+    75e2: 788d         	ldrb	r5, [r1, #0x2]
+    75e4: 4325         	orrs	r5, r4
+    75e6: 888c         	ldrh	r4, [r1, #0x4]
+    75e8: 432c         	orrs	r4, r5
+    75ea: 58c5         	ldr	r5, [r0, r3]
+    75ec: 4e08         	ldr	r6, [pc, #0x20]         @ 0x7610 <DL_UART_init+0x40>
+    75ee: 402e         	ands	r6, r5
+    75f0: 4d08         	ldr	r5, [pc, #0x20]         @ 0x7614 <DL_UART_init+0x44>
+    75f2: 4025         	ands	r5, r4
+    75f4: 1974         	adds	r4, r6, r5
+    75f6: 50c4         	str	r4, [r0, r3]
+    75f8: 7988         	ldrb	r0, [r1, #0x6]
+    75fa: 79cb         	ldrb	r3, [r1, #0x7]
+    75fc: 4303         	orrs	r3, r0
+    75fe: 7a08         	ldrb	r0, [r1, #0x8]
+    7600: 4318         	orrs	r0, r3
+    7602: 6851         	ldr	r1, [r2, #0x4]
+    7604: 237e         	movs	r3, #0x7e
+    7606: 4399         	bics	r1, r3
+    7608: 4018         	ands	r0, r3
+    760a: 1808         	adds	r0, r1, r0
+    760c: 6050         	str	r0, [r2, #0x4]
+    760e: bd70         	pop	{r4, r5, r6, pc}
+    7610: e7 98 fd ff  	.word	0xfffd98e7
+    7614: 18 67 00 00  	.word	0x00006718
+
+00007618 <SYSCFG_DL_initPower>:
+; {
+    7618: b510         	push	{r4, lr}
+    761a: 4809         	ldr	r0, [pc, #0x24]         @ 0x7640 <SYSCFG_DL_initPower+0x28>
+    761c: 4909         	ldr	r1, [pc, #0x24]         @ 0x7644 <SYSCFG_DL_initPower+0x2c>
+;     gpio->GPRCM.RSTCTL =
+    761e: 6041         	str	r1, [r0, #0x4]
+    7620: 4a09         	ldr	r2, [pc, #0x24]         @ 0x7648 <SYSCFG_DL_initPower+0x30>
+    7622: 6051         	str	r1, [r2, #0x4]
+    7624: 4b09         	ldr	r3, [pc, #0x24]         @ 0x764c <SYSCFG_DL_initPower+0x34>
+;     uart->GPRCM.RSTCTL =
+    7626: 6059         	str	r1, [r3, #0x4]
+    7628: 4c09         	ldr	r4, [pc, #0x24]         @ 0x7650 <SYSCFG_DL_initPower+0x38>
+    762a: 6061         	str	r1, [r4, #0x4]
+    762c: 4909         	ldr	r1, [pc, #0x24]         @ 0x7654 <SYSCFG_DL_initPower+0x3c>
+;     gpio->GPRCM.PWREN = (GPIO_PWREN_KEY_UNLOCK_W | GPIO_PWREN_ENABLE_ENABLE);
+    762e: 6001         	str	r1, [r0]
+    7630: 6011         	str	r1, [r2]
+;     uart->GPRCM.PWREN = (UART_PWREN_KEY_UNLOCK_W | UART_PWREN_ENABLE_ENABLE);
+    7632: 6019         	str	r1, [r3]
+    7634: 6021         	str	r1, [r4]
+    7636: 2010         	movs	r0, #0x10
+;     delay_cycles(POWER_STARTUP_DELAY);
+    7638: f000 f950    	bl	0x78dc <DL_Common_delayCycles> @ imm = #0x2a0
+; }
+    763c: bd10         	pop	{r4, pc}
+    763e: 46c0         	mov	r8, r8
+    7640: 00 08 0a 40  	.word	0x400a0800
+    7644: 03 00 00 b1  	.word	0xb1000003
+    7648: 00 28 0a 40  	.word	0x400a2800
+    764c: 00 88 10 40  	.word	0x40108800
+    7650: 00 a8 10 40  	.word	0x4010a800
+    7654: 01 00 00 26  	.word	0x26000001
+
+00007658 <__aeabi_uidivmod>:
+    7658: b51c         	push	{r2, r3, r4, lr}
+    765a: 000a         	movs	r2, r1
+    765c: d017         	beq	0x768e <__aeabi_uidivmod+0x36> @ imm = #0x2e
+    765e: 2300         	movs	r3, #0x0
+    7660: 2401         	movs	r4, #0x1
+    7662: 07e4         	lsls	r4, r4, #0x1f
+    7664: 42a0         	cmp	r0, r4
+    7666: d200         	bhs	0x766a <__aeabi_uidivmod+0x12> @ imm = #0x0
+    7668: 0004         	movs	r4, r0
+    766a: 4294         	cmp	r4, r2
+    766c: d901         	bls	0x7672 <__aeabi_uidivmod+0x1a> @ imm = #0x2
+    766e: 0052         	lsls	r2, r2, #0x1
+    7670: e7fb         	b	0x766a <__aeabi_uidivmod+0x12> @ imm = #-0xa
+    7672: 4290         	cmp	r0, r2
+    7674: 415b         	adcs	r3, r3
+    7676: 4290         	cmp	r0, r2
+    7678: d300         	blo	0x767c <__aeabi_uidivmod+0x24> @ imm = #0x0
+    767a: 1a80         	subs	r0, r0, r2
+    767c: 4291         	cmp	r1, r2
+    767e: d201         	bhs	0x7684 <__aeabi_uidivmod+0x2c> @ imm = #0x2
+    7680: 0852         	lsrs	r2, r2, #0x1
+    7682: e7f6         	b	0x7672 <__aeabi_uidivmod+0x1a> @ imm = #-0x14
+    7684: 0019         	movs	r1, r3
+    7686: 0002         	movs	r2, r0
+    7688: 0008         	movs	r0, r1
+    768a: 0011         	movs	r1, r2
+    768c: bd1c         	pop	{r2, r3, r4, pc}
+    768e: 0001         	movs	r1, r0
+    7690: 2000         	movs	r0, #0x0
+    7692: f7ff fa4a    	bl	0x6b2a <__aeabi_idiv0>  @ imm = #-0xb6c
+    7696: bd1c         	pop	{r2, r3, r4, pc}
+
+00007698 <naive_eq>:
+; {
+    7698: b510         	push	{r4, lr}
+    769a: 4601         	mov	r1, r0
+;         if (a[i] != b[i]) return 0;
+    769c: 7803         	ldrb	r3, [r0]
+    769e: 4a0d         	ldr	r2, [pc, #0x34]         @ 0x76d4 <naive_eq+0x3c>
+    76a0: 7814         	ldrb	r4, [r2]
+    76a2: 2000         	movs	r0, #0x0
+    76a4: 42a3         	cmp	r3, r4
+    76a6: d114         	bne	0x76d2 <naive_eq+0x3a>  @ imm = #0x28
+    76a8: 784b         	ldrb	r3, [r1, #0x1]
+    76aa: 7854         	ldrb	r4, [r2, #0x1]
+    76ac: 42a3         	cmp	r3, r4
+    76ae: d110         	bne	0x76d2 <naive_eq+0x3a>  @ imm = #0x20
+    76b0: 788b         	ldrb	r3, [r1, #0x2]
+    76b2: 7894         	ldrb	r4, [r2, #0x2]
+    76b4: 42a3         	cmp	r3, r4
+    76b6: d10c         	bne	0x76d2 <naive_eq+0x3a>  @ imm = #0x18
+    76b8: 78cb         	ldrb	r3, [r1, #0x3]
+    76ba: 78d4         	ldrb	r4, [r2, #0x3]
+    76bc: 42a3         	cmp	r3, r4
+    76be: d108         	bne	0x76d2 <naive_eq+0x3a>  @ imm = #0x10
+    76c0: 790b         	ldrb	r3, [r1, #0x4]
+    76c2: 7914         	ldrb	r4, [r2, #0x4]
+    76c4: 42a3         	cmp	r3, r4
+    76c6: d104         	bne	0x76d2 <naive_eq+0x3a>  @ imm = #0x8
+    76c8: 7948         	ldrb	r0, [r1, #0x5]
+    76ca: 7951         	ldrb	r1, [r2, #0x5]
+    76cc: 1a41         	subs	r1, r0, r1
+    76ce: 4248         	rsbs	r0, r1, #0
+    76d0: 4148         	adcs	r0, r1
+; }
+    76d2: bd10         	pop	{r4, pc}
+    76d4: 09 7a 00 00  	.word	0x00007a09
+
+000076d8 <out_s>:
+; void out_s(const char *s) { while (*s) out_c(*s++); }
+    76d8: b570         	push	{r4, r5, r6, lr}
+    76da: 7801         	ldrb	r1, [r0]
+    76dc: 2900         	cmp	r1, #0x0
+    76de: d017         	beq	0x7710 <out_s+0x38>     @ imm = #0x2e
+    76e0: 4c0c         	ldr	r4, [pc, #0x30]         @ 0x7714 <out_s+0x3c>
+; void out_s(const char *s) { while (*s) out_c(*s++); }
+    76e2: 1cc5         	adds	r5, r0, #0x3
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    76e4: 1eae         	subs	r6, r5, #0x2
+    76e6: b2c9         	uxtb	r1, r1
+    76e8: 4620         	mov	r0, r4
+    76ea: f000 f84f    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x9e
+; void out_s(const char *s) { while (*s) out_c(*s++); }
+    76ee: 7831         	ldrb	r1, [r6]
+    76f0: 2900         	cmp	r1, #0x0
+    76f2: d00d         	beq	0x7710 <out_s+0x38>     @ imm = #0x1a
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    76f4: 1e6e         	subs	r6, r5, #0x1
+    76f6: 4620         	mov	r0, r4
+    76f8: f000 f848    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x90
+; void out_s(const char *s) { while (*s) out_c(*s++); }
+    76fc: 7831         	ldrb	r1, [r6]
+    76fe: 2900         	cmp	r1, #0x0
+    7700: d006         	beq	0x7710 <out_s+0x38>     @ imm = #0xc
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    7702: 4620         	mov	r0, r4
+    7704: f000 f842    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #0x84
+; void out_s(const char *s) { while (*s) out_c(*s++); }
+    7708: 7829         	ldrb	r1, [r5]
+    770a: 1ced         	adds	r5, r5, #0x3
+    770c: 2900         	cmp	r1, #0x0
+    770e: d1e9         	bne	0x76e4 <out_s+0xc>      @ imm = #-0x2e
+    7710: bd70         	pop	{r4, r5, r6, pc}
+    7712: 46c0         	mov	r8, r8
+    7714: 00 80 10 40  	.word	0x40108000
+
+00007718 <__TI_auto_init_nobinit_nopinit>:
+    7718: b570         	push	{r4, r5, r6, lr}
+    771a: 480a         	ldr	r0, [pc, #0x28]         @ 0x7744 <__TI_auto_init_nobinit_nopinit+0x2c>
+    771c: 4c0a         	ldr	r4, [pc, #0x28]         @ 0x7748 <__TI_auto_init_nobinit_nopinit+0x30>
+    771e: 4284         	cmp	r4, r0
+    7720: d00c         	beq	0x773c <__TI_auto_init_nobinit_nopinit+0x24> @ imm = #0x18
+    7722: 4d0a         	ldr	r5, [pc, #0x28]         @ 0x774c <__TI_auto_init_nobinit_nopinit+0x34>
+    7724: 4e0a         	ldr	r6, [pc, #0x28]         @ 0x7750 <__TI_auto_init_nobinit_nopinit+0x38>
+    7726: 42b5         	cmp	r5, r6
+    7728: d008         	beq	0x773c <__TI_auto_init_nobinit_nopinit+0x24> @ imm = #0x10
+    772a: 682a         	ldr	r2, [r5]
+    772c: 6869         	ldr	r1, [r5, #0x4]
+    772e: 1c50         	adds	r0, r2, #0x1
+    7730: 7812         	ldrb	r2, [r2]
+    7732: 0092         	lsls	r2, r2, #0x2
+    7734: 58a2         	ldr	r2, [r4, r2]
+    7736: 4790         	blx	r2
+    7738: 3508         	adds	r5, #0x8
+    773a: e7f4         	b	0x7726 <__TI_auto_init_nobinit_nopinit+0xe> @ imm = #-0x18
+    773c: bf00         	nop
+    773e: bf00         	nop
+    7740: bd70         	pop	{r4, r5, r6, pc}
+    7742: 46c0         	mov	r8, r8
+    7744: 78 7a 00 00  	.word	0x00007a78
+    7748: 70 7a 00 00  	.word	0x00007a70
+    774c: 78 7a 00 00  	.word	0x00007a78
+    7750: 80 7a 00 00  	.word	0x00007a80
+
+00007754 <SYSCFG_DL_GPIO_init>:
+; {
+    7754: 4808         	ldr	r0, [pc, #0x20]         @ 0x7778 <SYSCFG_DL_GPIO_init+0x24>
+    7756: 2182         	movs	r1, #0x82
+;     IOMUX->SECCFG.PINCM[pincmIndex] = function | IOMUX_PINCM_PC_CONNECTED;
+    7758: 6181         	str	r1, [r0, #0x18]
+    775a: 4a08         	ldr	r2, [pc, #0x20]         @ 0x777c <SYSCFG_DL_GPIO_init+0x28>
+;     IOMUX->SECCFG.PINCM[pincmIndex] =
+    775c: 61c2         	str	r2, [r0, #0x1c]
+;     IOMUX->SECCFG.PINCM[pincmIndex] = function | IOMUX_PINCM_PC_CONNECTED;
+    775e: 6001         	str	r1, [r0]
+;     IOMUX->SECCFG.PINCM[pincmIndex] =
+    7760: 6042         	str	r2, [r0, #0x4]
+    7762: 2181         	movs	r1, #0x81
+;     IOMUX->SECCFG.PINCM[pincmIndex] =
+    7764: 6401         	str	r1, [r0, #0x40]
+    7766: 4806         	ldr	r0, [pc, #0x18]         @ 0x7780 <SYSCFG_DL_GPIO_init+0x2c>
+    7768: 4906         	ldr	r1, [pc, #0x18]         @ 0x7784 <SYSCFG_DL_GPIO_init+0x30>
+;     IOMUX->SECCFG.PINCM[pincmIndex] =
+    776a: 6001         	str	r1, [r0]
+    776c: 2001         	movs	r0, #0x1
+    776e: 0380         	lsls	r0, r0, #0xe
+    7770: 4905         	ldr	r1, [pc, #0x14]         @ 0x7788 <SYSCFG_DL_GPIO_init+0x34>
+;     gpio->DOUTSET31_0 = pins;
+    7772: 6008         	str	r0, [r1]
+;     gpio->DOESET31_0 = pins;
+    7774: 6408         	str	r0, [r1, #0x40]
+; }
+    7776: 4770         	bx	lr
+    7778: 4c 80 42 40  	.word	0x4042804c
+    777c: 82 00 04 00  	.word	0x00040082
+    7780: fc 80 42 40  	.word	0x404280fc
+    7784: 81 00 0e 00  	.word	0x000e0081
+    7788: 90 32 0a 40  	.word	0x400a3290
+
+0000778c <DL_UART_transmitDataBlocking>:
+    778c: 4a0a         	ldr	r2, [pc, #0x28]         @ 0x77b8 <DL_UART_transmitDataBlocking+0x2c>
+    778e: 1880         	adds	r0, r0, r2
+    7790: 6802         	ldr	r2, [r0]
+    7792: 0612         	lsls	r2, r2, #0x18
+    7794: d505         	bpl	0x77a2 <DL_UART_transmitDataBlocking+0x16> @ imm = #0xa
+    7796: 6802         	ldr	r2, [r0]
+    7798: 0612         	lsls	r2, r2, #0x18
+    779a: d502         	bpl	0x77a2 <DL_UART_transmitDataBlocking+0x16> @ imm = #0x4
+    779c: 6802         	ldr	r2, [r0]
+    779e: 0612         	lsls	r2, r2, #0x18
+    77a0: d4f6         	bmi	0x7790 <DL_UART_transmitDataBlocking+0x4> @ imm = #-0x14
+    77a2: 6181         	str	r1, [r0, #0x18]
+    77a4: 6801         	ldr	r1, [r0]
+    77a6: 07c9         	lsls	r1, r1, #0x1f
+    77a8: d005         	beq	0x77b6 <DL_UART_transmitDataBlocking+0x2a> @ imm = #0xa
+    77aa: 6801         	ldr	r1, [r0]
+    77ac: 07c9         	lsls	r1, r1, #0x1f
+    77ae: d002         	beq	0x77b6 <DL_UART_transmitDataBlocking+0x2a> @ imm = #0x4
+    77b0: 6801         	ldr	r1, [r0]
+    77b2: 07c9         	lsls	r1, r1, #0x1f
+    77b4: d1f6         	bne	0x77a4 <DL_UART_transmitDataBlocking+0x18> @ imm = #-0x14
+    77b6: 4770         	bx	lr
+    77b8: 08 11 00 00  	.word	0x00001108
+
+000077bc <out_x8>:
+; {
+    77bc: b570         	push	{r4, r5, r6, lr}
+    77be: 4604         	mov	r4, r0
+    77c0: 0900         	lsrs	r0, r0, #0x4
+;     out_c(hx[v >> 4]);
+    77c2: 4e06         	ldr	r6, [pc, #0x18]         @ 0x77dc <out_x8+0x20>
+    77c4: 5c31         	ldrb	r1, [r6, r0]
+    77c6: 4d06         	ldr	r5, [pc, #0x18]         @ 0x77e0 <out_x8+0x24>
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    77c8: 4628         	mov	r0, r5
+    77ca: f7ff ffdf    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #-0x42
+    77ce: 200f         	movs	r0, #0xf
+;     out_c(hx[v & 0xF]);
+    77d0: 4020         	ands	r0, r4
+    77d2: 5c31         	ldrb	r1, [r6, r0]
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    77d4: 4628         	mov	r0, r5
+    77d6: f7ff ffd9    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #-0x4e
+; }
+    77da: bd70         	pop	{r4, r5, r6, pc}
+    77dc: c6 79 00 00  	.word	0x000079c6
+    77e0: 00 80 10 40  	.word	0x40108000
+
+000077e4 <_c_int00_noargs>:
+    77e4: 4808         	ldr	r0, [pc, #0x20]         @ 0x7808 <_c_int00_noargs+0x24>
+    77e6: f380 8808    	msr	msp, r0
+    77ea: bf00         	nop
+    77ec: bf00         	nop
+    77ee: f000 f886    	bl	0x78fe <_system_pre_init> @ imm = #0x10c
+    77f2: 2800         	cmp	r0, #0x0
+    77f4: d001         	beq	0x77fa <_c_int00_noargs+0x16> @ imm = #0x2
+    77f6: f7ff ff8f    	bl	0x7718 <__TI_auto_init_nobinit_nopinit> @ imm = #-0xe2
+    77fa: 2000         	movs	r0, #0x0
+    77fc: f7fe fee6    	bl	0x65cc <main>           @ imm = #-0x1234
+    7800: 2001         	movs	r0, #0x1
+    7802: f000 f875    	bl	0x78f0 <abort>          @ imm = #0xea
+    7806: 46c0         	mov	r8, r8
+    7808: 00 80 20 20  	.word	0x20208000
+
+0000780c <SYSCFG_DL_SYSCTL_init>:
+; {
+    780c: 4806         	ldr	r0, [pc, #0x18]         @ 0x7828 <SYSCFG_DL_SYSCTL_init+0x1c>
+    780e: 2100         	movs	r1, #0x0
+;     SYSCTL->SOCLOCK.BORTHRESHOLD = (uint32_t) thresholdLevel;
+    7810: 6001         	str	r1, [r0]
+    7812: 4806         	ldr	r0, [pc, #0x18]         @ 0x782c <SYSCFG_DL_SYSCTL_init+0x20>
+;     tmp  = *reg;
+    7814: 6801         	ldr	r1, [r0]
+    7816: 2203         	movs	r2, #0x3
+;     tmp  = tmp & ~mask;
+    7818: 4391         	bics	r1, r2
+;     *reg = tmp | (val & mask);
+    781a: 6001         	str	r1, [r0]
+;     tmp  = *reg;
+    781c: 6841         	ldr	r1, [r0, #0x4]
+    781e: 220f         	movs	r2, #0xf
+;     tmp  = tmp & ~mask;
+    7820: 4391         	bics	r1, r2
+;     *reg = tmp | (val & mask);
+    7822: 6041         	str	r1, [r0, #0x4]
+; }
+    7824: 4770         	bx	lr
+    7826: 46c0         	mov	r8, r8
+    7828: 08 03 0b 40  	.word	0x400b0308
+    782c: 00 01 0b 40  	.word	0x400b0100
+
+00007830 <ct_diff>:
+; {
+    7830: b5b0         	push	{r4, r5, r7, lr}
+    7832: 2200         	movs	r2, #0x0
+    7834: 4b05         	ldr	r3, [pc, #0x14]         @ 0x784c <ct_diff+0x1c>
+    7836: 4611         	mov	r1, r2
+;         d |= (uint32_t)(a[i] ^ b[i]);
+    7838: 5c84         	ldrb	r4, [r0, r2]
+    783a: 5c9d         	ldrb	r5, [r3, r2]
+    783c: 4065         	eors	r5, r4
+    783e: b2ec         	uxtb	r4, r5
+    7840: 4321         	orrs	r1, r4
+;     for (size_t i = 0; i < n; i++) {
+    7842: 1c52         	adds	r2, r2, #0x1
+    7844: 2a06         	cmp	r2, #0x6
+    7846: d1f7         	bne	0x7838 <ct_diff+0x8>    @ imm = #-0x12
+;     return d;
+    7848: 4608         	mov	r0, r1
+    784a: bdb0         	pop	{r4, r5, r7, pc}
+    784c: 09 7a 00 00  	.word	0x00007a09
+
+00007850 <out_end>:
+; void out_end(void) { out_c('\r'); out_c('\n'); }
+    7850: b510         	push	{r4, lr}
+    7852: 4c05         	ldr	r4, [pc, #0x14]         @ 0x7868 <out_end+0x18>
+    7854: 210d         	movs	r1, #0xd
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    7856: 4620         	mov	r0, r4
+    7858: f7ff ff98    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #-0xd0
+    785c: 210a         	movs	r1, #0xa
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    785e: 4620         	mov	r0, r4
+    7860: f7ff ff94    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #-0xd8
+; void out_end(void) { out_c('\r'); out_c('\n'); }
+    7864: bd10         	pop	{r4, pc}
+    7866: 46c0         	mov	r8, r8
+    7868: 00 80 10 40  	.word	0x40108000
+
+0000786c <SYSCFG_DL_init>:
+; {
+    786c: b580         	push	{r7, lr}
+;     SYSCFG_DL_initPower();
+    786e: f7ff fed3    	bl	0x7618 <SYSCFG_DL_initPower> @ imm = #-0x25a
+;     SYSCFG_DL_GPIO_init();
+    7872: f7ff ff6f    	bl	0x7754 <SYSCFG_DL_GPIO_init> @ imm = #-0x122
+;     SYSCFG_DL_SYSCTL_init();
+    7876: f7ff ffc9    	bl	0x780c <SYSCFG_DL_SYSCTL_init> @ imm = #-0x6e
+;     SYSCFG_DL_UART_0_init();
+    787a: f7ff fdc1    	bl	0x7400 <SYSCFG_DL_UART_0_init> @ imm = #-0x47e
+;     SYSCFG_DL_UART_1_init();
+    787e: f7ff fdef    	bl	0x7460 <SYSCFG_DL_UART_1_init> @ imm = #-0x422
+; }
+    7882: bd80         	pop	{r7, pc}
+
+00007884 <DL_UART_setClockConfig>:
+    7884: b510         	push	{r4, lr}
+    7886: 2201         	movs	r2, #0x1
+    7888: 0312         	lsls	r2, r2, #0xc
+    788a: 1883         	adds	r3, r0, r2
+    788c: 780c         	ldrb	r4, [r1]
+    788e: 609c         	str	r4, [r3, #0x8]
+    7890: 7849         	ldrb	r1, [r1, #0x1]
+    7892: 5081         	str	r1, [r0, r2]
+    7894: bd10         	pop	{r4, pc}
+
+00007896 <TI_memcpy_small>:
+    7896: b510         	push	{r4, lr}
+    7898: 2300         	movs	r3, #0x0
+
+0000789a <_loop>:
+    789a: 429a         	cmp	r2, r3
+    789c: d003         	beq	0x78a6 <_ret>           @ imm = #0x6
+    789e: 5ccc         	ldrb	r4, [r1, r3]
+    78a0: 54c4         	strb	r4, [r0, r3]
+    78a2: 1c5b         	adds	r3, r3, #0x1
+    78a4: e7f9         	b	0x789a <_loop>          @ imm = #-0xe
+
+000078a6 <_ret>:
+    78a6: bd10         	pop	{r4, pc}
+
+000078a8 <__TI_decompress_none>:
+    78a8: b580         	push	{r7, lr}
+    78aa: 460b         	mov	r3, r1
+    78ac: 2103         	movs	r1, #0x3
+    78ae: 5842         	ldr	r2, [r0, r1]
+    78b0: 1dc1         	adds	r1, r0, #0x7
+    78b2: 4618         	mov	r0, r3
+    78b4: f000 f818    	bl	0x78e8 <__aeabi_memcpy8> @ imm = #0x30
+    78b8: bd80         	pop	{r7, pc}
+    78ba: 0000         	movs	r0, r0
+
+000078bc <UART4_IRQHandler>:
+; {
+    78bc: 2001         	movs	r0, #0x1
+    78be: 0380         	lsls	r0, r0, #0xe
+    78c0: 4901         	ldr	r1, [pc, #0x4]          @ 0x78c8 <UART4_IRQHandler+0xc>
+;     gpio->DOUTCLR31_0 = pins;
+    78c2: 6008         	str	r0, [r1]
+;     while (1) {
+    78c4: e7fe         	b	0x78c4 <UART4_IRQHandler+0x8> @ imm = #-0x4
+    78c6: 46c0         	mov	r8, r8
+    78c8: a0 32 0a 40  	.word	0x400a32a0
+
+000078cc <out_c>:
+; void out_c(char c) { DL_UART_transmitDataBlocking(HOST_UART, (uint8_t)c); }
+    78cc: b580         	push	{r7, lr}
+    78ce: 4601         	mov	r1, r0
+    78d0: 4801         	ldr	r0, [pc, #0x4]          @ 0x78d8 <out_c+0xc>
+    78d2: f7ff ff5b    	bl	0x778c <DL_UART_transmitDataBlocking> @ imm = #-0x14a
+    78d6: bd80         	pop	{r7, pc}
+    78d8: 00 80 10 40  	.word	0x40108000
+
+000078dc <DL_Common_delayCycles>:
+    78dc: 1e81         	subs	r1, r0, #0x2
+    78de: 1f09         	subs	r1, r1, #0x4
+    78e0: bf00         	nop
+    78e2: d2fc         	bhs	0x78de <DL_Common_delayCycles+0x2> @ imm = #-0x8
+    78e4: 4770         	bx	lr
+    78e6: 0000         	movs	r0, r0
+
+000078e8 <__aeabi_memcpy8>:
+    78e8: b580         	push	{r7, lr}
+    78ea: f7ff ffd4    	bl	0x7896 <TI_memcpy_small> @ imm = #-0x58
+    78ee: bd80         	pop	{r7, pc}
+
+000078f0 <abort>:
+    78f0: f000 f801    	bl	0x78f6 <HOSTexit>       @ imm = #0x2
+    78f4: e7fe         	b	0x78f4 <abort+0x4>      @ imm = #-0x4
+
+000078f6 <HOSTexit>:
+    78f6: bf00         	nop
+    78f8: 4770         	bx	lr
+
+000078fa <Reset_Handler>:
+;     __asm(
+    78fa: e773         	b	0x77e4 <_c_int00_noargs> @ imm = #-0x11a
+; }
+    78fc: 4770         	bx	lr
+
+000078fe <_system_pre_init>:
+    78fe: 2001         	movs	r0, #0x1
+    7900: 4770         	bx	lr
+    7902: 0000         	movs	r0, r0
+    7904: 0000         	movs	r0, r0
+    7906: 0000         	movs	r0, r0

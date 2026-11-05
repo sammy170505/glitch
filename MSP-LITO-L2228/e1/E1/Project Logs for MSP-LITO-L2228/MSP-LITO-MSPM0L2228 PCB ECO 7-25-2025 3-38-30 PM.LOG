@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=PA.31 Pin=U1-39
+Change Component DesignItemId : Designator=U1 Old DesignItemId=CMP-0093960-1 New DesignItemId=CMP-0121756-1
+Change Component Footprint: Designator=U1 Old Footprint=PM0064A-MFG New Footprint=PM0064A-MFG
+Change Component Comment : Designator=U1 Old Comment=MSPM0G3507SPM New Comment=MSPM0L2228SPM
+Change Component Description : Designator=U1 Old Description=Mixed-Signal Microcontrollers With CAN-FD Interface LQFP64 New Description=Mixed-Signal Microcontroller, LQFP64
+Added Pin To Net: NetName=VBAT Pin=U1-39
+Added Net: Name=VBAT

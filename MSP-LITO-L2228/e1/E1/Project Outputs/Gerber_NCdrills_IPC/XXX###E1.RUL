@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: C:\Users\a0488321\Documents\1. Launchpads\msp-lito-l2228-evm\1_PCB\E1\MSP-LITO-MSPM0L2228.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=1.90
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=8.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=5.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

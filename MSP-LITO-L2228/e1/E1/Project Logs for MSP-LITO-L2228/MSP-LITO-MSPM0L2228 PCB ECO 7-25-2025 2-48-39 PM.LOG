@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=PA.31 Pin=U1-39
+Change Component DesignItemId : Designator=U1 Old DesignItemId=CMP-0093960-1 New DesignItemId=CMP-0121756-1
+Change Component Footprint: Designator=U1 Old Footprint=PM0064A-MFG New Footprint=PM0064A-MFG
+Change Component Comment : Designator=U1 Old Comment=MSPM0G3507SPM New Comment=MSPM0L2228SPM
+Change Component Description : Designator=U1 Old Description=Mixed-Signal Microcontrollers With CAN-FD Interface LQFP64 New Description=Mixed-Signal Microcontroller, LQFP64
+Change Managed Component Library Link : Designator=U1 Old VaultGUID=7C5C494C-8C0B-46E3-B7B5-096FDD15FE09 New VaultGUID=7C5C494C-8C0B-46E3-B7B5-096FDD15FE09 Old ItemGUID=8EB0E6C7-A54A-4B80-A0B3-8923587849B3 New ItemGUID=6A2C3B7A-60C6-49C5-BFAE-CCA06D86FD28 Old RevisionGUID=A6EF95A1-1CE2-4671-BF86-1A48F227B3EB New RevisionGUID=78FA35CA-712F-478D-BA71-ADCF87D3D2F5
+Change component parameters: Designator = "U1" ("U1"); Footprint = "PM0064A-MFG"; UniqueID = "\YWMLYNJQ" ("\YWMLYNJQ")
+Change component parameters (AddParameter): Name = "AEC Qualified"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Core Architecture"; Value = "ARM Cortex-M0+"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Data Bus Width"; Value = "32bits"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Path"; Value = "datasheets/IC-MSPM0L2228SPM.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency_Fixed"; Value = "32MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "helpURL"; Value = "https://upverter.com/upn/revision/e3d91dc85fdb9748/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Interface"; Value = "I2C,SPI,UART,LIN,IrDA,SMBus,Other"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Supply Voltage"; Value = "3.6V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Memory Size"; Value = "256KBytes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Memory Type"; Value = "FLASH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Supply Voltage"; Value = "1.62V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of A/D Converters"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of Adc Channels"; Value = "26"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of Cores"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of I2C Channels"; Value = "3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of I/Os"; Value = "59"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of Pwm Channels"; Value = "18"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of Spi Channels"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of Timers/Counters"; Value = "6"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number Of Uart Channels"; Value = "5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Range"; Value = "-40°C to +125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "LQFP64"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "MSPM0L2228SPM"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartNumber"; Value = "MSPM0L2228SPM"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ram Size"; Value = "32KBytes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "UNKNOWN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SizeZ_mm"; Value = "1.6mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Standoff Height"; Value = "0.05mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VBAT Pin=U1-39
+Added Net: Name=VBAT
+Change Class Name : Old Net Name=MSP-LITO-MSPM0G3507 New Net Name=MSP-LITO-MSPM0L2228
+Added Member To Class: ClassName=MSP-LITO-MSPM0L2228 Member=Component R8 RC0402FR-072K2L
+Added Member To Class: ClassName=MSP-LITO-MSPM0L2228 Member=Component U1 MSPM0L2228SPM

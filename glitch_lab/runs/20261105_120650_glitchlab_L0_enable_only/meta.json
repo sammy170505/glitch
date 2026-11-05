@@ -1,0 +1,18 @@
+{
+  "level": 0,
+  "mode": "enable_only",
+  "width": null,
+  "cw_clk": 60000000.0,
+  "target_hz": 32000000.0,
+  "offset_max": 2361,
+  "offset_step": 10,
+  "repeats": [
+    1,
+    21
+  ],
+  "tries": 2,
+  "base_c": 1270,
+  "port": "COM14",
+  "send": "0",
+  "fw_sha256": "e5ce5a1c39d5deb026dcf8952f62eaae154ba7ae02d4dbf0aea977ef4a865d67"
+}
